@@ -1,0 +1,2314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types>
+    <settings>
+        <add_resized_images_to_library>0</add_resized_images_to_library>
+        <register_translations_on_import>0</register_translations_on_import>
+        <images_remote>0</images_remote>
+        <images_remote_cache_time>36</images_remote_cache_time>
+        <help_box>no</help_box>
+        <hide_standard_custom_fields_metabox>show</hide_standard_custom_fields_metabox>
+        <postmeta_unfiltered_html>on</postmeta_unfiltered_html>
+        <usermeta_unfiltered_html>on</usermeta_unfiltered_html>
+        <toolset_messages>0</toolset_messages>
+    </settings>
+    <groups>
+        <group>
+            <ID>7</ID>
+            <post_content>Articles (posts) assigned to the categories below will display on this page.</post_content>
+            <post_title>Category Home options</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>all</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,categories,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,page,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>,template-category-home.php,</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>cb6e1a13e87a5e9c244bc42f7322f564</hash>
+            <checksum>cb6e1a13e87a5e9c244bc42f7322f564</checksum>
+            <__types_id>category-home-options</__types_id>
+            <__types_title>Category Home options</__types_title>
+        </group>
+        <group>
+            <ID>8</ID>
+            <post_content>Paste the web address (URL) below to which this item should link.  If left blank, this item will not link to anything.</post_content>
+            <post_title>Page Link</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,link-url,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_nav_boxes,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>351f6969cf95c8f5d04231864fb15059</hash>
+            <checksum>351f6969cf95c8f5d04231864fb15059</checksum>
+            <__types_id>page-link</__types_id>
+            <__types_title>Page Link</__types_title>
+        </group>
+        <group>
+            <ID>9</ID>
+            <post_content>Landing boxes assigned to the group below will display on this page.</post_content>
+            <post_title>Landing Page options</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>all</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,nav-box-group,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,page,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>,template-landing-page.php,</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>53a4e0e89ca2b660c17f4708ecbf6578</hash>
+            <checksum>53a4e0e89ca2b660c17f4708ecbf6578</checksum>
+            <__types_id>landing-page-options</__types_id>
+            <__types_title>Landing Page options</__types_title>
+        </group>
+        <group>
+            <ID>10</ID>
+            <post_content></post_content>
+            <post_title>Page/Post Subtitle</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,page-subtitle,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,post,page,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>8e31e543c438ac5b9c0072266841a60e</hash>
+            <checksum>8e31e543c438ac5b9c0072266841a60e</checksum>
+            <__types_id>pagepost-subtitle</__types_id>
+            <__types_title>Page/Post Subtitle</__types_title>
+        </group>
+        <group>
+            <ID>11</ID>
+            <post_content>Use the &quot;Select File&quot; button to upload a new file to the Media Library or to select an attachment that is already in the Media Library. When you do so, the file&#039;s URL will be inserted in the URL field.
+
+Alternatively, you may simply paste into the URL field the address of any document that has been uploaded to the site via some other means (eg. FTP) or the full URL (with http://) of any document on another site.</post_content>
+            <post_title>File Attachments</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,attachment,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_proprty_listing,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>2990640f35bd92194dd8f8fe0d420765</hash>
+            <checksum>2990640f35bd92194dd8f8fe0d420765</checksum>
+            <__types_id>file-attachments</__types_id>
+            <__types_title>File Attachments</__types_title>
+        </group>
+        <group>
+            <ID>12</ID>
+            <post_content>Details for the person to contact</post_content>
+            <post_title>Contact information</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,contact-name,contact-company,contact-address,contact-phone,contact-email,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_proprty_listing,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>a7fb7342bfaab760cdaa222564382035</hash>
+            <checksum>a7fb7342bfaab760cdaa222564382035</checksum>
+            <__types_id>contact-information</__types_id>
+            <__types_title>Contact information</__types_title>
+        </group>
+        <group>
+            <ID>13</ID>
+            <post_content>Put common details here.  Put additional descriptions of the property in the editor box above.</post_content>
+            <post_title>Property Details</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,street-address,city,state,zip-code,county,parcel-number,listing-price,listing-url,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_proprty_listing,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>82bd3ca40d7e8ff28e1d3ca2a7d74bb2</hash>
+            <checksum>82bd3ca40d7e8ff28e1d3ca2a7d74bb2</checksum>
+            <__types_id>property-details</__types_id>
+            <__types_title>Property Details</__types_title>
+        </group>
+        <group>
+            <ID>14</ID>
+            <post_content>Use the &quot;Select File&quot; button to upload a new file to the Media Library or to select a publication that is already in the Media Library.  When you do so, the file&#039;s URL will be inserted in the URL field.
+
+Alternatively, you may simply paste into the URL field the address of any document that has been uploaded to the site via some other means (eg. FTP) or the full URL (with http://) of any document on another site.</post_content>
+            <post_title>Publication File</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,publication-url,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_publication,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>8e09d981d6b93e26dd5501caf89e4802</hash>
+            <checksum>8e09d981d6b93e26dd5501caf89e4802</checksum>
+            <__types_id>publication-file</__types_id>
+            <__types_title>Publication File</__types_title>
+        </group>
+        <group>
+            <ID>15</ID>
+            <post_content></post_content>
+            <post_title>Land Bank data</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,lb-incorporation-date,lb-dtac-funding,lb-last-updated,lb-notes,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_landbank,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>89f89a1341e9822052857e4a05882058</hash>
+            <checksum>89f89a1341e9822052857e4a05882058</checksum>
+            <__types_id>land-bank-data</__types_id>
+            <__types_title>Land Bank data</__types_title>
+        </group>
+        <group>
+            <ID>16</ID>
+            <post_content>Primary contact info for the land bank.</post_content>
+            <post_title>Land Bank Contact</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_post_types>,grcs_landbank,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+                <_wp_types_group_fields>,lb-contact-name,lb-contact-title,lb-address,lb-phone,lb-email,lb-website,</_wp_types_group_fields>
+            </meta>
+            <hash>9aca4b9c13b45e6079a4fc129a168472</hash>
+            <checksum>9aca4b9c13b45e6079a4fc129a168472</checksum>
+            <__types_id>land-bank-contact</__types_id>
+            <__types_title>Land Bank Contact</__types_title>
+        </group>
+        <group>
+            <ID>17</ID>
+            <post_content></post_content>
+            <post_title>Land Bank Board Member Info</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,lb-member-name,lb_title,email,lb-member-order,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_landbank_member,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>1ad70e47fbd92437b902edc4d56db0a7</hash>
+            <checksum>1ad70e47fbd92437b902edc4d56db0a7</checksum>
+            <__types_id>land-bank-board-member-info</__types_id>
+            <__types_title>Land Bank Board Member Info</__types_title>
+        </group>
+        <group>
+            <ID>18</ID>
+            <post_content></post_content>
+            <post_title>Board member information</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,position,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_trustee,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>6a6ba7d0a15e431c06cc6e7f9a34ead9</hash>
+            <checksum>6a6ba7d0a15e431c06cc6e7f9a34ead9</checksum>
+            <__types_id>board-member-information</__types_id>
+            <__types_title>Board member information</__types_title>
+        </group>
+        <group>
+            <ID>19</ID>
+            <post_content></post_content>
+            <post_title>Bio/Profile</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,bio,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_staff,grcs_trustee,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>6e34188831988619f12ff4b57e6bd812</hash>
+            <checksum>6e34188831988619f12ff4b57e6bd812</checksum>
+            <__types_id>bioprofile</__types_id>
+            <__types_title>Bio/Profile</__types_title>
+        </group>
+        <group>
+            <ID>20</ID>
+            <post_content></post_content>
+            <post_title>Social media links</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,twitter,linkedin,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_staff,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>25442749a3a7f1183b81c77d2970d8d5</hash>
+            <checksum>25442749a3a7f1183b81c77d2970d8d5</checksum>
+            <__types_id>social-media-links</__types_id>
+            <__types_title>Social media links</__types_title>
+        </group>
+        <group>
+            <ID>21</ID>
+            <post_content></post_content>
+            <post_title>Staff member information</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,position,email,focus-area,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_staff,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>966a1804f92c5e413f1ea3eaac256cd9</hash>
+            <checksum>966a1804f92c5e413f1ea3eaac256cd9</checksum>
+            <__types_id>staff-member-information</__types_id>
+            <__types_title>Staff member information</__types_title>
+        </group>
+        <group>
+            <ID>22</ID>
+            <post_content>Paste the web address (URL) below to which this slide should link.  If left blank, the slide will not link to anything.</post_content>
+            <post_title>Slide Link</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,link-url,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,grcs_slide,</_wp_types_group_post_types>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wpcf_conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </_wpcf_conditional_display>
+            </meta>
+            <hash>5e46452fa071822e4e118d853f7a0e79</hash>
+            <checksum>5e46452fa071822e4e118d853f7a0e79</checksum>
+            <__types_id>slide-link</__types_id>
+            <__types_title>Slide Link</__types_title>
+        </group>
+    </groups>
+    <fields>
+        <field>
+            <description>The person\&#039;s work email address.  (Will be published on site).</description>
+            <data>
+                <placeholder></placeholder>
+                <validate>
+                    <email>
+                        <active>1</active>
+                        <message>Please enter a valid email address</message>
+                    </email>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>email</id>
+            <name>Email</name>
+            <type>email</type>
+            <slug>email</slug>
+            <meta_key>wpcf-email</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>email</__types_id>
+            <__types_title>Email</__types_title>
+            <hash>6bf2fe35e8b0e863383ec7c73249f91f</hash>
+            <checksum>6bf2fe35e8b0e863383ec7c73249f91f</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>1</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>focus-area</id>
+            <name>Focus area</name>
+            <type>textfield</type>
+            <slug>focus-area</slug>
+            <meta_key>wpcf-focus-area</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>focus-area</__types_id>
+            <__types_title>Focus area</__types_title>
+            <hash>8d74adc9d0852b5f67e489b16271504e</hash>
+            <checksum>8d74adc9d0852b5f67e489b16271504e</checksum>
+        </field>
+        <field>
+            <description>The web address (URL) for a work-related (or personal) twitter account.</description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <url>
+                        <active>1</active>
+                        <message>Please enter a valid URL address</message>
+                    </url>
+                </validate>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>twitter</id>
+            <name>Twitter</name>
+            <type>url</type>
+            <slug>twitter</slug>
+            <meta_key>wpcf-twitter</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>twitter</__types_id>
+            <__types_title>Twitter</__types_title>
+            <hash>a35b1dbaf898b144f5a7ff1604c80dab</hash>
+            <checksum>a35b1dbaf898b144f5a7ff1604c80dab</checksum>
+        </field>
+        <field>
+            <description>Job title, position, or role</description>
+            <data>
+                <repetitive>0</repetitive>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>position</id>
+            <name>Position</name>
+            <type>textfield</type>
+            <slug>position</slug>
+            <meta_key>wpcf-position</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>position</__types_id>
+            <__types_title>Position</__types_title>
+            <hash>f87e5b7d37e43f517d724af69e101cdd</hash>
+            <checksum>f87e5b7d37e43f517d724af69e101cdd</checksum>
+        </field>
+        <field>
+            <description>The web address (URL) for an employee\&#039;s LinkedIn account.</description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <url>
+                        <active>1</active>
+                        <message>Please enter a valid URL address</message>
+                    </url>
+                </validate>
+                <is_new>1</is_new>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>linkedin</id>
+            <name>LinkedIn</name>
+            <type>url</type>
+            <slug>linkedin</slug>
+            <meta_key>wpcf-linkedin</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>linkedin</__types_id>
+            <__types_title>LinkedIn</__types_title>
+            <hash>5b22c6f4bb4f7355f3a26c46f3209068</hash>
+            <checksum>5b22c6f4bb4f7355f3a26c46f3209068</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>bio</id>
+            <name>Public profile or bio</name>
+            <type>wysiwyg</type>
+            <slug>bio</slug>
+            <meta_key>wpcf-bio</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>bio</__types_id>
+            <__types_title>Public profile or bio</__types_title>
+            <hash>5459d06dcce525004a441616fa06ad12</hash>
+            <checksum>5459d06dcce525004a441616fa06ad12</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <placeholder></placeholder>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb_title</id>
+            <name>Title/position</name>
+            <type>textfield</type>
+            <slug>lb_title</slug>
+            <meta_key>wpcf-lb_title</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb_title</__types_id>
+            <__types_title>Title/position</__types_title>
+            <hash>998b4ca7aecd65e3890b476173251e80</hash>
+            <checksum>998b4ca7aecd65e3890b476173251e80</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-contact-name</id>
+            <name>Name</name>
+            <type>textfield</type>
+            <slug>lb-contact-name</slug>
+            <meta_key>wpcf-lb-contact-name</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-contact-name</__types_id>
+            <__types_title>Name</__types_title>
+            <hash>4ae76bc71cd59cbc99e2d278fd1f6eac</hash>
+            <checksum>4ae76bc71cd59cbc99e2d278fd1f6eac</checksum>
+        </field>
+        <field>
+            <description>The contact\&#039;s title (if any)</description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-contact-title</id>
+            <name>Title</name>
+            <type>textfield</type>
+            <slug>lb-contact-title</slug>
+            <meta_key>wpcf-lb-contact-title</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-contact-title</__types_id>
+            <__types_title>Title</__types_title>
+            <hash>f1ec74781838b3399efa6d87ae23d9f2</hash>
+            <checksum>f1ec74781838b3399efa6d87ae23d9f2</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-address</id>
+            <name>Address</name>
+            <type>textarea</type>
+            <slug>lb-address</slug>
+            <meta_key>wpcf-lb-address</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-address</__types_id>
+            <__types_title>Address</__types_title>
+            <hash>e1e18f7a86c91feef706cbce23c32ba5</hash>
+            <checksum>e1e18f7a86c91feef706cbce23c32ba5</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-phone</id>
+            <name>Phone</name>
+            <type>phone</type>
+            <slug>lb-phone</slug>
+            <meta_key>wpcf-lb-phone</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-phone</__types_id>
+            <__types_title>Phone</__types_title>
+            <hash>230cfef2bec1cb6c2937553ac3caff80</hash>
+            <checksum>230cfef2bec1cb6c2937553ac3caff80</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <email>
+                        <active>1</active>
+                        <message>Please enter a valid email address</message>
+                    </email>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-email</id>
+            <name>Contact Email</name>
+            <type>email</type>
+            <slug>lb-email</slug>
+            <meta_key>wpcf-lb-email</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-email</__types_id>
+            <__types_title>Contact Email</__types_title>
+            <hash>3b2230cb14146f8a009958d61a01dcec</hash>
+            <checksum>3b2230cb14146f8a009958d61a01dcec</checksum>
+        </field>
+        <field>
+            <description>Enter the website\&#039;s address (URL) including the http://</description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <url>
+                        <active>1</active>
+                        <message>Please enter a valid URL address</message>
+                    </url>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-website</id>
+            <name>Website</name>
+            <type>url</type>
+            <slug>lb-website</slug>
+            <meta_key>wpcf-lb-website</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-website</__types_id>
+            <__types_title>Website</__types_title>
+            <hash>97ca88d65acfe4e6514cb77f83c20fbe</hash>
+            <checksum>97ca88d65acfe4e6514cb77f83c20fbe</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <date_and_time>date</date_and_time>
+                <placeholder></placeholder>
+                <validate>
+                    <date>
+                        <active>1</active>
+                        <format>mdy</format>
+                        <pattern>check.format</pattern>
+                        <message>Please enter a valid date</message>
+                    </date>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-incorporation-date</id>
+            <name>Incorporation Date</name>
+            <type>date</type>
+            <slug>lb-incorporation-date</slug>
+            <meta_key>wpcf-lb-incorporation-date</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-incorporation-date</__types_id>
+            <__types_title>Incorporation Date</__types_title>
+            <hash>010c9b5dd60e532c7bd57f41d30d60d8</hash>
+            <checksum>010c9b5dd60e532c7bd57f41d30d60d8</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <number>
+                        <active>1</active>
+                        <message>Please enter numeric data</message>
+                    </number>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-properties-held</id>
+            <name>Number of properties held</name>
+            <type>numeric</type>
+            <slug>lb-properties-held</slug>
+            <meta_key>wpcf-lb-properties-held</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-properties-held</__types_id>
+            <__types_title>Number of properties held</__types_title>
+            <hash>cc41df9e4fdabe4329ad858468f5998c</hash>
+            <checksum>cc41df9e4fdabe4329ad858468f5998c</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <number>
+                        <active>1</active>
+                        <message>Please enter numeric data</message>
+                    </number>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-properties-transferred</id>
+            <name>Number of properties transferred</name>
+            <type>numeric</type>
+            <slug>lb-properties-transferred</slug>
+            <meta_key>wpcf-lb-properties-transferred</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-properties-transferred</__types_id>
+            <__types_title>Number of properties transferred</__types_title>
+            <hash>11f597e75a65ea59d16fb5b31bdad7c2</hash>
+            <checksum>11f597e75a65ea59d16fb5b31bdad7c2</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <date_and_time>date</date_and_time>
+                <placeholder></placeholder>
+                <validate>
+                    <date>
+                        <active>1</active>
+                        <format>mdy</format>
+                        <pattern>check.format</pattern>
+                        <message>Please enter a valid date</message>
+                    </date>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-last-updated</id>
+            <name>Date last updated</name>
+            <type>date</type>
+            <slug>lb-last-updated</slug>
+            <meta_key>wpcf-lb-last-updated</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-last-updated</__types_id>
+            <__types_title>Date last updated</__types_title>
+            <hash>41310fad6d3b9ba3908064cf7b143950</hash>
+            <checksum>41310fad6d3b9ba3908064cf7b143950</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <placeholder></placeholder>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-notes</id>
+            <name>Notes</name>
+            <type>textarea</type>
+            <slug>lb-notes</slug>
+            <meta_key>wpcf-lb-notes</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-notes</__types_id>
+            <__types_title>Notes</__types_title>
+            <hash>ccc45f7f80176caa1eb4fcb8c8f73922</hash>
+            <checksum>ccc45f7f80176caa1eb4fcb8c8f73922</checksum>
+        </field>
+        <field>
+            <description>Enter the percentage of funding from DTAC</description>
+            <data>
+                <placeholder></placeholder>
+                <validate>
+                    <number>
+                        <active>1</active>
+                        <message>Please enter numeric data</message>
+                    </number>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-dtac-funding</id>
+            <name>DTAC Funding</name>
+            <type>numeric</type>
+            <slug>lb-dtac-funding</slug>
+            <meta_key>wpcf-lb-dtac-funding</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-dtac-funding</__types_id>
+            <__types_title>DTAC Funding</__types_title>
+            <hash>3ad6dcf134ad314d47777c043af98c0f</hash>
+            <checksum>3ad6dcf134ad314d47777c043af98c0f</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <placeholder></placeholder>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-member-name</id>
+            <name>Member Name</name>
+            <type>textfield</type>
+            <slug>lb-member-name</slug>
+            <meta_key>wpcf-lb-member-name</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-member-name</__types_id>
+            <__types_title>Member Name</__types_title>
+            <hash>0a348b92986118831488f15001d1c091</hash>
+            <checksum>0a348b92986118831488f15001d1c091</checksum>
+        </field>
+        <field>
+            <description>Number the board members in the order in which they should be displayed.</description>
+            <data>
+                <placeholder></placeholder>
+                <validate>
+                    <number>
+                        <active>1</active>
+                        <message>Please enter numeric data</message>
+                    </number>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>lb-member-order</id>
+            <name>Display Order</name>
+            <type>numeric</type>
+            <slug>lb-member-order</slug>
+            <meta_key>wpcf-lb-member-order</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>lb-member-order</__types_id>
+            <__types_title>Display Order</__types_title>
+            <hash>b6757081c0b8ca57af04402bea3985a3</hash>
+            <checksum>b6757081c0b8ca57af04402bea3985a3</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <required>
+                        <active>1</active>
+                        <value>true</value>
+                        <message>This field is required</message>
+                    </required>
+                </validate>
+                <is_new>1</is_new>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>upload-a-file</id>
+            <name>Upload a File</name>
+            <type>file</type>
+            <slug>upload-a-file</slug>
+            <meta_key>wpcf-upload-a-file</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>upload-a-file</__types_id>
+            <__types_title>Upload a File</__types_title>
+            <hash>066fdcd4f9fe7044a28f4156ef43f5e1</hash>
+            <checksum>066fdcd4f9fe7044a28f4156ef43f5e1</checksum>
+        </field>
+        <field>
+            <description>Note: URLs for this site may include or exclude the domain http://www.wrlandconservancy.org but must begin with a slash if the domain is excluded (eg. /pdf/Landline-Winter2014.pdf).  The domain-less style will continue to work without needing to be updated in the event that the domain name of the site changes.</description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <required>
+                        <active>1</active>
+                        <value>true</value>
+                        <message>This field is required</message>
+                    </required>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>publication-url</id>
+            <name>Publication URL</name>
+            <type>file</type>
+            <slug>publication-url</slug>
+            <meta_key>wpcf-publication-url</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>publication-url</__types_id>
+            <__types_title>Publication URL</__types_title>
+            <hash>0405aaf623abc2f76a3ba38b469510c6</hash>
+            <checksum>0405aaf623abc2f76a3ba38b469510c6</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>street-address</id>
+            <name>Street Address</name>
+            <type>textfield</type>
+            <slug>street-address</slug>
+            <meta_key>wpcf-street-address</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>street-address</__types_id>
+            <__types_title>Street Address</__types_title>
+            <hash>ecf08a08a461a38febc3ff38f2e6bc8c</hash>
+            <checksum>ecf08a08a461a38febc3ff38f2e6bc8c</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>city</id>
+            <name>City</name>
+            <type>textfield</type>
+            <slug>city</slug>
+            <meta_key>wpcf-city</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>city</__types_id>
+            <__types_title>City</__types_title>
+            <hash>91ad5253cb262fa6f1373f1941b4a184</hash>
+            <checksum>91ad5253cb262fa6f1373f1941b4a184</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <options>
+                    <wpcf-fields-select-option-44edafc1efe2a5d1a270a5df1ff91fcf-1>
+                        <title>Ohio</title>
+                        <value>OH</value>
+                    </wpcf-fields-select-option-44edafc1efe2a5d1a270a5df1ff91fcf-1>
+                    <default>wpcf-fields-select-option-44edafc1efe2a5d1a270a5df1ff91fcf-1</default>
+                    <wpcf-fields-select-option-33cbe2639de97a37a38f556eaaf2d1eb-1>
+                        <title>Pennsylvania</title>
+                        <value>PA</value>
+                    </wpcf-fields-select-option-33cbe2639de97a37a38f556eaaf2d1eb-1>
+                </options>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>state</id>
+            <name>State</name>
+            <type>select</type>
+            <slug>state</slug>
+            <meta_key>wpcf-state</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>state</__types_id>
+            <__types_title>State</__types_title>
+            <hash>73e8d7e6f3cb1f1d79152ed9217b911f</hash>
+            <checksum>73e8d7e6f3cb1f1d79152ed9217b911f</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>zip-code</id>
+            <name>Zip Code</name>
+            <type>textfield</type>
+            <slug>zip-code</slug>
+            <meta_key>wpcf-zip-code</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>zip-code</__types_id>
+            <__types_title>Zip Code</__types_title>
+            <hash>9bdd6cc0e5f069e5eb21bccc977a6061</hash>
+            <checksum>9bdd6cc0e5f069e5eb21bccc977a6061</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>county</id>
+            <name>County</name>
+            <type>textfield</type>
+            <slug>county</slug>
+            <meta_key>wpcf-county</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>county</__types_id>
+            <__types_title>County</__types_title>
+            <hash>43d67b68e3aeaf2a6f3724bfe1821930</hash>
+            <checksum>43d67b68e3aeaf2a6f3724bfe1821930</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>parcel-number</id>
+            <name>Parcel Number(s)</name>
+            <type>textfield</type>
+            <slug>parcel-number</slug>
+            <meta_key>wpcf-parcel-number</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>parcel-number</__types_id>
+            <__types_title>Parcel Number(s)</__types_title>
+            <hash>d10819a5a7de1bc9040c3b232f1daa13</hash>
+            <checksum>d10819a5a7de1bc9040c3b232f1daa13</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <number>
+                        <active>1</active>
+                        <message>Please enter numeric data</message>
+                    </number>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>listing-price</id>
+            <name>Listing Price</name>
+            <type>numeric</type>
+            <slug>listing-price</slug>
+            <meta_key>wpcf-listing-price</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>listing-price</__types_id>
+            <__types_title>Listing Price</__types_title>
+            <hash>8999dd782e20ee12c15ce15362f4c254</hash>
+            <checksum>8999dd782e20ee12c15ce15362f4c254</checksum>
+        </field>
+        <field>
+            <description>A web address (URL) including the http://</description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <url>
+                        <active>1</active>
+                        <message>Please enter a valid web address</message>
+                    </url>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>listing-url</id>
+            <name>Realtor Site Listing</name>
+            <type>url</type>
+            <slug>listing-url</slug>
+            <meta_key>wpcf-listing-url</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>listing-url</__types_id>
+            <__types_title>Realtor Site Listing</__types_title>
+            <hash>2a55dc9dbb26c67d00dfca5a99e8ce2a</hash>
+            <checksum>2a55dc9dbb26c67d00dfca5a99e8ce2a</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>contact-name</id>
+            <name>Name</name>
+            <type>textfield</type>
+            <slug>contact-name</slug>
+            <meta_key>wpcf-contact-name</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>contact-name</__types_id>
+            <__types_title>Name</__types_title>
+            <hash>4306401627b0b6d433e6b9a7bffb750c</hash>
+            <checksum>4306401627b0b6d433e6b9a7bffb750c</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>contact-company</id>
+            <name>Company</name>
+            <type>textfield</type>
+            <slug>contact-company</slug>
+            <meta_key>wpcf-contact-company</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>contact-company</__types_id>
+            <__types_title>Company</__types_title>
+            <hash>0e0fbef000fc8585f902733578dff521</hash>
+            <checksum>0e0fbef000fc8585f902733578dff521</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>contact-address</id>
+            <name>Address</name>
+            <type>textarea</type>
+            <slug>contact-address</slug>
+            <meta_key>wpcf-contact-address</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>contact-address</__types_id>
+            <__types_title>Address</__types_title>
+            <hash>6bfb6298a7032bc3d8a4d81e0689b854</hash>
+            <checksum>6bfb6298a7032bc3d8a4d81e0689b854</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>contact-phone</id>
+            <name>Phone</name>
+            <type>phone</type>
+            <slug>contact-phone</slug>
+            <meta_key>wpcf-contact-phone</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>contact-phone</__types_id>
+            <__types_title>Phone</__types_title>
+            <hash>22e574c92a59f4d8c402730686d2697c</hash>
+            <checksum>22e574c92a59f4d8c402730686d2697c</checksum>
+        </field>
+        <field>
+            <description>(Will be published on the site)</description>
+            <data>
+                <repetitive>0</repetitive>
+                <validate>
+                    <email>
+                        <active>1</active>
+                        <message>Please enter a valid email address</message>
+                    </email>
+                </validate>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>contact-email</id>
+            <name>Email</name>
+            <type>email</type>
+            <slug>contact-email</slug>
+            <meta_key>wpcf-contact-email</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>contact-email</__types_id>
+            <__types_title>Email</__types_title>
+            <hash>59fd636c4ed72e80b44a59ef035f1b2f</hash>
+            <checksum>59fd636c4ed72e80b44a59ef035f1b2f</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>1</repetitive>
+                <is_new>1</is_new>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>attachment</id>
+            <name>Attachment</name>
+            <type>file</type>
+            <slug>attachment</slug>
+            <meta_key>wpcf-attachment</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>attachment</__types_id>
+            <__types_title>Attachment</__types_title>
+            <hash>72b1eebd7734d77f53a866743d9b66d0</hash>
+            <checksum>72b1eebd7734d77f53a866743d9b66d0</checksum>
+        </field>
+        <field>
+            <description>Note: URLs for this site may include or exclude the domain http://www.wrlandconservancy.org but must begin with a slash if the domain is excluded (eg. /who-we-are/). The domain-less style will continue to work without needing to be updated in the event that the domain name of the site changes.
+
+URLs for other sites must include http:// and the domain name.</description>
+            <data>
+                <repetitive>0</repetitive>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>link-url</id>
+            <name>Link URL</name>
+            <type>url</type>
+            <slug>link-url</slug>
+            <meta_key>wpcf-link-url</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>link-url</__types_id>
+            <__types_title>Link URL</__types_title>
+            <hash>82d2fa0000448b444a9cf8f47fac4fb0</hash>
+            <checksum>82d2fa0000448b444a9cf8f47fac4fb0</checksum>
+        </field>
+        <field>
+            <description></description>
+            <data>
+                <repetitive>0</repetitive>
+                <conditional_display>
+                    <custom_use>0</custom_use>
+                    <relation>AND</relation>
+                    <custom></custom>
+                </conditional_display>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>page-subtitle</id>
+            <name>Subtitle</name>
+            <type>textfield</type>
+            <slug>page-subtitle</slug>
+            <meta_key>wpcf-page-subtitle</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>page-subtitle</__types_id>
+            <__types_title>Subtitle</__types_title>
+            <hash>6d705cd44d2d7eb007fae6b0e4b1e013</hash>
+            <checksum>6d705cd44d2d7eb007fae6b0e4b1e013</checksum>
+        </field>
+        <field>
+            <description>Enter the slug of the group to display.</description>
+            <data>
+                <repetitive>0</repetitive>
+                <is_new>1</is_new>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>nav-box-group</id>
+            <name>Landing Box Group</name>
+            <type>textfield</type>
+            <slug>nav-box-group</slug>
+            <meta_key>wpcf-nav-box-group</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>nav-box-group</__types_id>
+            <__types_title>Landing Box Group</__types_title>
+            <hash>3cdd99ca9fbfce7a2f308afcd1cb091c</hash>
+            <checksum>3cdd99ca9fbfce7a2f308afcd1cb091c</checksum>
+        </field>
+        <field>
+            <description>Enter the slug of the category to display.</description>
+            <data>
+                <repetitive>1</repetitive>
+                <is_new>1</is_new>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <id>categories</id>
+            <name>Category</name>
+            <type>textfield</type>
+            <slug>categories</slug>
+            <meta_key>wpcf-categories</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>categories</__types_id>
+            <__types_title>Category</__types_title>
+            <hash>5bc4f61a7a21c0190f0ec01d32a8edab</hash>
+            <checksum>5bc4f61a7a21c0190f0ec01d32a8edab</checksum>
+        </field>
+    </fields>
+    <types>
+        <type>
+            <__types_id>grcs_landbank</__types_id>
+            <__types_title>Land Banks</__types_title>
+            <_toolset_edit_last>1456612187</_toolset_edit_last>
+            <wpcf-post-type>grcs_landbank</wpcf-post-type>
+            <icon>id-alt</icon>
+            <labels>
+                <name>Land Banks</name>
+                <singular_name>Land Bank</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Land Banks</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
+            </labels>
+            <slug>grcs_landbank</slug>
+            <description>For maintaining information about area land banks.</description>
+            <public>public</public>
+            <menu_position></menu_position>
+            <dashboard_glance>1</dashboard_glance>
+            <taxonomies>
+                <post_tag>1</post_tag>
+            </taxonomies>
+            <custom-field-group>
+                <land-bank-data>15</land-bank-data>
+                <land-bank-contact>16</land-bank-contact>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <revisions>1</revisions>
+                <author>1</author>
+                <thumbnail>1</thumbnail>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>custom</custom>
+                <slug>county-land-banks/land-banks</slug>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu>1</show_in_menu>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <publicly_queryable>1</publicly_queryable>
+            <can_export>1</can_export>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <disabled>1</disabled>
+            <id>grcs_landbank</id>
+            <hash>b6454731a6b4c689b23264d11ef5cc79</hash>
+            <checksum>b6454731a6b4c689b23264d11ef5cc79</checksum>
+        </type>
+        <type>
+            <__types_id>grcs_landbank_member</__types_id>
+            <__types_title>Land Bank Board Members</__types_title>
+            <_toolset_edit_last>1456612198</_toolset_edit_last>
+            <wpcf-post-type>grcs_landbank_member</wpcf-post-type>
+            <icon>groups</icon>
+            <labels>
+                <name>Land Bank Board Members</name>
+                <singular_name>Land Bank Board Member</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All items</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
+            </labels>
+            <slug>grcs_landbank_member</slug>
+            <description>Land banks can have their own list of board members.</description>
+            <public>public</public>
+            <menu_position></menu_position>
+            <custom-field-group>
+                <land-bank-board-member-info>17</land-bank-board-member-info>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <author>1</author>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>normal</custom>
+                <slug></slug>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <publicly_queryable>1</publicly_queryable>
+            <exclude_from_search>1</exclude_from_search>
+            <can_export>1</can_export>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <disabled>1</disabled>
+            <id>grcs_landbank_member</id>
+            <hash>c521a3cb1dd866e25d717a1fdf3a6629</hash>
+            <checksum>c521a3cb1dd866e25d717a1fdf3a6629</checksum>
+        </type>
+        <type>
+            <_toolset_edit_last>1456613763</_toolset_edit_last>
+            <__types_id>grcs_nav_boxes</__types_id>
+            <__types_title>Landing Boxes</__types_title>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <wpcf-post-type>grcs_nav_boxes</wpcf-post-type>
+            <icon>screenoptions</icon>
+            <labels>
+                <name>Landing Boxes</name>
+                <singular_name>Landing Box</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Landing Boxes</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
+            </labels>
+            <slug>grcs_nav_boxes</slug>
+            <description>Content boxes for our \&quot;landing pages\&quot;.</description>
+            <public>public</public>
+            <menu_position>10--wpcf-add-menu-after--edit.php?post_type=wrlc_slide</menu_position>
+            <taxonomies>
+                <wrlc_nav_box_group>1</wrlc_nav_box_group>
+                <grcs_nav_box_group>1</grcs_nav_box_group>
+            </taxonomies>
+            <custom-field-group>
+                <page-link>8</page-link>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <editor>1</editor>
+                <revisions>1</revisions>
+                <author>1</author>
+                <thumbnail>1</thumbnail>
+                <page-attributes>1</page-attributes>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>normal</custom>
+                <slug></slug>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu>1</show_in_menu>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <exclude_from_search>1</exclude_from_search>
+            <can_export>1</can_export>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <id>grcs_nav_boxes</id>
+            <hash>f6b6708007cfe08a963b9edd242cc0da</hash>
+            <checksum>f6b6708007cfe08a963b9edd242cc0da</checksum>
+        </type>
+        <type>
+            <__types_id>grcs_proprty_listing</__types_id>
+            <__types_title>Property Listings</__types_title>
+            <_toolset_edit_last>1456612702</_toolset_edit_last>
+            <wpcf-post-type>grcs_proprty_listing</wpcf-post-type>
+            <icon>location</icon>
+            <labels>
+                <name>Property Listings</name>
+                <singular_name>Property Listing</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Listings</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
+            </labels>
+            <slug>grcs_proprty_listing</slug>
+            <description>Conservation buyer properties</description>
+            <public>public</public>
+            <menu_position></menu_position>
+            <dashboard_glance>1</dashboard_glance>
+            <taxonomies>
+                <post_tag>1</post_tag>
+            </taxonomies>
+            <custom-field-group>
+                <file-attachments>11</file-attachments>
+                <contact-information>12</contact-information>
+                <property-details>13</property-details>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <editor>1</editor>
+                <revisions>1</revisions>
+                <author>1</author>
+                <excerpt>1</excerpt>
+                <thumbnail>1</thumbnail>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>custom</custom>
+                <slug>connect-with-us/buy-properties/listings</slug>
+                <feeds>1</feeds>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive>1</has_archive>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu>1</show_in_menu>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <publicly_queryable>1</publicly_queryable>
+            <can_export>1</can_export>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <disabled>1</disabled>
+            <id>grcs_proprty_listing</id>
+            <hash>837387a53bf0ffef14586ce4104b99aa</hash>
+            <checksum>837387a53bf0ffef14586ce4104b99aa</checksum>
+        </type>
+        <type>
+            <__types_id>grcs_publication</__types_id>
+            <__types_title>Publications</__types_title>
+            <_toolset_edit_last>1456614001</_toolset_edit_last>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <wpcf-post-type>grcs_publication</wpcf-post-type>
+            <icon>media-document</icon>
+            <labels>
+                <name>Publications</name>
+                <singular_name>Publication</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Publications</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
+            </labels>
+            <slug>grcs_publication</slug>
+            <description></description>
+            <public>public</public>
+            <menu_position>20--wpcf-add-menu-after--edit.php?post_type=page</menu_position>
+            <dashboard_glance>1</dashboard_glance>
+            <taxonomies>
+                <post_tag>1</post_tag>
+                <wrlc_pub_type>1</wrlc_pub_type>
+                <grcs_pub_type>1</grcs_pub_type>
+            </taxonomies>
+            <custom-field-group>
+                <publication-file>14</publication-file>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <author>1</author>
+                <thumbnail>1</thumbnail>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>custom</custom>
+                <slug>publications</slug>
+                <feeds>1</feeds>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive>1</has_archive>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu>1</show_in_menu>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <publicly_queryable>1</publicly_queryable>
+            <can_export>1</can_export>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <id>grcs_publication</id>
+            <hash>e741084cd46dfd0fab3109263e72d31c</hash>
+            <checksum>e741084cd46dfd0fab3109263e72d31c</checksum>
+        </type>
+        <type>
+            <__types_id>grcs_slide</__types_id>
+            <__types_title>Slides</__types_title>
+            <_toolset_edit_last>1456612791</_toolset_edit_last>
+            <wpcf-post-type>grcs_slide</wpcf-post-type>
+            <icon>images-alt2</icon>
+            <labels>
+                <name>Slides</name>
+                <singular_name>Slide</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Slides</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
+            </labels>
+            <slug>grcs_slide</slug>
+            <description>Simple slide type for the Gracias theme</description>
+            <public>public</public>
+            <menu_position>10--wpcf-add-menu-after--upload.php</menu_position>
+            <dashboard_glance>1</dashboard_glance>
+            <custom-field-group>
+                <slide-link>22</slide-link>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <author>1</author>
+                <thumbnail>1</thumbnail>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>normal</custom>
+                <slug></slug>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu>1</show_in_menu>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <can_export>1</can_export>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <id>grcs_slide</id>
+            <hash>ec5f1bc0390d54f1a8274a46c377a503</hash>
+            <checksum>ec5f1bc0390d54f1a8274a46c377a503</checksum>
+        </type>
+        <type>
+            <__types_id>grcs_staff</__types_id>
+            <__types_title>Staff</__types_title>
+            <_toolset_edit_last>1456613680</_toolset_edit_last>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <wpcf-post-type>grcs_staff</wpcf-post-type>
+            <icon>groups</icon>
+            <labels>
+                <name>Staff</name>
+                <singular_name>Staff Member</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Staff</all_items>
+                <enter_title_here>Enter name here</enter_title_here>
+            </labels>
+            <slug>grcs_staff</slug>
+            <description>People to display on the \&quot;Staff\&quot; page.</description>
+            <public>public</public>
+            <menu_position>20--wpcf-add-menu-after--edit.php?post_type=grcs_publication</menu_position>
+            <dashboard_glance>1</dashboard_glance>
+            <taxonomies>
+                <post_tag>1</post_tag>
+                <wrlc_locations>1</wrlc_locations>
+                <wrlc_team>1</wrlc_team>
+                <grcs_locations>1</grcs_locations>
+                <grcs_team>1</grcs_team>
+            </taxonomies>
+            <custom-field-group>
+                <bioprofile>19</bioprofile>
+                <social-media-links>20</social-media-links>
+                <staff-member-information>21</staff-member-information>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <revisions>1</revisions>
+                <author>1</author>
+                <thumbnail>1</thumbnail>
+                <page-attributes>1</page-attributes>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>custom</custom>
+                <slug>staff</slug>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive>1</has_archive>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu>1</show_in_menu>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <publicly_queryable>1</publicly_queryable>
+            <can_export>1</can_export>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <id>grcs_staff</id>
+            <hash>2eef78c5563b2f789a64f0d2eee78dcd</hash>
+            <checksum>2eef78c5563b2f789a64f0d2eee78dcd</checksum>
+        </type>
+        <type>
+            <__types_id>grcs_trustee</__types_id>
+            <__types_title>Board Members</__types_title>
+            <_toolset_edit_last>1456613565</_toolset_edit_last>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <wpcf-post-type>grcs_trustee</wpcf-post-type>
+            <icon>groups</icon>
+            <labels>
+                <name>Board Members</name>
+                <singular_name>Board Member</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Board Members</all_items>
+                <enter_title_here>Enter name here</enter_title_here>
+            </labels>
+            <slug>grcs_trustee</slug>
+            <description>People to display on one or more board pages.</description>
+            <public>public</public>
+            <menu_position>20--wpcf-add-menu-after--edit.php?post_type=grcs_staff</menu_position>
+            <dashboard_glance>1</dashboard_glance>
+            <taxonomies>
+                <post_tag>1</post_tag>
+                <nppb_board>1</nppb_board>
+                <grcs_board>1</grcs_board>
+            </taxonomies>
+            <custom-field-group>
+                <board-member-information>18</board-member-information>
+                <bioprofile>19</bioprofile>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <revisions>1</revisions>
+                <author>1</author>
+                <thumbnail>1</thumbnail>
+                <page-attributes>1</page-attributes>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>custom</custom>
+                <slug>board-members</slug>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive>1</has_archive>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu>1</show_in_menu>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <publicly_queryable>1</publicly_queryable>
+            <can_export>1</can_export>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <id>grcs_trustee</id>
+            <hash>6f6ec622d350bc481c6525660e188300</hash>
+            <checksum>6f6ec622d350bc481c6525660e188300</checksum>
+        </type>
+    </types>
+    <taxonomies>
+        <taxonomy>
+            <labels>
+                <name>Categories</name>
+                <singular_name>Category</singular_name>
+                <search_items>Search Categories</search_items>
+                <popular_items></popular_items>
+                <all_items>All Categories</all_items>
+                <parent_item>Parent Category</parent_item>
+                <parent_item_colon>Parent Category:</parent_item_colon>
+                <edit_item>Edit Category</edit_item>
+                <view_item>View Category</view_item>
+                <update_item>Update Category</update_item>
+                <add_new_item>Add New Category</add_new_item>
+                <new_item_name>New Category Name</new_item_name>
+                <separate_items_with_commas></separate_items_with_commas>
+                <add_or_remove_items></add_or_remove_items>
+                <choose_from_most_used></choose_from_most_used>
+                <not_found>No categories found.</not_found>
+                <no_terms>No categories</no_terms>
+                <items_list_navigation>Categories list navigation</items_list_navigation>
+                <items_list>Categories list</items_list>
+                <menu_name>Categories</menu_name>
+                <name_admin_bar>category</name_admin_bar>
+            </labels>
+            <description></description>
+            <public>1</public>
+            <hierarchical>1</hierarchical>
+            <show_ui>1</show_ui>
+            <show_in_menu>1</show_in_menu>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <show_tagcloud>1</show_tagcloud>
+            <show_in_quick_edit>1</show_in_quick_edit>
+            <show_admin_column>1</show_admin_column>
+            <meta_box_cb>post_categories_meta_box</meta_box_cb>
+            <rewrite></rewrite>
+            <query_var></query_var>
+            <update_count_callback></update_count_callback>
+            <_builtin>1</_builtin>
+            <cap>
+                <manage_terms>manage_categories</manage_terms>
+                <edit_terms>manage_categories</edit_terms>
+                <delete_terms>manage_categories</delete_terms>
+                <assign_terms>edit_posts</assign_terms>
+            </cap>
+            <name>category</name>
+            <label>Categories</label>
+            <slug>category</slug>
+            <supports>
+                <__types_cpt_supports_post>1</__types_cpt_supports_post>
+            </supports>
+            <id>category</id>
+            <__types_id>category</__types_id>
+            <__types_title>Categories</__types_title>
+            <checksum>a660e7f773e20c7fc0a2487aec578a84</checksum>
+        </taxonomy>
+        <taxonomy>
+            <labels>
+                <name>Tags</name>
+                <singular_name>Tag</singular_name>
+                <search_items>Search Tags</search_items>
+                <popular_items>Popular Tags</popular_items>
+                <all_items>All Tags</all_items>
+                <parent_item></parent_item>
+                <parent_item_colon></parent_item_colon>
+                <edit_item>Edit Tag</edit_item>
+                <view_item>View Tag</view_item>
+                <update_item>Update Tag</update_item>
+                <add_new_item>Add New Tag</add_new_item>
+                <new_item_name>New Tag Name</new_item_name>
+                <separate_items_with_commas>Separate tags with commas</separate_items_with_commas>
+                <add_or_remove_items>Add or remove tags</add_or_remove_items>
+                <choose_from_most_used>Choose from the most used tags</choose_from_most_used>
+                <not_found>No tags found.</not_found>
+                <no_terms>No tags</no_terms>
+                <items_list_navigation>Tags list navigation</items_list_navigation>
+                <items_list>Tags list</items_list>
+                <menu_name>Tags</menu_name>
+                <name_admin_bar>post_tag</name_admin_bar>
+            </labels>
+            <description></description>
+            <public>1</public>
+            <hierarchical></hierarchical>
+            <show_ui>1</show_ui>
+            <show_in_menu>1</show_in_menu>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <show_tagcloud>1</show_tagcloud>
+            <show_in_quick_edit>1</show_in_quick_edit>
+            <show_admin_column>1</show_admin_column>
+            <meta_box_cb>post_tags_meta_box</meta_box_cb>
+            <rewrite></rewrite>
+            <query_var></query_var>
+            <update_count_callback></update_count_callback>
+            <_builtin>1</_builtin>
+            <cap>
+                <manage_terms>manage_categories</manage_terms>
+                <edit_terms>manage_categories</edit_terms>
+                <delete_terms>manage_categories</delete_terms>
+                <assign_terms>edit_posts</assign_terms>
+            </cap>
+            <name>post_tag</name>
+            <label>Tags</label>
+            <slug>post_tag</slug>
+            <supports>
+                <__types_cpt_supports_post>1</__types_cpt_supports_post>
+                <__types_cpt_supports_grcs_landbank>1</__types_cpt_supports_grcs_landbank>
+                <__types_cpt_supports_grcs_proprty_listing>1</__types_cpt_supports_grcs_proprty_listing>
+                <__types_cpt_supports_grcs_publication>1</__types_cpt_supports_grcs_publication>
+                <__types_cpt_supports_grcs_staff>1</__types_cpt_supports_grcs_staff>
+                <__types_cpt_supports_grcs_trustee>1</__types_cpt_supports_grcs_trustee>
+            </supports>
+            <id>post_tag</id>
+            <__types_id>post_tag</__types_id>
+            <__types_title>Tags</__types_title>
+            <checksum>317178704c40b390395ba9b15bd13538</checksum>
+        </taxonomy>
+        <taxonomy>
+            <wpcf-tax>nppb_board</wpcf-tax>
+            <icon>admin-post</icon>
+            <labels>
+                <name>Boards</name>
+                <singular_name>Board</singular_name>
+                <search_items>Search %s</search_items>
+                <popular_items>Popular %s</popular_items>
+                <all_items>All %s</all_items>
+                <parent_item>Parent %s</parent_item>
+                <parent_item_colon>Parent %s:</parent_item_colon>
+                <edit_item>Edit %s</edit_item>
+                <update_item>Update %s</update_item>
+                <add_new_item>Add New %s</add_new_item>
+                <new_item_name>New %s Name</new_item_name>
+                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
+                <add_or_remove_items>Add or remove %s</add_or_remove_items>
+                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
+                <menu_name>%s</menu_name>
+            </labels>
+            <slug>grcs_board</slug>
+            <description>Allows board members to be assigned to one or more boards.</description>
+            <public>public</public>
+            <hierarchical>hierarchical</hierarchical>
+            <supports>
+                <__types_cpt_supports_grcs_trustee>1</__types_cpt_supports_grcs_trustee>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <slug>boards</slug>
+                <hierarchical>1</hierarchical>
+            </rewrite>
+            <show_ui>1</show_ui>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <show_admin_column>1</show_admin_column>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <update_count_callback></update_count_callback>
+            <meta_box_cb>
+                <callback></callback>
+            </meta_box_cb>
+            <_toolset_edit_last>1456613565</_toolset_edit_last>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <name></name>
+            <id>grcs_board</id>
+            <__types_id>grcs_board</__types_id>
+            <__types_title>Boards</__types_title>
+            <checksum>2c57374a5a7a6a7f3b5b16ae97841cd3</checksum>
+        </taxonomy>
+        <taxonomy>
+            <wpcf-tax>wrlc_locations</wpcf-tax>
+            <icon>admin-post</icon>
+            <labels>
+                <name>Office Locations</name>
+                <singular_name>Office Location</singular_name>
+                <search_items>Search %s</search_items>
+                <popular_items>Popular %s</popular_items>
+                <all_items>All %s</all_items>
+                <parent_item>Parent %s</parent_item>
+                <parent_item_colon>Parent %s:</parent_item_colon>
+                <edit_item>Edit %s</edit_item>
+                <update_item>Update %s</update_item>
+                <add_new_item>Add New %s</add_new_item>
+                <new_item_name>New %s Name</new_item_name>
+                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
+                <add_or_remove_items>Add or remove %s</add_or_remove_items>
+                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
+                <menu_name>%s</menu_name>
+            </labels>
+            <slug>grcs_locations</slug>
+            <description></description>
+            <public>public</public>
+            <hierarchical>hierarchical</hierarchical>
+            <supports>
+                <__types_cpt_supports_grcs_staff>1</__types_cpt_supports_grcs_staff>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <slug></slug>
+                <hierarchical>1</hierarchical>
+            </rewrite>
+            <show_ui>1</show_ui>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <show_admin_column>1</show_admin_column>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <update_count_callback></update_count_callback>
+            <meta_box_cb>
+                <callback></callback>
+            </meta_box_cb>
+            <_toolset_edit_last>1456613644</_toolset_edit_last>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <name></name>
+            <id>grcs_locations</id>
+            <__types_id>grcs_locations</__types_id>
+            <__types_title>Office Locations</__types_title>
+            <checksum>5ef66e91fbc3f6439291c6cdf34ba4a6</checksum>
+        </taxonomy>
+        <taxonomy>
+            <wpcf-tax>grcs_team</wpcf-tax>
+            <icon>admin-post</icon>
+            <labels>
+                <name>Teams</name>
+                <singular_name>Team</singular_name>
+                <search_items>Search %s</search_items>
+                <popular_items>Popular %s</popular_items>
+                <all_items>All %s</all_items>
+                <parent_item>Parent %s</parent_item>
+                <parent_item_colon>Parent %s:</parent_item_colon>
+                <edit_item>Edit %s</edit_item>
+                <update_item>Update %s</update_item>
+                <add_new_item>Add New %s</add_new_item>
+                <new_item_name>New %s Name</new_item_name>
+                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
+                <add_or_remove_items>Add or remove %s</add_or_remove_items>
+                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
+                <menu_name>%s</menu_name>
+            </labels>
+            <slug>grcs_team</slug>
+            <description>Allows staff members to be assigned to one or more teams/departments.</description>
+            <public>public</public>
+            <hierarchical>hierarchical</hierarchical>
+            <supports>
+                <__types_cpt_supports_grcs_staff>1</__types_cpt_supports_grcs_staff>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <slug></slug>
+                <hierarchical>1</hierarchical>
+            </rewrite>
+            <show_ui>1</show_ui>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <show_admin_column>1</show_admin_column>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <update_count_callback></update_count_callback>
+            <meta_box_cb>
+                <callback></callback>
+            </meta_box_cb>
+            <_toolset_edit_last>1456613832</_toolset_edit_last>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <name></name>
+            <id>grcs_team</id>
+            <__types_id>grcs_team</__types_id>
+            <__types_title>Teams</__types_title>
+            <checksum>e6dd0212965bd572de1a630185970125</checksum>
+        </taxonomy>
+        <taxonomy>
+            <wpcf-tax>wrlc_nav_box_group</wpcf-tax>
+            <icon>admin-post</icon>
+            <labels>
+                <name>Landing Box Groups</name>
+                <singular_name>Landing Box Group</singular_name>
+                <search_items>Search Groups</search_items>
+                <popular_items>Popular Groups</popular_items>
+                <all_items>All %s</all_items>
+                <parent_item>Parent Group</parent_item>
+                <parent_item_colon>Parent Group:</parent_item_colon>
+                <edit_item>Edit %s</edit_item>
+                <update_item>Update Group</update_item>
+                <add_new_item>Add New Group</add_new_item>
+                <new_item_name>New %s Name</new_item_name>
+                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
+                <add_or_remove_items>Add or remove %s</add_or_remove_items>
+                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
+                <menu_name>%s</menu_name>
+            </labels>
+            <slug>grcs_nav_box_group</slug>
+            <description>Used to assign landing boxes to be displayed on one or more landing pages.</description>
+            <public>public</public>
+            <hierarchical>hierarchical</hierarchical>
+            <supports>
+                <__types_cpt_supports_grcs_nav_boxes>1</__types_cpt_supports_grcs_nav_boxes>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <slug></slug>
+                <hierarchical>1</hierarchical>
+            </rewrite>
+            <show_ui>1</show_ui>
+            <show_admin_column>1</show_admin_column>
+            <query_var></query_var>
+            <update_count_callback></update_count_callback>
+            <meta_box_cb>
+                <callback></callback>
+            </meta_box_cb>
+            <_toolset_edit_last>1456613763</_toolset_edit_last>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <name></name>
+            <id>grcs_nav_box_group</id>
+            <__types_id>grcs_nav_box_group</__types_id>
+            <__types_title>Landing Box Groups</__types_title>
+            <checksum>adb1a2e41ec3f6113b2e2635a792f97e</checksum>
+        </taxonomy>
+        <taxonomy>
+            <wpcf-tax>wrlc_property_type</wpcf-tax>
+            <icon>admin-post</icon>
+            <labels>
+                <name>Property Types</name>
+                <singular_name>Property Type</singular_name>
+                <search_items>Search %s</search_items>
+                <popular_items>Popular %s</popular_items>
+                <all_items>All %s</all_items>
+                <parent_item>Parent %s</parent_item>
+                <parent_item_colon>Parent %s:</parent_item_colon>
+                <edit_item>Edit %s</edit_item>
+                <update_item>Update %s</update_item>
+                <add_new_item>Add New %s</add_new_item>
+                <new_item_name>New %s Name</new_item_name>
+                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
+                <add_or_remove_items>Add or remove %s</add_or_remove_items>
+                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
+                <menu_name>%s</menu_name>
+            </labels>
+            <slug>grcs_property_type</slug>
+            <description></description>
+            <public>public</public>
+            <hierarchical>hierarchical</hierarchical>
+            <rewrite>
+                <enabled>1</enabled>
+                <slug>properties-by-type</slug>
+                <hierarchical>1</hierarchical>
+            </rewrite>
+            <show_ui>1</show_ui>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <show_admin_column>1</show_admin_column>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <update_count_callback></update_count_callback>
+            <meta_box_cb>
+                <callback></callback>
+            </meta_box_cb>
+            <_toolset_edit_last>1456613910</_toolset_edit_last>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <name></name>
+            <disabled>1</disabled>
+            <id>grcs_property_type</id>
+            <__types_id>grcs_property_type</__types_id>
+            <__types_title>Property Types</__types_title>
+            <checksum>b0dcf9ad85d12f3646d457096eedbc63</checksum>
+        </taxonomy>
+        <taxonomy>
+            <wpcf-tax>wrlc_pub_type</wpcf-tax>
+            <icon>admin-post</icon>
+            <labels>
+                <name>Publication Types</name>
+                <singular_name>Publication Type</singular_name>
+                <search_items>Search %s</search_items>
+                <popular_items>Popular %s</popular_items>
+                <all_items>All %s</all_items>
+                <parent_item>Parent %s</parent_item>
+                <parent_item_colon>Parent %s:</parent_item_colon>
+                <edit_item>Edit %s</edit_item>
+                <update_item>Update %s</update_item>
+                <add_new_item>Add New %s</add_new_item>
+                <new_item_name>New %s Name</new_item_name>
+                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
+                <add_or_remove_items>Add or remove %s</add_or_remove_items>
+                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
+                <menu_name>%s</menu_name>
+            </labels>
+            <slug>grcs_pub_type</slug>
+            <description>Group publications into categories</description>
+            <public>public</public>
+            <hierarchical>hierarchical</hierarchical>
+            <supports>
+                <__types_cpt_supports_grcs_publication>1</__types_cpt_supports_grcs_publication>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <slug>publications-by-type</slug>
+                <hierarchical>1</hierarchical>
+            </rewrite>
+            <show_ui>1</show_ui>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <show_admin_column>1</show_admin_column>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <update_count_callback></update_count_callback>
+            <meta_box_cb>
+                <callback></callback>
+            </meta_box_cb>
+            <_toolset_edit_last>1456614001</_toolset_edit_last>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <name></name>
+            <id>grcs_pub_type</id>
+            <__types_id>grcs_pub_type</__types_id>
+            <__types_title>Publication Types</__types_title>
+            <checksum>8c36d6072e1d4a816dfec89de137a30f</checksum>
+        </taxonomy>
+    </taxonomies>
+</types>
