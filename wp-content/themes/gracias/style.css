@@ -1,0 +1,476 @@
+/*
+ Theme Name:   Gracias
+ Description:  A theme with special features for non-profit organizations.  Based on the Pinboard Theme by One Designs.
+ Author:       One Designs, Anthony Kozar Jr., Elizabeth Mather
+ Author URI:   http://anthonykozar.net
+ Template:     pinboard
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@font-face{
+	font-family: "Scrivano Regular";
+	src: url('Scrivano.otf');
+}
+
+#header {
+	border-top:#111 0px solid;
+	/* Adjust the Image location 'wp-content/uploads/NAMEOFFILE.png' */
+	background:     url(/wp-content/uploads/2015/04/masthead-design-for-website.jpg) no-repeat 0 0;
+}
+
+h1#site-title {
+	font-family: "Scrivano Regular", "Oswald", sans-serif;
+	font-size: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 12px;
+	line-height:1.25em;
+}
+
+.twocol .entry-title,
+.threecol .entry-title,
+.page-template-template-blog-php .twocol .entry-title,
+.page-template-template-blog-php .threecol .entry-title,
+.page-template-template-portfolio-php .twocol .entry-title,
+.page-template-template-portfolio-php .threecol .entry-title {
+	line-height:1.25em;
+}
+
+#access a {
+	line-height:0.25em;
+	text-transform: lowercase;
+}
+
+#access li li a {
+	line-height: 20px;
+}
+
+a.social-media-icon:hover {
+	background-position: 0 -32px;
+}
+
+.facebook {
+	background-image: url(images/facebook.png);
+}
+
+.twitter {
+	background-image: url(images/twitter.png);
+}
+
+a.social-media-icon.vimeo {
+	background-image: url(images/Donate.gif);
+	width:96px; height:32px;
+}
+
+.youtube {
+	background-image: url(images/youtube.png);
+}
+
+.linkedin {
+	background-image: url(images/linkedin.png);
+}
+
+.dribble {
+	background-image: url(images/dribble.png);
+}
+
+img.featured-image,
+img.staff-image {
+    width: auto;
+    float: right;
+    margin: 0em 0em 2em 2em;
+}
+
+.staff-name {
+    float: left;
+}
+
+div.staff-social-icons {
+    float: left;
+    margin-left: 1em;
+}
+
+p.staff-edit-link {
+    float: left;
+	margin-left: 1em;
+}
+
+.staff-email,
+.staff-locations {
+	margin-bottom: 5px;
+}
+
+.edit-link {
+    padding-left: 24px;
+}
+
+h2.subtitle {
+	font-size: 16px;
+}
+
+@media screen and (max-width: 760px) {
+	.entry-header .subtitle{
+		font-weight: 900;
+		font-size: 17px;
+	}
+}
+
+h2.staff-position {
+	font-size: 18px;
+}
+
+.entry-content h2 {
+	font-weight: bold;
+}
+
+.clear-left {
+	clear: left;
+}
+
+.clear-right {
+	clear: right;
+}
+
+.entry-type {
+	margin: 0px 0px 6px;
+	color: rgb(153, 153, 153);
+	font-family: "Open Sans",sans-serif;
+	font-size: 11px;
+	font-weight: 300;
+	line-height: 1.0em;
+	text-transform: uppercase;
+}
+
+/* publication lists */
+
+ul.publication-list {
+	list-style: none outside none;
+	position: relative;
+}
+
+li.pub-entry {
+	padding: 1.5% 2.4%;
+	margin: 0px;
+	background: none repeat scroll 0% 0% transparent;
+	border-top: 1px solid rgb(244, 244, 244);
+	border-bottom: 1px solid rgb(244, 244, 244);
+	color: rgb(80, 80, 80);
+}
+
+li.pub-entry .pub-title {
+	display: inline-block;
+	width: 60%;
+}
+
+li.pub-entry .pub-date,
+li.pub-entry .pub-type {
+	position: absolute;
+}
+
+li.pub-entry .pub-date {
+	left: 65%;
+	font-size: 14px;
+}
+
+li.pub-entry .pub-type {
+	left: 85%;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 760px) {
+	li.pub-entry .pub-title,
+	li.pub-entry .pub-date,
+	li.pub-entry .pub-type {
+		display: block;
+		position: static;
+		width: auto;
+		margin-right: 20px;
+	}
+}
+
+/* Land Bank formatting */
+@media screen and (min-width: 761px) {
+	.lb-general,
+	.lb-notes,
+	.lb-contact {
+		margin-left: 10px;
+	}
+
+	.lb-board-member {
+		float: left;
+		width: 46%;
+		margin: 5px 10px;
+	}
+	.lb-member-title, 
+	.lb-member-email,
+		.lb-contact-email,
+		.lb-contact-title,
+		.lb-contact-address,
+		.lb-contact-phone,
+		.lb-contact-website {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.lb-member-title,
+	.lb-member-email, 
+		.lb-contact-email,
+		.lb-contact-website {
+		display: block;
+		font-size: 13px;
+	}
+	
+	.lb-member-title {
+		margin-bottom: -20px;
+	}
+	
+}
+
+/* add margins to the contents of our custom shortcode columns */
+.gracias-column > *
+{
+    margin-right: 20px;
+}
+
+.gracias-column > .gracias-column
+{
+    margin-right: 0px;
+}
+
+/* match the spacing on empty tag archives to other "404 pages" */
+#post-0 > .entry {
+	margin-bottom: 5.1% !important;
+	padding: 20px;
+}
+
+
+/***** STYLES FROM THEME OPTIONS *****/
+
+#slider .entry-title a {
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);
+}
+
+/* make tag buttons darker */
+.entry-tags a {
+	background: linear-gradient(rgb(232, 232, 232), rgb(192, 192, 192)) repeat scroll 0% 0% transparent;
+}
+
+/* make post date darker */
+.entry-meta {
+	color: rgb(80, 80, 80);
+}
+
+/* match other link colors in post "metadata" */
+.entry-meta a {
+	color: rgb(22, 87, 114);
+}
+
+/* reduce extra space around title on pages */
+.single .entry-title, .page .entry-title, .error404 .entry-title {
+	line-height: 1.25em;
+	margin: 0 0 10px;
+}
+
+/* fix small margin differences in intro text on multi-post pages */
+#intro .hentry .entry {
+	margin: 2.48% !important;
+}
+
+/*remove padding around entries on pages with secondary loops */
+.entries .entry {
+	padding: 0px;
+}
+
+/* fix text size and vertical spacing of the upcoming events widget */
+.tribe-events-list-widget ol li {
+	margin-bottom: 0px;
+}
+
+aside.tribe-events-list-widget .entry-title {
+	font-size: 16px;
+	margin: 0px 0px 2px;
+}
+
+/* selectors for landing boxes */
+.nav-box a,
+.nav-box a:hover,
+.nav-box a:active,
+.nav-box a:visited {
+	color: black;
+}
+
+.nav-box:hover {
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.wp-caption {
+    padding: 0%;
+    margin-top: 10px;
+}
+
+/* add missing default styles */
+b {
+	font-weight: bold;
+}
+
+/* tweaks for related content */
+.cprp_title {
+	font-size: 16px;
+	line-height: 1.25em;
+}
+
+/* adjust related post images for thumbnail size */
+.cprp_thumbnail {
+	margin: 5px 10px 20px 0px;
+}
+
+@media screen and (max-width: 760px) {
+	.cprp_thumbnail {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 761px) {
+	.cprp_thumbnail {
+		width: auto;
+	}
+}
+
+/* tweaks for YouTube plugin */
+.ytc_title {
+	font-size: 14px;
+	margin-bottom: 14px;
+}
+
+/* highlight the current item in sidebar menus */
+.widget-area .current-menu-item > a {
+	color: #D54E21;
+}
+
+/* eliminate space between Land Bank Playbook menus */
+@media screen and (min-width: 961px), screen and (max-width: 760px) {
+
+	#sidebar-playbook .column .widget {
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	
+	#sidebar-playbook .column:first-child .widget {
+		 margin-top: 7.5%;
+	}
+	
+	#sidebar-playbook .column:last-child .widget {
+		margin-bottom: 7.5%;
+	}
+
+}
+
+/* swap positions of site credits and copyright */
+@media screen and (min-width: 761px) {
+	.copyright {
+		float: right;
+		text-align: right;
+	}
+	
+	.credits {
+		text-align: left;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	#copyright p {
+		line-height: 1.25em;
+		margin-bottom: 5px;
+	}
+}
+
+/* Fix the column widths on our multi-post Pages */
+@media screen and (max-width: 960px) {
+	#content-column {
+		width: 100%;
+	}
+}
+
+/* fix column widths so that we always get the right # of columns */
+@media screen and (min-width: 761px) and (max-width: 960px) {
+	.onecol .threecol,
+	.onecol .fourcol {
+		width: 49.9%;
+	}
+}
+
+/* This rule needs to cover 761-960px too! The above one might be unnecessary ? */
+@media screen and (min-width: 761px) and (max-width: 1152px) {
+	.threefourthcol .threecol {
+		width: 49.8%;
+	}
+}
+
+/* Limit the featured image width on single event pages */
+@media screen and (min-width: 761px) {
+	.type-tribe_events .tribe-events-event-image .attachment-full.wp-post-image {
+		max-width: 400px;
+		width: auto;
+	}
+}
+
+#sidebar-footer-wide .widget-title {
+	 font-style: normal;
+	 font-size: 24px;
+}
+
+/* fix styling of job listings page */
+.job_listings div.location, .job_listings li.job-type, .job_listings li.date{
+	font-size: 12px;
+}
+
+/* Tighten up the social media icons on the smallest screen size */
+@media screen and (max-width: 359px) {
+	a.social-media-icon {
+		margin-right: 2px;
+	}
+}
+
+/* Reduce vertical space above social media icons on mid screen sizes */
+/* NOTE: This doesn't work the same in Safari 5! */
+@media screen and (min-width: 761px) and (max-width: 960px) {
+	#social-media-icons {
+		margin-top: 8px;
+	}
+}
+
+/* Remove white space above the header on small screen sizes */
+@media screen and (max-width: 760px) {
+	#site-title {
+		margin: 0;
+	}
+}
+
+/* Darken search box and change text to white */
+#header #searchform input#s {
+	background: rgba(0, 0, 0, 0.5) url("/wp-content/themes/pinboard/images/search.png") no-repeat scroll right center;
+	color: white;
+}
+
+/* Fix width of dropdown menu items on narrower screens */
+@media screen and (min-width: 761px) and (max-width: 960px)  {
+	nav#access.original li li a,
+	nav#access.cloned li li a {
+		min-width: 100px;
+		max-width: 100px;
+	}
+}
+
+/* Set max width for dropdown menu items on wider screens */
+@media screen and (min-width: 961px)  {
+	nav#access.original li li a,
+	nav#access.cloned li li a {
+		max-width: 180px;
+	}
+}
