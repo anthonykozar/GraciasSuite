@@ -1,9 +1,12 @@
 <?php
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-function theme_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 
+// Load extra stylesheets including the original Pinboard styles
+function gracias_enqueue_styles() {
+	wp_enqueue_style( 'original-pinboard', get_template_directory_uri() . '/styles/pinboard.css' );
 }
+
+add_action( 'wp_enqueue_scripts', 'gracias_enqueue_styles' );
+
 
 /* NEW FEATURES */
 
@@ -1884,6 +1887,8 @@ function pinboard_custom_styles() {
 <?php
 }
 
+// include Pinboard theme functions
+require_once 'functions-pinboard.php';
 
 /* DEBUG FUNCTIONS */
 
