@@ -174,15 +174,6 @@ add_action('admin_menu', 'gracias_register_admin_menu_items');
 // Thanks to Josh Leuze's Meteor Slides plugin for illustrating how to do this!
 function gracias_slide_imagebox_callback($post, $metabox)
 {
-     if (get_current_user_id() == 2) {
-     	echo '<p>Hello beautiful!</p>';
-     }
-     else {
-     	global $current_user;
-		get_currentuserinfo();
-     	echo '<p>Hello ' . $current_user->display_name . '!</p>';
-     }
-     
      echo '<p>The image size should be 1140x342 pixels.</p>';
      // call built-in function for WP featured image box
      post_thumbnail_meta_box($post, $metabox);
