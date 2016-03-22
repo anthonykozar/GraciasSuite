@@ -57,7 +57,7 @@
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 				$post_type = get_post_meta(get_the_ID(), 'wpcf-post-type', true);
-				$posts_per_page = get_post_meta(get_the_ID(), 'wpcf-post-per-page', true);
+				$posts_per_page = get_post_meta(get_the_ID(), 'wpcf-posts-per-page', true);
 				$boxes = new WP_Query(array('post_type' => $post_type, 'paged' => $paged, 'posts_per_page' => $posts_per_page));
 			?>
 			<?php if( $boxes->have_posts() ) : ?>
