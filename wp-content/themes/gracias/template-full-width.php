@@ -12,6 +12,7 @@ Template Name: Full Width
 							<h1 class="entry-title"><?php the_title(); ?></h1>
 						</header><!-- .entry-header -->
 						<div class="entry-content">
+							<?php gracias_featured_image(); ?>
 							<?php the_content(); ?>
 							<div class="clear"></div>
 						</div><!-- .entry-content -->
