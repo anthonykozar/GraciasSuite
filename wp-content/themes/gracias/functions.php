@@ -57,7 +57,7 @@ function gracias_add_custom_types_to_queries($query)
 		if ($query->is_tag || $query->is_search) {
 			$post_types = array('post', 'page', 'tribe_events', 'simple_link', 'job_listing',
 								'grcs_landbank', 'grcs_proprty_listing', 'grcs_publication', 
-								'grcs_staff', 'grcs_trustee', 'glossary');
+								'grcs_staff', 'grcs_board_member', 'glossary');
 			// override the original list of post types
 			$query->set('post_type', $post_types);
 		}
@@ -191,7 +191,7 @@ function gracias_customize_admin_editors()
 		
 	// remove Types "marketing" box
 	remove_meta_box('wpcf-marketing', 'grcs_staff', 'side');
-	remove_meta_box('wpcf-marketing', 'grcs_trustee', 'side');
+	remove_meta_box('wpcf-marketing', 'grcs_board_member', 'side');
 	remove_meta_box('wpcf-marketing', 'grcs_landbank', 'side');
 	remove_meta_box('wpcf-marketing', 'grcs_landbank_member', 'side');
 	remove_meta_box('wpcf-marketing', 'grcs_nav_boxes', 'side');
@@ -281,9 +281,9 @@ function gracias_staff_admin_columns($cols)
 	return $cols;
 }
 
-function gracias_trustee_admin_columns($cols)
+function gracias_board_member_admin_columns($cols)
 {
-	// specify the columns for Trustees post type.
+	// specify the columns for Board Members post type.
 	$cols = array(
 		'cb'				=>	'<input type="checkbox" />',
 		'title'				=>	'Name',
@@ -325,7 +325,7 @@ function gracias_display_custom_columns($column_id, $post_id)
 add_action('manage_edit-grcs_slide_columns', 'gracias_slide_admin_columns');
 add_action('manage_edit-grcs_nav_boxes_columns', 'gracias_nav_boxes_admin_columns');
 add_action('manage_edit-grcs_staff_columns', 'gracias_staff_admin_columns');
-add_action('manage_edit-grcs_trustee_columns', 'gracias_trustee_admin_columns');
+add_action('manage_edit-grcs_board_member_columns', 'gracias_board_member_admin_columns');
 // manage_posts_custom_column might not be the "correct" hook for custom types? (see WP code)
 add_action('manage_posts_custom_column', 'gracias_display_custom_columns', 10, 2);
 
@@ -408,7 +408,7 @@ function gracias_display_image($attachment_id, $size = 'medium', $classes = 'fea
 	echo "</figure>\n";
 }
 
-// Displays the featured image on staff & trustee pages.
+// Displays the featured image on staff & board member pages.
 // Adapted from pinboard_post_thumbnail().
 function gracias_staff_image() {
 	if ( has_post_thumbnail() ) : ?>
@@ -418,7 +418,7 @@ function gracias_staff_image() {
 	<?php endif;
 }
 
-// Displays a person's title/position on staff & trustee pages.
+// Displays a person's title/position on staff & board member pages.
 function gracias_staff_position($html_tag = 'h2') {
 	$position = get_post_meta(get_the_ID(), 'wpcf-position', true);
 	if ($position) {
@@ -456,7 +456,7 @@ function gracias_staff_focus_areas() {
 	}
 }
 
-// Displays a person's bio on staff & trustee pages.
+// Displays a person's bio on staff & board member pages.
 // Roughly based on the_content().
 function gracias_staff_bio() {
 	$content = get_post_meta(get_the_ID(), 'wpcf-bio', true);

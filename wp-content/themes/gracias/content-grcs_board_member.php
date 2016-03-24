@@ -1,5 +1,5 @@
 <?php
-/*  Custom content template that displays one trustee on
+/*  Custom content template that displays one board member on
 	an archive or search results page.
 
 	Part of:  Gracias WordPress theme by Anthony Kozar
@@ -13,7 +13,7 @@
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-	<div class="entry trustee">
+	<div class="entry board-member">
 		<?php pinboard_post_thumbnail(); ?>
 		<div class="entry-container">
 			<header class="entry-header">
