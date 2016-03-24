@@ -256,7 +256,7 @@ function gracias_nav_boxes_admin_columns($cols)
 		'title'				=>	'Title',
 		'author'			=>	'Author',
 		'taxonomy-grcs_nav_box_group'	=>	"Landing Box Groups",
-		'gracias-link'			=>	'Link',
+		'gracias-link'		=>	'Link',
 		'gracias-order'		=>	'Order',
 		'date'				=>	'Date',
 	);
@@ -289,6 +289,7 @@ function gracias_board_member_admin_columns($cols)
 		'title'				=>	'Name',
 		'author'			=>	'Author',
 		'tags'				=>	'Tags',
+		'taxonomy-grcs_board'		=>	"Boards",
 		'gracias-order'		=>	'Order',
 		'date'				=>	'Date',
 	);
