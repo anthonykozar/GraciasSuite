@@ -420,8 +420,8 @@ function gracias_staff_image() {
 }
 
 // Displays a person's title/position on staff & board member pages.
-function gracias_staff_position($html_tag = 'h2') {
-	$position = get_post_meta(get_the_ID(), 'wpcf-position', true);
+function gracias_staff_position($html_tag = 'h2', $field_slug = 'wpcf-position') {
+	$position = get_post_meta(get_the_ID(), $field_slug, true);
 	if ($position) {
 		echo '<' . $html_tag . ' class="staff-position">' . $position . '</' . $html_tag . ">\n";
 	}

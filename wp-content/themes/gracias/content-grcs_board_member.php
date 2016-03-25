@@ -21,7 +21,7 @@
 				<<?php pinboard_title_tag( 'post' ); ?> class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></<?php pinboard_title_tag( 'post' ); ?>>
 			</header><!-- .entry-header -->
 			<div class="entry-summary">
-				<?php gracias_staff_position('p'); ?>
+				<?php gracias_staff_position('p', 'wpcf-bm-position'); ?>
 			</div><!-- .entry-summary -->
 			<div class="clear"></div>
 		</div><!-- .entry-container -->

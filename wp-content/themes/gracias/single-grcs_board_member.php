@@ -9,10 +9,11 @@
 							<<?php pinboard_title_tag( 'post' ); ?> class="entry-title staff-name"><?php the_title(); ?></<?php pinboard_title_tag( 'post' ); ?>>
 							<p class="staff-edit-link"><?php edit_post_link( __( 'Edit', 'pinboard' ), '<span class="edit-link">', '</span>' ); ?></p>
 							<div class="clear clear-left"></div>
-							<?php gracias_staff_position(); ?>
+							<?php gracias_staff_position('h2', 'wpcf-bm-position'); ?>
 						</header><!-- .entry-header -->
 						<div class="entry-content">
 							<?php gracias_staff_bio(); ?>
+							<?php the_meta(); ?>
 							<div class="clear"></div>
 						</div><!-- .entry-content -->
 						<footer class="entry-utility">
