@@ -10,10 +10,14 @@
 							<p class="staff-edit-link"><?php edit_post_link( __( 'Edit', 'pinboard' ), '<span class="edit-link">', '</span>' ); ?></p>
 							<div class="clear clear-left"></div>
 							<?php gracias_staff_position('h2', 'wpcf-bm-position'); ?>
+							<?php gracias_text_field('', 'wpcf-bm-classifications', '<p class="bm-classifications">', "</p>\n"); ?>
 						</header><!-- .entry-header -->
 						<div class="entry-content">
+							<p class="bm-company-info">
+								<?php gracias_text_field('', 'wpcf-bm-company', '<span class="bm-company-name">', '</span><br />');
+									  gracias_text_field('', 'wpcf-bm-company-title', '<span class="bm-company-title">', '</span>'); ?>
+							</p>
 							<?php gracias_staff_bio(); ?>
-							<?php the_meta(); ?>
 							<div class="clear"></div>
 						</div><!-- .entry-content -->
 						<footer class="entry-utility">
