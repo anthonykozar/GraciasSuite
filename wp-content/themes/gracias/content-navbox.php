@@ -25,8 +25,10 @@
 				the_post_thumbnail('landing-box');	// use size defined in function.php
 				echo '</figure>';
 			}
+			// get the box's accent color
+			$color = get_post_meta(get_the_ID(), 'wpcf-nav-box-color', true);
 		?>
-		<div class="entry-container">
+		<div class="entry-container" <?php if ($color) echo "style=\"background-color: $color;\"" ?>>
 			<header class="entry-header">
 				<<?php pinboard_title_tag('post'); ?> class="entry-title">
 				<?php the_title(); ?>
