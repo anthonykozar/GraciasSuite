@@ -13,6 +13,25 @@
     </settings>
     <groups>
         <group>
+            <ID>1183</ID>
+            <post_content></post_content>
+            <post_title>Landing box colors</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_post_types>,,grcs_nav_boxes,</_wp_types_group_post_types>
+                <_wp_types_group_templates>,,,,,,,,,,,,,,,</_wp_types_group_templates>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+                <_wp_types_group_fields>,nav-box-color,</_wp_types_group_fields>
+            </meta>
+            <hash>4af8e8317afc29cacaf7c91550f4b165</hash>
+            <checksum>4af8e8317afc29cacaf7c91550f4b165</checksum>
+            <__types_id>landing-box-colors</__types_id>
+            <__types_title>Landing box colors</__types_title>
+        </group>
+        <group>
             <ID>7</ID>
             <post_content>Articles (posts) assigned to the categories below will display on this page.</post_content>
             <post_title>Category Home options</post_title>
@@ -300,19 +319,19 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <post_status>publish</post_status>
             <meta>
                 <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
-                <_wp_types_group_fields>,position,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_board_member,</_wp_types_group_post_types>
+                <_wp_types_group_fields>,bm-position,bm-company,bm-company-title,bm-classifications-2,bm-classifications,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,,grcs_board_member,</_wp_types_group_post_types>
                 <_wp_types_group_terms>all</_wp_types_group_terms>
                 <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wp_types_group_templates>,,,,,,,,,,,,,,,</_wp_types_group_templates>
                 <_wpcf_conditional_display>
                     <custom_use>0</custom_use>
                     <relation>AND</relation>
                     <custom></custom>
                 </_wpcf_conditional_display>
             </meta>
-            <hash>61386dc95fec3d84d095801361445712</hash>
-            <checksum>61386dc95fec3d84d095801361445712</checksum>
+            <hash>8f577ffde90bb6414946b7be389c13c0</hash>
+            <checksum>8f577ffde90bb6414946b7be389c13c0</checksum>
             <__types_id>board-member-information</__types_id>
             <__types_title>Board member information</__types_title>
         </group>
@@ -492,21 +511,25 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <checksum>a35b1dbaf898b144f5a7ff1604c80dab</checksum>
         </field>
         <field>
+            <id>position</id>
+            <slug>position</slug>
+            <type>textfield</type>
+            <name>Position</name>
             <description>Job title, position, or role</description>
             <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
                 <repetitive>0</repetitive>
+                <custom_use></custom_use>
+                <submit-key>position</submit-key>
                 <disabled_by_type>0</disabled_by_type>
             </data>
-            <id>position</id>
-            <name>Position</name>
-            <type>textfield</type>
-            <slug>position</slug>
             <meta_key>wpcf-position</meta_key>
             <meta_type>postmeta</meta_type>
             <__types_id>position</__types_id>
             <__types_title>Position</__types_title>
-            <hash>f87e5b7d37e43f517d724af69e101cdd</hash>
-            <checksum>f87e5b7d37e43f517d724af69e101cdd</checksum>
+            <hash>6243813e5613c8f37f1d8b320c3dda33</hash>
+            <checksum>6243813e5613c8f37f1d8b320c3dda33</checksum>
         </field>
         <field>
             <description>The web address (URL) for an employee\&#039;s LinkedIn account.</description>
@@ -1400,6 +1423,170 @@ URLs for other sites must include http:// and the domain name.</description>
             <__types_title>Category</__types_title>
             <hash>5bc4f61a7a21c0190f0ec01d32a8edab</hash>
             <checksum>5bc4f61a7a21c0190f0ec01d32a8edab</checksum>
+        </field>
+        <field>
+            <id>board-position</id>
+            <slug>board-position</slug>
+            <type>textfield</type>
+            <name>Board Position</name>
+            <description>Position or role on the board</description>
+            <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
+                <repetitive>0</repetitive>
+                <submit-key>textfield-371418260</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-board-position</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>board-position</__types_id>
+            <__types_title>Board Position</__types_title>
+            <hash>9ed61e49bfa11bc4cc6ff4e730379d95</hash>
+            <checksum>9ed61e49bfa11bc4cc6ff4e730379d95</checksum>
+        </field>
+        <field>
+            <id>bm-position</id>
+            <slug>bm-position</slug>
+            <type>textfield</type>
+            <name>Board Position</name>
+            <description>Position or role on the board</description>
+            <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
+                <repetitive>0</repetitive>
+                <custom_use></custom_use>
+                <submit-key>bm-position</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-bm-position</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>bm-position</__types_id>
+            <__types_title>Board Position</__types_title>
+            <hash>3d8392cc4d1a93f666969a0188d7a37a</hash>
+            <checksum>3d8392cc4d1a93f666969a0188d7a37a</checksum>
+        </field>
+        <field>
+            <id>bm-company</id>
+            <slug>bm-company</slug>
+            <type>textfield</type>
+            <name>Company</name>
+            <description></description>
+            <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
+                <repetitive>0</repetitive>
+                <custom_use></custom_use>
+                <submit-key>bm-company</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-bm-company</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>bm-company</__types_id>
+            <__types_title>Company</__types_title>
+            <hash>804cc3ebc968e5de1d1485dafd96d877</hash>
+            <checksum>804cc3ebc968e5de1d1485dafd96d877</checksum>
+        </field>
+        <field>
+            <id>bm-company-title</id>
+            <slug>bm-company-title</slug>
+            <type>textfield</type>
+            <name>Company Title</name>
+            <description>Job title, position, or role at the above company</description>
+            <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
+                <repetitive>0</repetitive>
+                <custom_use></custom_use>
+                <submit-key>bm-company-title</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-bm-company-title</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>bm-company-title</__types_id>
+            <__types_title>Company Title</__types_title>
+            <hash>ceb0bd57934686497103439e61c17039</hash>
+            <checksum>ceb0bd57934686497103439e61c17039</checksum>
+        </field>
+        <field>
+            <id>bm-classifications</id>
+            <slug>bm-classifications</slug>
+            <type>textfield</type>
+            <name>Additional Board Classifications</name>
+            <description>Director Emeriti, Honorary, Lifetime, etc.</description>
+            <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
+                <custom_use></custom_use>
+                <submit-key>bm-classifications</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-bm-classifications</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>bm-classifications</__types_id>
+            <__types_title>Additional Board Classifications</__types_title>
+            <hash>51b54bd0f7ff6265e4dee54fd3747390</hash>
+            <checksum>51b54bd0f7ff6265e4dee54fd3747390</checksum>
+        </field>
+        <field>
+            <id>bm-classifications-2</id>
+            <slug>bm-classifications-2</slug>
+            <type>checkboxes</type>
+            <name>Board Classifications</name>
+            <description></description>
+            <data>
+                <save_empty>no</save_empty>
+                <options>
+                    <wpcf-fields-checkboxes-option-fc59e927bf7bc00666271bf8d3c77759-1>
+                        <title>Director Emeriti</title>
+                        <set_value>1</set_value>
+                        <display>db</display>
+                        <display_value_not_selected></display_value_not_selected>
+                        <display_value_selected></display_value_selected>
+                    </wpcf-fields-checkboxes-option-fc59e927bf7bc00666271bf8d3c77759-1>
+                    <wpcf-fields-checkboxes-option-4a760e2ea7a407585b78f504a47e27a6-1>
+                        <title>Honorary</title>
+                        <set_value>1</set_value>
+                        <display>db</display>
+                        <display_value_not_selected></display_value_not_selected>
+                        <display_value_selected></display_value_selected>
+                    </wpcf-fields-checkboxes-option-4a760e2ea7a407585b78f504a47e27a6-1>
+                    <wpcf-fields-checkboxes-option-e206f817bf4f193d8ffe7c07bf044cf8-1>
+                        <title>Lifetime</title>
+                        <set_value>1</set_value>
+                        <display>db</display>
+                        <display_value_not_selected></display_value_not_selected>
+                        <display_value_selected></display_value_selected>
+                    </wpcf-fields-checkboxes-option-e206f817bf4f193d8ffe7c07bf044cf8-1>
+                </options>
+                <custom_use></custom_use>
+                <submit-key>bm-classifications-2</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-bm-classifications-2</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>bm-classifications-2</__types_id>
+            <__types_title>Board Classifications</__types_title>
+            <hash>f6db684e3ca404a32cfcce1a2f49660d</hash>
+            <checksum>f6db684e3ca404a32cfcce1a2f49660d</checksum>
+        </field>
+        <field>
+            <id>nav-box-color</id>
+            <slug>nav-box-color</slug>
+            <type>colorpicker</type>
+            <name>Box color</name>
+            <description>Depending upon the selected template, this color will be used either as the background color for the text box or as the shadow color for the entire landing box.  Leave this field blank to use the default color.</description>
+            <data>
+                <placeholder></placeholder>
+                <repetitive>0</repetitive>
+                <submit-key>colorpicker-1207310966</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-nav-box-color</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>nav-box-color</__types_id>
+            <__types_title>Box color</__types_title>
+            <hash>b27e33ff69099b6cbbb9c41e7ee4e06f</hash>
+            <checksum>b27e33ff69099b6cbbb9c41e7ee4e06f</checksum>
         </field>
     </fields>
     <types>
