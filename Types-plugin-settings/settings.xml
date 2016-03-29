@@ -301,7 +301,7 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <meta>
                 <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
                 <_wp_types_group_fields>,position,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_trustee,</_wp_types_group_post_types>
+                <_wp_types_group_post_types>,grcs_board_member,</_wp_types_group_post_types>
                 <_wp_types_group_terms>all</_wp_types_group_terms>
                 <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
                 <_wp_types_group_templates>all</_wp_types_group_templates>
@@ -311,8 +311,8 @@ Alternatively, you may simply paste into the URL field the address of any docume
                     <custom></custom>
                 </_wpcf_conditional_display>
             </meta>
-            <hash>6a6ba7d0a15e431c06cc6e7f9a34ead9</hash>
-            <checksum>6a6ba7d0a15e431c06cc6e7f9a34ead9</checksum>
+            <hash>61386dc95fec3d84d095801361445712</hash>
+            <checksum>61386dc95fec3d84d095801361445712</checksum>
             <__types_id>board-member-information</__types_id>
             <__types_title>Board member information</__types_title>
         </group>
@@ -326,7 +326,7 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <meta>
                 <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
                 <_wp_types_group_fields>,bio,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_staff,grcs_trustee,</_wp_types_group_post_types>
+                <_wp_types_group_post_types>,grcs_staff,grcs_board_member,</_wp_types_group_post_types>
                 <_wp_types_group_terms>all</_wp_types_group_terms>
                 <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
                 <_wp_types_group_templates>all</_wp_types_group_templates>
@@ -336,8 +336,8 @@ Alternatively, you may simply paste into the URL field the address of any docume
                     <custom></custom>
                 </_wpcf_conditional_display>
             </meta>
-            <hash>6e34188831988619f12ff4b57e6bd812</hash>
-            <checksum>6e34188831988619f12ff4b57e6bd812</checksum>
+            <hash>ce22a325f76c3371d20ed7b5d04fa360</hash>
+            <checksum>ce22a325f76c3371d20ed7b5d04fa360</checksum>
             <__types_id>bioprofile</__types_id>
             <__types_title>Bio/Profile</__types_title>
         </group>
@@ -1404,14 +1404,16 @@ URLs for other sites must include http:// and the domain name.</description>
     </fields>
     <types>
         <type>
-            <__types_id>grcs_landbank</__types_id>
-            <__types_title>Land Banks</__types_title>
-            <_toolset_edit_last>1456612187</_toolset_edit_last>
-            <wpcf-post-type>grcs_landbank</wpcf-post-type>
-            <icon>id-alt</icon>
+            <__types_id>grcs_board_member</__types_id>
+            <__types_title>Board Members</__types_title>
+            <_toolset_edit_last>1458522846</_toolset_edit_last>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <wpcf-post-type>grcs_board_member</wpcf-post-type>
+            <icon>groups</icon>
             <labels>
-                <name>Land Banks</name>
-                <singular_name>Land Bank</singular_name>
+                <name>Board Members</name>
+                <singular_name>Board Member</singular_name>
                 <add_new>Add New</add_new>
                 <add_new_item>Add New %s</add_new_item>
                 <edit_item>Edit %s</edit_item>
@@ -1421,31 +1423,33 @@ URLs for other sites must include http:// and the domain name.</description>
                 <not_found>No %s found</not_found>
                 <not_found_in_trash>No %s found in Trash</not_found_in_trash>
                 <parent_item_colon>Parent text</parent_item_colon>
-                <all_items>All Land Banks</all_items>
-                <enter_title_here>Enter title here</enter_title_here>
+                <all_items>All Board Members</all_items>
+                <enter_title_here>Enter name here</enter_title_here>
             </labels>
-            <slug>grcs_landbank</slug>
-            <description>For maintaining information about area land banks.</description>
+            <slug>grcs_board_member</slug>
+            <description>People to display on one or more board pages.</description>
             <public>public</public>
-            <menu_position></menu_position>
+            <menu_position>20--wpcf-add-menu-after--edit.php?post_type=grcs_staff</menu_position>
             <dashboard_glance>1</dashboard_glance>
             <taxonomies>
                 <post_tag>1</post_tag>
+                <grcs_board>1</grcs_board>
             </taxonomies>
             <custom-field-group>
-                <land-bank-data>15</land-bank-data>
-                <land-bank-contact>16</land-bank-contact>
+                <board-member-information>18</board-member-information>
+                <bioprofile>19</bioprofile>
             </custom-field-group>
             <supports>
                 <title>1</title>
                 <revisions>1</revisions>
                 <author>1</author>
                 <thumbnail>1</thumbnail>
+                <page-attributes>1</page-attributes>
             </supports>
             <rewrite>
                 <enabled>1</enabled>
                 <custom>custom</custom>
-                <slug>county-land-banks/land-banks</slug>
+                <slug>people/board-members</slug>
                 <pages>1</pages>
             </rewrite>
             <has_archive_slug></has_archive_slug>
@@ -1459,22 +1463,21 @@ URLs for other sites must include http:// and the domain name.</description>
             <query_var></query_var>
             <permalink_epmask>EP_PERMALINK</permalink_epmask>
             <rest_base></rest_base>
-            <_builtin></_builtin>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <disabled>1</disabled>
-            <id>grcs_landbank</id>
-            <hash>b6454731a6b4c689b23264d11ef5cc79</hash>
-            <checksum>b6454731a6b4c689b23264d11ef5cc79</checksum>
+            <id>grcs_board_member</id>
+            <hash>fcb21ef42e2fec1eac3d1aae8c7b4d4e</hash>
+            <checksum>fcb21ef42e2fec1eac3d1aae8c7b4d4e</checksum>
         </type>
         <type>
-            <__types_id>grcs_landbank_member</__types_id>
-            <__types_title>Land Bank Board Members</__types_title>
-            <_toolset_edit_last>1456612198</_toolset_edit_last>
-            <wpcf-post-type>grcs_landbank_member</wpcf-post-type>
+            <__types_id>grcs_staff</__types_id>
+            <__types_title>Staff</__types_title>
+            <_toolset_edit_last>1458522886</_toolset_edit_last>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <wpcf-post-type>grcs_staff</wpcf-post-type>
             <icon>groups</icon>
             <labels>
-                <name>Land Bank Board Members</name>
-                <singular_name>Land Bank Board Member</singular_name>
+                <name>Staff</name>
+                <singular_name>Staff Member</singular_name>
                 <add_new>Add New</add_new>
                 <add_new_item>Add New %s</add_new_item>
                 <edit_item>Edit %s</edit_item>
@@ -1484,84 +1487,85 @@ URLs for other sites must include http:// and the domain name.</description>
                 <not_found>No %s found</not_found>
                 <not_found_in_trash>No %s found in Trash</not_found_in_trash>
                 <parent_item_colon>Parent text</parent_item_colon>
-                <all_items>All items</all_items>
-                <enter_title_here>Enter title here</enter_title_here>
+                <all_items>All Staff</all_items>
+                <enter_title_here>Enter name here</enter_title_here>
             </labels>
-            <slug>grcs_landbank_member</slug>
-            <description>Land banks can have their own list of board members.</description>
+            <slug>grcs_staff</slug>
+            <description>People to display on the \&quot;Staff\&quot; page.</description>
             <public>public</public>
-            <menu_position></menu_position>
-            <custom-field-group>
-                <land-bank-board-member-info>17</land-bank-board-member-info>
-            </custom-field-group>
-            <supports>
-                <title>1</title>
-                <author>1</author>
-            </supports>
-            <rewrite>
-                <enabled>1</enabled>
-                <custom>normal</custom>
-                <slug></slug>
-                <pages>1</pages>
-            </rewrite>
-            <has_archive_slug></has_archive_slug>
-            <show_in_menu_page></show_in_menu_page>
-            <show_ui>1</show_ui>
-            <publicly_queryable>1</publicly_queryable>
-            <exclude_from_search>1</exclude_from_search>
-            <can_export>1</can_export>
-            <query_var_enabled>1</query_var_enabled>
-            <query_var></query_var>
-            <permalink_epmask>EP_PERMALINK</permalink_epmask>
-            <rest_base></rest_base>
-            <_builtin></_builtin>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <disabled>1</disabled>
-            <id>grcs_landbank_member</id>
-            <hash>c521a3cb1dd866e25d717a1fdf3a6629</hash>
-            <checksum>c521a3cb1dd866e25d717a1fdf3a6629</checksum>
-        </type>
-        <type>
-            <_toolset_edit_last>1456613763</_toolset_edit_last>
-            <__types_id>grcs_nav_boxes</__types_id>
-            <__types_title>Landing Boxes</__types_title>
-            <_builtin></_builtin>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <wpcf-post-type>grcs_nav_boxes</wpcf-post-type>
-            <icon>screenoptions</icon>
-            <labels>
-                <name>Landing Boxes</name>
-                <singular_name>Landing Box</singular_name>
-                <add_new>Add New</add_new>
-                <add_new_item>Add New %s</add_new_item>
-                <edit_item>Edit %s</edit_item>
-                <new_item>New %s</new_item>
-                <view_item>View %s</view_item>
-                <search_items>Search %s</search_items>
-                <not_found>No %s found</not_found>
-                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
-                <parent_item_colon>Parent text</parent_item_colon>
-                <all_items>All Landing Boxes</all_items>
-                <enter_title_here>Enter title here</enter_title_here>
-            </labels>
-            <slug>grcs_nav_boxes</slug>
-            <description>Content boxes for our \&quot;landing pages\&quot;.</description>
-            <public>public</public>
-            <menu_position>10--wpcf-add-menu-after--edit.php?post_type=wrlc_slide</menu_position>
+            <menu_position>20--wpcf-add-menu-after--edit.php?post_type=grcs_publication</menu_position>
+            <dashboard_glance>1</dashboard_glance>
             <taxonomies>
-                <wrlc_nav_box_group>1</wrlc_nav_box_group>
-                <grcs_nav_box_group>1</grcs_nav_box_group>
+                <post_tag>1</post_tag>
+                <grcs_locations>1</grcs_locations>
+                <grcs_team>1</grcs_team>
             </taxonomies>
             <custom-field-group>
-                <page-link>8</page-link>
+                <bioprofile>19</bioprofile>
+                <social-media-links>20</social-media-links>
+                <staff-member-information>21</staff-member-information>
             </custom-field-group>
             <supports>
                 <title>1</title>
-                <editor>1</editor>
                 <revisions>1</revisions>
                 <author>1</author>
                 <thumbnail>1</thumbnail>
                 <page-attributes>1</page-attributes>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>custom</custom>
+                <slug>people/staff</slug>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu>1</show_in_menu>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <publicly_queryable>1</publicly_queryable>
+            <can_export>1</can_export>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <id>grcs_staff</id>
+            <hash>12fc2753e95bcc05e0589efc0ccd1ac2</hash>
+            <checksum>12fc2753e95bcc05e0589efc0ccd1ac2</checksum>
+        </type>
+        <type>
+            <__types_id>grcs_slide</__types_id>
+            <__types_title>Slides</__types_title>
+            <_toolset_edit_last>1458507196</_toolset_edit_last>
+            <wpcf-post-type>grcs_slide</wpcf-post-type>
+            <icon>images-alt2</icon>
+            <labels>
+                <name>Slides</name>
+                <singular_name>Slide</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Slides</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
+            </labels>
+            <slug>grcs_slide</slug>
+            <description>Simple slide type for the Gracias theme</description>
+            <public>public</public>
+            <menu_position>10--wpcf-add-menu-after--upload.php</menu_position>
+            <dashboard_glance>1</dashboard_glance>
+            <custom-field-group>
+                <slide-link>22</slide-link>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <author>1</author>
+                <thumbnail>1</thumbnail>
             </supports>
             <rewrite>
                 <enabled>1</enabled>
@@ -1573,19 +1577,85 @@ URLs for other sites must include http:// and the domain name.</description>
             <show_in_menu>1</show_in_menu>
             <show_in_menu_page></show_in_menu_page>
             <show_ui>1</show_ui>
-            <exclude_from_search>1</exclude_from_search>
             <can_export>1</can_export>
+            <query_var_enabled>1</query_var_enabled>
             <query_var></query_var>
             <permalink_epmask>EP_PERMALINK</permalink_epmask>
             <rest_base></rest_base>
-            <id>grcs_nav_boxes</id>
-            <hash>f6b6708007cfe08a963b9edd242cc0da</hash>
-            <checksum>f6b6708007cfe08a963b9edd242cc0da</checksum>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <id>grcs_slide</id>
+            <hash>17c77b526aa802e2d2bce2e6a02dbd3b</hash>
+            <checksum>17c77b526aa802e2d2bce2e6a02dbd3b</checksum>
+        </type>
+        <type>
+            <__types_id>grcs_publication</__types_id>
+            <__types_title>Publications</__types_title>
+            <_toolset_edit_last>1458509029</_toolset_edit_last>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <wpcf-post-type>grcs_publication</wpcf-post-type>
+            <icon>media-document</icon>
+            <labels>
+                <name>Publications</name>
+                <singular_name>Publication</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Publications</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
+            </labels>
+            <slug>grcs_publication</slug>
+            <description></description>
+            <public>public</public>
+            <menu_position>20--wpcf-add-menu-after--edit.php?post_type=page</menu_position>
+            <dashboard_glance>1</dashboard_glance>
+            <taxonomies>
+                <post_tag>1</post_tag>
+                <wrlc_pub_type>1</wrlc_pub_type>
+                <grcs_pub_type>1</grcs_pub_type>
+            </taxonomies>
+            <custom-field-group>
+                <publication-file>14</publication-file>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <author>1</author>
+                <thumbnail>1</thumbnail>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>custom</custom>
+                <slug>publications</slug>
+                <feeds>1</feeds>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive>1</has_archive>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu>1</show_in_menu>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <publicly_queryable>1</publicly_queryable>
+            <can_export>1</can_export>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <id>grcs_publication</id>
+            <hash>bd4c002e3a788f94273687dd73d04608</hash>
+            <checksum>bd4c002e3a788f94273687dd73d04608</checksum>
         </type>
         <type>
             <__types_id>grcs_proprty_listing</__types_id>
             <__types_title>Property Listings</__types_title>
-            <_toolset_edit_last>1456612702</_toolset_edit_last>
+            <_toolset_edit_last>1458507795</_toolset_edit_last>
             <wpcf-post-type>grcs_proprty_listing</wpcf-post-type>
             <icon>location</icon>
             <labels>
@@ -1646,20 +1716,18 @@ URLs for other sites must include http:// and the domain name.</description>
             <_wpcf_author_id>1</_wpcf_author_id>
             <disabled>1</disabled>
             <id>grcs_proprty_listing</id>
-            <hash>837387a53bf0ffef14586ce4104b99aa</hash>
-            <checksum>837387a53bf0ffef14586ce4104b99aa</checksum>
+            <hash>c21b366a541e07d12668353dd4be0daf</hash>
+            <checksum>c21b366a541e07d12668353dd4be0daf</checksum>
         </type>
         <type>
-            <__types_id>grcs_publication</__types_id>
-            <__types_title>Publications</__types_title>
-            <_toolset_edit_last>1456614001</_toolset_edit_last>
-            <_builtin></_builtin>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <wpcf-post-type>grcs_publication</wpcf-post-type>
-            <icon>media-document</icon>
+            <_toolset_edit_last>1458508683</_toolset_edit_last>
+            <__types_id>grcs_nav_boxes</__types_id>
+            <__types_title>Landing Boxes</__types_title>
+            <wpcf-post-type>grcs_nav_boxes</wpcf-post-type>
+            <icon>screenoptions</icon>
             <labels>
-                <name>Publications</name>
-                <singular_name>Publication</singular_name>
+                <name>Landing Boxes</name>
+                <singular_name>Landing Box</singular_name>
                 <add_new>Add New</add_new>
                 <add_new_item>Add New %s</add_new_item>
                 <edit_item>Edit %s</edit_item>
@@ -1669,83 +1737,28 @@ URLs for other sites must include http:// and the domain name.</description>
                 <not_found>No %s found</not_found>
                 <not_found_in_trash>No %s found in Trash</not_found_in_trash>
                 <parent_item_colon>Parent text</parent_item_colon>
-                <all_items>All Publications</all_items>
+                <all_items>All Landing Boxes</all_items>
                 <enter_title_here>Enter title here</enter_title_here>
             </labels>
-            <slug>grcs_publication</slug>
-            <description></description>
+            <slug>grcs_nav_boxes</slug>
+            <description>Content boxes for our \&quot;landing pages\&quot;.</description>
             <public>public</public>
-            <menu_position>20--wpcf-add-menu-after--edit.php?post_type=page</menu_position>
+            <menu_position>10--wpcf-add-menu-after--edit.php?post_type=grcs_slide</menu_position>
             <dashboard_glance>1</dashboard_glance>
             <taxonomies>
-                <post_tag>1</post_tag>
-                <wrlc_pub_type>1</wrlc_pub_type>
-                <grcs_pub_type>1</grcs_pub_type>
+                <wrlc_nav_box_group>1</wrlc_nav_box_group>
+                <grcs_nav_box_group>1</grcs_nav_box_group>
             </taxonomies>
             <custom-field-group>
-                <publication-file>14</publication-file>
+                <page-link>8</page-link>
             </custom-field-group>
             <supports>
                 <title>1</title>
+                <editor>1</editor>
+                <revisions>1</revisions>
                 <author>1</author>
                 <thumbnail>1</thumbnail>
-            </supports>
-            <rewrite>
-                <enabled>1</enabled>
-                <custom>custom</custom>
-                <slug>publications</slug>
-                <feeds>1</feeds>
-                <pages>1</pages>
-            </rewrite>
-            <has_archive>1</has_archive>
-            <has_archive_slug></has_archive_slug>
-            <show_in_menu>1</show_in_menu>
-            <show_in_menu_page></show_in_menu_page>
-            <show_ui>1</show_ui>
-            <publicly_queryable>1</publicly_queryable>
-            <can_export>1</can_export>
-            <show_in_nav_menus>1</show_in_nav_menus>
-            <query_var_enabled>1</query_var_enabled>
-            <query_var></query_var>
-            <permalink_epmask>EP_PERMALINK</permalink_epmask>
-            <rest_base></rest_base>
-            <id>grcs_publication</id>
-            <hash>e741084cd46dfd0fab3109263e72d31c</hash>
-            <checksum>e741084cd46dfd0fab3109263e72d31c</checksum>
-        </type>
-        <type>
-            <__types_id>grcs_slide</__types_id>
-            <__types_title>Slides</__types_title>
-            <_toolset_edit_last>1456612791</_toolset_edit_last>
-            <wpcf-post-type>grcs_slide</wpcf-post-type>
-            <icon>images-alt2</icon>
-            <labels>
-                <name>Slides</name>
-                <singular_name>Slide</singular_name>
-                <add_new>Add New</add_new>
-                <add_new_item>Add New %s</add_new_item>
-                <edit_item>Edit %s</edit_item>
-                <new_item>New %s</new_item>
-                <view_item>View %s</view_item>
-                <search_items>Search %s</search_items>
-                <not_found>No %s found</not_found>
-                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
-                <parent_item_colon>Parent text</parent_item_colon>
-                <all_items>All Slides</all_items>
-                <enter_title_here>Enter title here</enter_title_here>
-            </labels>
-            <slug>grcs_slide</slug>
-            <description>Simple slide type for the Gracias theme</description>
-            <public>public</public>
-            <menu_position>10--wpcf-add-menu-after--upload.php</menu_position>
-            <dashboard_glance>1</dashboard_glance>
-            <custom-field-group>
-                <slide-link>22</slide-link>
-            </custom-field-group>
-            <supports>
-                <title>1</title>
-                <author>1</author>
-                <thumbnail>1</thumbnail>
+                <page-attributes>1</page-attributes>
             </supports>
             <rewrite>
                 <enabled>1</enabled>
@@ -1757,28 +1770,26 @@ URLs for other sites must include http:// and the domain name.</description>
             <show_in_menu>1</show_in_menu>
             <show_in_menu_page></show_in_menu_page>
             <show_ui>1</show_ui>
+            <exclude_from_search>1</exclude_from_search>
             <can_export>1</can_export>
-            <query_var_enabled>1</query_var_enabled>
             <query_var></query_var>
             <permalink_epmask>EP_PERMALINK</permalink_epmask>
             <rest_base></rest_base>
             <_builtin></_builtin>
             <_wpcf_author_id>1</_wpcf_author_id>
-            <id>grcs_slide</id>
-            <hash>ec5f1bc0390d54f1a8274a46c377a503</hash>
-            <checksum>ec5f1bc0390d54f1a8274a46c377a503</checksum>
+            <id>grcs_nav_boxes</id>
+            <hash>bdc217b107a6bc321a89458179ee42ef</hash>
+            <checksum>bdc217b107a6bc321a89458179ee42ef</checksum>
         </type>
         <type>
-            <__types_id>grcs_staff</__types_id>
-            <__types_title>Staff</__types_title>
-            <_toolset_edit_last>1456613680</_toolset_edit_last>
-            <_builtin></_builtin>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <wpcf-post-type>grcs_staff</wpcf-post-type>
+            <__types_id>grcs_landbank_member</__types_id>
+            <__types_title>Land Bank Board Members</__types_title>
+            <_toolset_edit_last>1458508264</_toolset_edit_last>
+            <wpcf-post-type>grcs_landbank_member</wpcf-post-type>
             <icon>groups</icon>
             <labels>
-                <name>Staff</name>
-                <singular_name>Staff Member</singular_name>
+                <name>Land Bank Board Members</name>
+                <singular_name>Land Bank Board Member</singular_name>
                 <add_new>Add New</add_new>
                 <add_new_item>Add New %s</add_new_item>
                 <edit_item>Edit %s</edit_item>
@@ -1788,40 +1799,88 @@ URLs for other sites must include http:// and the domain name.</description>
                 <not_found>No %s found</not_found>
                 <not_found_in_trash>No %s found in Trash</not_found_in_trash>
                 <parent_item_colon>Parent text</parent_item_colon>
-                <all_items>All Staff</all_items>
-                <enter_title_here>Enter name here</enter_title_here>
+                <all_items>All items</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
             </labels>
-            <slug>grcs_staff</slug>
-            <description>People to display on the \&quot;Staff\&quot; page.</description>
+            <slug>grcs_landbank_member</slug>
+            <description>Land banks can have their own list of board members.</description>
             <public>public</public>
-            <menu_position>20--wpcf-add-menu-after--edit.php?post_type=grcs_publication</menu_position>
+            <menu_position></menu_position>
+            <custom-field-group>
+                <land-bank-board-member-info>17</land-bank-board-member-info>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <author>1</author>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>normal</custom>
+                <slug></slug>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <publicly_queryable>1</publicly_queryable>
+            <exclude_from_search>1</exclude_from_search>
+            <can_export>1</can_export>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <_builtin></_builtin>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <disabled>1</disabled>
+            <id>grcs_landbank_member</id>
+            <hash>dfb74a2430811acbcdc51ccd2b155fda</hash>
+            <checksum>dfb74a2430811acbcdc51ccd2b155fda</checksum>
+        </type>
+        <type>
+            <__types_id>grcs_landbank</__types_id>
+            <__types_title>Land Banks</__types_title>
+            <_toolset_edit_last>1458508264</_toolset_edit_last>
+            <wpcf-post-type>grcs_landbank</wpcf-post-type>
+            <icon>id-alt</icon>
+            <labels>
+                <name>Land Banks</name>
+                <singular_name>Land Bank</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Land Banks</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
+            </labels>
+            <slug>grcs_landbank</slug>
+            <description>For maintaining information about area land banks.</description>
+            <public>public</public>
+            <menu_position></menu_position>
             <dashboard_glance>1</dashboard_glance>
             <taxonomies>
                 <post_tag>1</post_tag>
-                <wrlc_locations>1</wrlc_locations>
-                <wrlc_team>1</wrlc_team>
-                <grcs_locations>1</grcs_locations>
-                <grcs_team>1</grcs_team>
             </taxonomies>
             <custom-field-group>
-                <bioprofile>19</bioprofile>
-                <social-media-links>20</social-media-links>
-                <staff-member-information>21</staff-member-information>
+                <land-bank-data>15</land-bank-data>
+                <land-bank-contact>16</land-bank-contact>
             </custom-field-group>
             <supports>
                 <title>1</title>
                 <revisions>1</revisions>
                 <author>1</author>
                 <thumbnail>1</thumbnail>
-                <page-attributes>1</page-attributes>
             </supports>
             <rewrite>
                 <enabled>1</enabled>
                 <custom>custom</custom>
-                <slug>staff</slug>
+                <slug>county-land-banks/land-banks</slug>
                 <pages>1</pages>
             </rewrite>
-            <has_archive>1</has_archive>
             <has_archive_slug></has_archive_slug>
             <show_in_menu>1</show_in_menu>
             <show_in_menu_page></show_in_menu_page>
@@ -1833,78 +1892,63 @@ URLs for other sites must include http:// and the domain name.</description>
             <query_var></query_var>
             <permalink_epmask>EP_PERMALINK</permalink_epmask>
             <rest_base></rest_base>
-            <id>grcs_staff</id>
-            <hash>2eef78c5563b2f789a64f0d2eee78dcd</hash>
-            <checksum>2eef78c5563b2f789a64f0d2eee78dcd</checksum>
-        </type>
-        <type>
-            <__types_id>grcs_trustee</__types_id>
-            <__types_title>Board Members</__types_title>
-            <_toolset_edit_last>1456613565</_toolset_edit_last>
             <_builtin></_builtin>
             <_wpcf_author_id>1</_wpcf_author_id>
-            <wpcf-post-type>grcs_trustee</wpcf-post-type>
-            <icon>groups</icon>
-            <labels>
-                <name>Board Members</name>
-                <singular_name>Board Member</singular_name>
-                <add_new>Add New</add_new>
-                <add_new_item>Add New %s</add_new_item>
-                <edit_item>Edit %s</edit_item>
-                <new_item>New %s</new_item>
-                <view_item>View %s</view_item>
-                <search_items>Search %s</search_items>
-                <not_found>No %s found</not_found>
-                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
-                <parent_item_colon>Parent text</parent_item_colon>
-                <all_items>All Board Members</all_items>
-                <enter_title_here>Enter name here</enter_title_here>
-            </labels>
-            <slug>grcs_trustee</slug>
-            <description>People to display on one or more board pages.</description>
-            <public>public</public>
-            <menu_position>20--wpcf-add-menu-after--edit.php?post_type=grcs_staff</menu_position>
-            <dashboard_glance>1</dashboard_glance>
-            <taxonomies>
-                <post_tag>1</post_tag>
-                <nppb_board>1</nppb_board>
-                <grcs_board>1</grcs_board>
-            </taxonomies>
-            <custom-field-group>
-                <board-member-information>18</board-member-information>
-                <bioprofile>19</bioprofile>
-            </custom-field-group>
-            <supports>
-                <title>1</title>
-                <revisions>1</revisions>
-                <author>1</author>
-                <thumbnail>1</thumbnail>
-                <page-attributes>1</page-attributes>
-            </supports>
-            <rewrite>
-                <enabled>1</enabled>
-                <custom>custom</custom>
-                <slug>board-members</slug>
-                <pages>1</pages>
-            </rewrite>
-            <has_archive>1</has_archive>
-            <has_archive_slug></has_archive_slug>
-            <show_in_menu>1</show_in_menu>
-            <show_in_menu_page></show_in_menu_page>
-            <show_ui>1</show_ui>
-            <publicly_queryable>1</publicly_queryable>
-            <can_export>1</can_export>
-            <show_in_nav_menus>1</show_in_nav_menus>
-            <query_var_enabled>1</query_var_enabled>
-            <query_var></query_var>
-            <permalink_epmask>EP_PERMALINK</permalink_epmask>
-            <rest_base></rest_base>
-            <id>grcs_trustee</id>
-            <hash>6f6ec622d350bc481c6525660e188300</hash>
-            <checksum>6f6ec622d350bc481c6525660e188300</checksum>
+            <disabled>1</disabled>
+            <id>grcs_landbank</id>
+            <hash>0e6de429ee6ca81d03c4578f7d8b681e</hash>
+            <checksum>0e6de429ee6ca81d03c4578f7d8b681e</checksum>
         </type>
     </types>
     <taxonomies>
+        <taxonomy>
+            <wpcf-tax>nppb_board</wpcf-tax>
+            <labels>
+                <name>Boards</name>
+                <singular_name>Board</singular_name>
+                <search_items>Search %s</search_items>
+                <popular_items>Popular %s</popular_items>
+                <all_items>All %s</all_items>
+                <parent_item>Parent %s</parent_item>
+                <parent_item_colon>Parent %s:</parent_item_colon>
+                <edit_item>Edit %s</edit_item>
+                <update_item>Update %s</update_item>
+                <add_new_item>Add New %s</add_new_item>
+                <new_item_name>New %s Name</new_item_name>
+                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
+                <add_or_remove_items>Add or remove %s</add_or_remove_items>
+                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
+                <menu_name>%s</menu_name>
+            </labels>
+            <slug>grcs_board</slug>
+            <description>Allows board members to be assigned to one or more boards.</description>
+            <public>public</public>
+            <supports>
+                <__types_cpt_supports_grcs_board_member>1</__types_cpt_supports_grcs_board_member>
+            </supports>
+            <hierarchical>hierarchical</hierarchical>
+            <rewrite>
+                <enabled>1</enabled>
+                <slug>boards</slug>
+                <hierarchical>1</hierarchical>
+            </rewrite>
+            <show_ui>1</show_ui>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <show_admin_column>1</show_admin_column>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <update_count_callback></update_count_callback>
+            <meta_box_cb>
+                <callback></callback>
+            </meta_box_cb>
+            <_toolset_edit_last>1455312289</_toolset_edit_last>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <name></name>
+            <id>grcs_board</id>
+            <__types_id>grcs_board</__types_id>
+            <__types_title>Boards</__types_title>
+            <checksum>76210700ba455720b4ffb0b6acb327d9</checksum>
+        </taxonomy>
         <taxonomy>
             <labels>
                 <name>Categories</name>
@@ -2009,65 +2053,63 @@ URLs for other sites must include http:// and the domain name.</description>
             <slug>post_tag</slug>
             <supports>
                 <__types_cpt_supports_post>1</__types_cpt_supports_post>
-                <__types_cpt_supports_grcs_landbank>1</__types_cpt_supports_grcs_landbank>
-                <__types_cpt_supports_grcs_proprty_listing>1</__types_cpt_supports_grcs_proprty_listing>
-                <__types_cpt_supports_grcs_publication>1</__types_cpt_supports_grcs_publication>
+                <__types_cpt_supports_grcs_board_member>1</__types_cpt_supports_grcs_board_member>
                 <__types_cpt_supports_grcs_staff>1</__types_cpt_supports_grcs_staff>
-                <__types_cpt_supports_grcs_trustee>1</__types_cpt_supports_grcs_trustee>
+                <__types_cpt_supports_grcs_publication>1</__types_cpt_supports_grcs_publication>
+                <__types_cpt_supports_grcs_proprty_listing>1</__types_cpt_supports_grcs_proprty_listing>
+                <__types_cpt_supports_grcs_landbank>1</__types_cpt_supports_grcs_landbank>
             </supports>
             <id>post_tag</id>
             <__types_id>post_tag</__types_id>
             <__types_title>Tags</__types_title>
-            <checksum>317178704c40b390395ba9b15bd13538</checksum>
+            <checksum>9e9123bdaf701b5df0a521c315d499bf</checksum>
         </taxonomy>
         <taxonomy>
-            <wpcf-tax>nppb_board</wpcf-tax>
+            <wpcf-tax>wrlc_nav_box_group</wpcf-tax>
             <icon>admin-post</icon>
             <labels>
-                <name>Boards</name>
-                <singular_name>Board</singular_name>
-                <search_items>Search %s</search_items>
-                <popular_items>Popular %s</popular_items>
+                <name>Landing Box Groups</name>
+                <singular_name>Landing Box Group</singular_name>
+                <search_items>Search Groups</search_items>
+                <popular_items>Popular Groups</popular_items>
                 <all_items>All %s</all_items>
-                <parent_item>Parent %s</parent_item>
-                <parent_item_colon>Parent %s:</parent_item_colon>
+                <parent_item>Parent Group</parent_item>
+                <parent_item_colon>Parent Group:</parent_item_colon>
                 <edit_item>Edit %s</edit_item>
-                <update_item>Update %s</update_item>
-                <add_new_item>Add New %s</add_new_item>
+                <update_item>Update Group</update_item>
+                <add_new_item>Add New Group</add_new_item>
                 <new_item_name>New %s Name</new_item_name>
                 <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
                 <add_or_remove_items>Add or remove %s</add_or_remove_items>
                 <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
                 <menu_name>%s</menu_name>
             </labels>
-            <slug>grcs_board</slug>
-            <description>Allows board members to be assigned to one or more boards.</description>
+            <slug>grcs_nav_box_group</slug>
+            <description>Used to assign landing boxes to be displayed on one or more landing pages.</description>
             <public>public</public>
             <hierarchical>hierarchical</hierarchical>
             <supports>
-                <__types_cpt_supports_grcs_trustee>1</__types_cpt_supports_grcs_trustee>
+                <__types_cpt_supports_grcs_nav_boxes>1</__types_cpt_supports_grcs_nav_boxes>
             </supports>
             <rewrite>
                 <enabled>1</enabled>
-                <slug>boards</slug>
+                <slug></slug>
                 <hierarchical>1</hierarchical>
             </rewrite>
             <show_ui>1</show_ui>
-            <show_in_nav_menus>1</show_in_nav_menus>
             <show_admin_column>1</show_admin_column>
-            <query_var_enabled>1</query_var_enabled>
             <query_var></query_var>
             <update_count_callback></update_count_callback>
             <meta_box_cb>
                 <callback></callback>
             </meta_box_cb>
-            <_toolset_edit_last>1456613565</_toolset_edit_last>
+            <_toolset_edit_last>1458508683</_toolset_edit_last>
             <_wpcf_author_id>1</_wpcf_author_id>
             <name></name>
-            <id>grcs_board</id>
-            <__types_id>grcs_board</__types_id>
-            <__types_title>Boards</__types_title>
-            <checksum>2c57374a5a7a6a7f3b5b16ae97841cd3</checksum>
+            <id>grcs_nav_box_group</id>
+            <__types_id>grcs_nav_box_group</__types_id>
+            <__types_title>Landing Box Groups</__types_title>
+            <checksum>5e31acd7be2a13b24977a7efbb9c1773</checksum>
         </taxonomy>
         <taxonomy>
             <wpcf-tax>wrlc_locations</wpcf-tax>
@@ -2110,109 +2152,13 @@ URLs for other sites must include http:// and the domain name.</description>
             <meta_box_cb>
                 <callback></callback>
             </meta_box_cb>
-            <_toolset_edit_last>1456613644</_toolset_edit_last>
+            <_toolset_edit_last>1458508807</_toolset_edit_last>
             <_wpcf_author_id>1</_wpcf_author_id>
             <name></name>
             <id>grcs_locations</id>
             <__types_id>grcs_locations</__types_id>
             <__types_title>Office Locations</__types_title>
-            <checksum>5ef66e91fbc3f6439291c6cdf34ba4a6</checksum>
-        </taxonomy>
-        <taxonomy>
-            <wpcf-tax>grcs_team</wpcf-tax>
-            <icon>admin-post</icon>
-            <labels>
-                <name>Teams</name>
-                <singular_name>Team</singular_name>
-                <search_items>Search %s</search_items>
-                <popular_items>Popular %s</popular_items>
-                <all_items>All %s</all_items>
-                <parent_item>Parent %s</parent_item>
-                <parent_item_colon>Parent %s:</parent_item_colon>
-                <edit_item>Edit %s</edit_item>
-                <update_item>Update %s</update_item>
-                <add_new_item>Add New %s</add_new_item>
-                <new_item_name>New %s Name</new_item_name>
-                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
-                <add_or_remove_items>Add or remove %s</add_or_remove_items>
-                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
-                <menu_name>%s</menu_name>
-            </labels>
-            <slug>grcs_team</slug>
-            <description>Allows staff members to be assigned to one or more teams/departments.</description>
-            <public>public</public>
-            <hierarchical>hierarchical</hierarchical>
-            <supports>
-                <__types_cpt_supports_grcs_staff>1</__types_cpt_supports_grcs_staff>
-            </supports>
-            <rewrite>
-                <enabled>1</enabled>
-                <slug></slug>
-                <hierarchical>1</hierarchical>
-            </rewrite>
-            <show_ui>1</show_ui>
-            <show_in_nav_menus>1</show_in_nav_menus>
-            <show_admin_column>1</show_admin_column>
-            <query_var_enabled>1</query_var_enabled>
-            <query_var></query_var>
-            <update_count_callback></update_count_callback>
-            <meta_box_cb>
-                <callback></callback>
-            </meta_box_cb>
-            <_toolset_edit_last>1456613832</_toolset_edit_last>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <name></name>
-            <id>grcs_team</id>
-            <__types_id>grcs_team</__types_id>
-            <__types_title>Teams</__types_title>
-            <checksum>e6dd0212965bd572de1a630185970125</checksum>
-        </taxonomy>
-        <taxonomy>
-            <wpcf-tax>wrlc_nav_box_group</wpcf-tax>
-            <icon>admin-post</icon>
-            <labels>
-                <name>Landing Box Groups</name>
-                <singular_name>Landing Box Group</singular_name>
-                <search_items>Search Groups</search_items>
-                <popular_items>Popular Groups</popular_items>
-                <all_items>All %s</all_items>
-                <parent_item>Parent Group</parent_item>
-                <parent_item_colon>Parent Group:</parent_item_colon>
-                <edit_item>Edit %s</edit_item>
-                <update_item>Update Group</update_item>
-                <add_new_item>Add New Group</add_new_item>
-                <new_item_name>New %s Name</new_item_name>
-                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
-                <add_or_remove_items>Add or remove %s</add_or_remove_items>
-                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
-                <menu_name>%s</menu_name>
-            </labels>
-            <slug>grcs_nav_box_group</slug>
-            <description>Used to assign landing boxes to be displayed on one or more landing pages.</description>
-            <public>public</public>
-            <hierarchical>hierarchical</hierarchical>
-            <supports>
-                <__types_cpt_supports_grcs_nav_boxes>1</__types_cpt_supports_grcs_nav_boxes>
-            </supports>
-            <rewrite>
-                <enabled>1</enabled>
-                <slug></slug>
-                <hierarchical>1</hierarchical>
-            </rewrite>
-            <show_ui>1</show_ui>
-            <show_admin_column>1</show_admin_column>
-            <query_var></query_var>
-            <update_count_callback></update_count_callback>
-            <meta_box_cb>
-                <callback></callback>
-            </meta_box_cb>
-            <_toolset_edit_last>1456613763</_toolset_edit_last>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <name></name>
-            <id>grcs_nav_box_group</id>
-            <__types_id>grcs_nav_box_group</__types_id>
-            <__types_title>Landing Box Groups</__types_title>
-            <checksum>adb1a2e41ec3f6113b2e2635a792f97e</checksum>
+            <checksum>a5395b56e069bc1dc1d3f9b74c019a6d</checksum>
         </taxonomy>
         <taxonomy>
             <wpcf-tax>wrlc_property_type</wpcf-tax>
@@ -2252,14 +2198,14 @@ URLs for other sites must include http:// and the domain name.</description>
             <meta_box_cb>
                 <callback></callback>
             </meta_box_cb>
-            <_toolset_edit_last>1456613910</_toolset_edit_last>
+            <_toolset_edit_last>1458509282</_toolset_edit_last>
             <_wpcf_author_id>1</_wpcf_author_id>
             <name></name>
             <disabled>1</disabled>
             <id>grcs_property_type</id>
             <__types_id>grcs_property_type</__types_id>
             <__types_title>Property Types</__types_title>
-            <checksum>b0dcf9ad85d12f3646d457096eedbc63</checksum>
+            <checksum>d4ce1c2644cf3c0d02ec214e17893ca0</checksum>
         </taxonomy>
         <taxonomy>
             <wpcf-tax>wrlc_pub_type</wpcf-tax>
@@ -2302,13 +2248,62 @@ URLs for other sites must include http:// and the domain name.</description>
             <meta_box_cb>
                 <callback></callback>
             </meta_box_cb>
-            <_toolset_edit_last>1456614001</_toolset_edit_last>
+            <_toolset_edit_last>1458509029</_toolset_edit_last>
             <_wpcf_author_id>1</_wpcf_author_id>
             <name></name>
             <id>grcs_pub_type</id>
             <__types_id>grcs_pub_type</__types_id>
             <__types_title>Publication Types</__types_title>
-            <checksum>8c36d6072e1d4a816dfec89de137a30f</checksum>
+            <checksum>e803951ec4dd7df95cef0686701a370f</checksum>
+        </taxonomy>
+        <taxonomy>
+            <wpcf-tax>wrlc_team</wpcf-tax>
+            <icon>admin-post</icon>
+            <labels>
+                <name>Teams</name>
+                <singular_name>Team</singular_name>
+                <search_items>Search %s</search_items>
+                <popular_items>Popular %s</popular_items>
+                <all_items>All %s</all_items>
+                <parent_item>Parent %s</parent_item>
+                <parent_item_colon>Parent %s:</parent_item_colon>
+                <edit_item>Edit %s</edit_item>
+                <update_item>Update %s</update_item>
+                <add_new_item>Add New %s</add_new_item>
+                <new_item_name>New %s Name</new_item_name>
+                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
+                <add_or_remove_items>Add or remove %s</add_or_remove_items>
+                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
+                <menu_name>%s</menu_name>
+            </labels>
+            <slug>grcs_team</slug>
+            <description>Allows staff members to be assigned to one or more teams/departments.</description>
+            <public>public</public>
+            <hierarchical>hierarchical</hierarchical>
+            <supports>
+                <__types_cpt_supports_grcs_staff>1</__types_cpt_supports_grcs_staff>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <slug></slug>
+                <hierarchical>1</hierarchical>
+            </rewrite>
+            <show_ui>1</show_ui>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <show_admin_column>1</show_admin_column>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <update_count_callback></update_count_callback>
+            <meta_box_cb>
+                <callback></callback>
+            </meta_box_cb>
+            <_toolset_edit_last>1458509196</_toolset_edit_last>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <name></name>
+            <id>grcs_team</id>
+            <__types_id>grcs_team</__types_id>
+            <__types_title>Teams</__types_title>
+            <checksum>86203e57e24b13b259e843f221f41a5c</checksum>
         </taxonomy>
     </taxonomies>
 </types>
