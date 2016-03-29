@@ -13,6 +13,25 @@
     </settings>
     <groups>
         <group>
+            <ID>1247</ID>
+            <post_content></post_content>
+            <post_title>Location details</post_title>
+            <post_excerpt></post_excerpt>
+            <post_type>wp-types-group</post_type>
+            <post_status>publish</post_status>
+            <meta>
+                <_wp_types_group_fields>,location-address,location-phone,location-fax,location-hours,</_wp_types_group_fields>
+                <_wp_types_group_post_types>,,grcs_location,</_wp_types_group_post_types>
+                <_wp_types_group_templates>,,,,,,,,,,,,,,,</_wp_types_group_templates>
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
+            </meta>
+            <hash>a57ad35778f0181404c9dfb82c85e913</hash>
+            <checksum>a57ad35778f0181404c9dfb82c85e913</checksum>
+            <__types_id>location-details</__types_id>
+            <__types_title>Location details</__types_title>
+        </group>
+        <group>
             <ID>1183</ID>
             <post_content></post_content>
             <post_title>Landing box colors</post_title>
@@ -1588,6 +1607,90 @@ URLs for other sites must include http:// and the domain name.</description>
             <hash>b27e33ff69099b6cbbb9c41e7ee4e06f</hash>
             <checksum>b27e33ff69099b6cbbb9c41e7ee4e06f</checksum>
         </field>
+        <field>
+            <id>location-address</id>
+            <slug>location-address</slug>
+            <type>textarea</type>
+            <name>Address</name>
+            <description></description>
+            <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
+                <repetitive>0</repetitive>
+                <custom_use></custom_use>
+                <submit-key>location-address</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-location-address</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>location-address</__types_id>
+            <__types_title>Address</__types_title>
+            <hash>1c3a09d6e3c0783535fe0b99de9178bd</hash>
+            <checksum>1c3a09d6e3c0783535fe0b99de9178bd</checksum>
+        </field>
+        <field>
+            <id>location-phone</id>
+            <slug>location-phone</slug>
+            <type>phone</type>
+            <name>Phone</name>
+            <description></description>
+            <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
+                <repetitive>0</repetitive>
+                <custom_use></custom_use>
+                <submit-key>location-phone</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-location-phone</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>location-phone</__types_id>
+            <__types_title>Phone</__types_title>
+            <hash>443428ae54d288056cfd20bf4ca44d54</hash>
+            <checksum>443428ae54d288056cfd20bf4ca44d54</checksum>
+        </field>
+        <field>
+            <id>location-fax</id>
+            <slug>location-fax</slug>
+            <type>phone</type>
+            <name>Fax</name>
+            <description></description>
+            <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
+                <repetitive>0</repetitive>
+                <custom_use></custom_use>
+                <submit-key>location-fax</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-location-fax</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>location-fax</__types_id>
+            <__types_title>Fax</__types_title>
+            <hash>a8914bf0a8a6b056adb1a5149f9767b8</hash>
+            <checksum>a8914bf0a8a6b056adb1a5149f9767b8</checksum>
+        </field>
+        <field>
+            <id>location-hours</id>
+            <slug>location-hours</slug>
+            <type>textarea</type>
+            <name>Hours</name>
+            <description></description>
+            <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
+                <repetitive>0</repetitive>
+                <custom_use></custom_use>
+                <submit-key>location-hours</submit-key>
+                <disabled_by_type>0</disabled_by_type>
+            </data>
+            <meta_key>wpcf-location-hours</meta_key>
+            <meta_type>postmeta</meta_type>
+            <__types_id>location-hours</__types_id>
+            <__types_title>Hours</__types_title>
+            <hash>308ddf33413fe9e8144895a8212888f6</hash>
+            <checksum>308ddf33413fe9e8144895a8212888f6</checksum>
+        </field>
     </fields>
     <types>
         <type>
@@ -1657,7 +1760,7 @@ URLs for other sites must include http:// and the domain name.</description>
         <type>
             <__types_id>grcs_staff</__types_id>
             <__types_title>Staff</__types_title>
-            <_toolset_edit_last>1458522886</_toolset_edit_last>
+            <_toolset_edit_last>1459237588</_toolset_edit_last>
             <_builtin></_builtin>
             <_wpcf_author_id>1</_wpcf_author_id>
             <wpcf-post-type>grcs_staff</wpcf-post-type>
@@ -1684,7 +1787,6 @@ URLs for other sites must include http:// and the domain name.</description>
             <dashboard_glance>1</dashboard_glance>
             <taxonomies>
                 <post_tag>1</post_tag>
-                <grcs_locations>1</grcs_locations>
                 <grcs_team>1</grcs_team>
             </taxonomies>
             <custom-field-group>
@@ -1716,9 +1818,14 @@ URLs for other sites must include http:// and the domain name.</description>
             <query_var></query_var>
             <permalink_epmask>EP_PERMALINK</permalink_epmask>
             <rest_base></rest_base>
+            <post_relationship>
+                <has>
+                    <grcs_staff_location>1</grcs_staff_location>
+                </has>
+            </post_relationship>
             <id>grcs_staff</id>
-            <hash>12fc2753e95bcc05e0589efc0ccd1ac2</hash>
-            <checksum>12fc2753e95bcc05e0589efc0ccd1ac2</checksum>
+            <hash>30949303ac0f6f53dd38e8b97e47113b</hash>
+            <checksum>30949303ac0f6f53dd38e8b97e47113b</checksum>
         </type>
         <type>
             <__types_id>grcs_slide</__types_id>
@@ -2084,7 +2191,130 @@ URLs for other sites must include http:// and the domain name.</description>
             <hash>0e6de429ee6ca81d03c4578f7d8b681e</hash>
             <checksum>0e6de429ee6ca81d03c4578f7d8b681e</checksum>
         </type>
+        <type>
+            <_builtin></_builtin>
+            <_toolset_edit_last>1459237682</_toolset_edit_last>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <wpcf-post-type>grcs_location</wpcf-post-type>
+            <icon>location</icon>
+            <labels>
+                <name>Locations</name>
+                <singular_name>Location</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All Locations</all_items>
+                <enter_title_here>Enter location name here</enter_title_here>
+            </labels>
+            <slug>grcs_location</slug>
+            <description>Contact information and hours for different offices/locations of your organization. Staff members can be associated with locations where they work.</description>
+            <public>public</public>
+            <menu_position>10--wpcf-add-menu-after--edit.php?post_type=grcs_nav_boxes</menu_position>
+            <dashboard_glance>1</dashboard_glance>
+            <taxonomies>
+                <post_tag>1</post_tag>
+            </taxonomies>
+            <custom-field-group>
+                <location-details>1247</location-details>
+            </custom-field-group>
+            <supports>
+                <title>1</title>
+                <editor>1</editor>
+                <revisions>1</revisions>
+                <author>1</author>
+                <thumbnail>1</thumbnail>
+                <page-attributes>1</page-attributes>
+            </supports>
+            <rewrite>
+                <enabled>1</enabled>
+                <custom>custom</custom>
+                <slug>locations</slug>
+                <pages>1</pages>
+            </rewrite>
+            <has_archive>1</has_archive>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu>1</show_in_menu>
+            <show_in_menu_page></show_in_menu_page>
+            <show_ui>1</show_ui>
+            <publicly_queryable>1</publicly_queryable>
+            <can_export>1</can_export>
+            <show_in_nav_menus>1</show_in_nav_menus>
+            <query_var_enabled>1</query_var_enabled>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <post_relationship>
+                <has>
+                    <grcs_staff_location>1</grcs_staff_location>
+                </has>
+            </post_relationship>
+            <id>grcs_location</id>
+            <__types_id>grcs_location</__types_id>
+            <__types_title>Locations</__types_title>
+            <hash>095479e0e8ab7054aaac1862c49e1295</hash>
+            <checksum>095479e0e8ab7054aaac1862c49e1295</checksum>
+        </type>
+        <type>
+            <_builtin></_builtin>
+            <_toolset_edit_last>1459237427</_toolset_edit_last>
+            <_wpcf_author_id>1</_wpcf_author_id>
+            <wpcf-post-type>grcs_staff_location</wpcf-post-type>
+            <icon>share</icon>
+            <labels>
+                <name>Staff Locations</name>
+                <singular_name>Staff Location</singular_name>
+                <add_new>Add New</add_new>
+                <add_new_item>Add New %s</add_new_item>
+                <edit_item>Edit %s</edit_item>
+                <new_item>New %s</new_item>
+                <view_item>View %s</view_item>
+                <search_items>Search %s</search_items>
+                <not_found>No %s found</not_found>
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+                <parent_item_colon>Parent text</parent_item_colon>
+                <all_items>All items</all_items>
+                <enter_title_here>Enter title here</enter_title_here>
+            </labels>
+            <slug>grcs_staff_location</slug>
+            <description>Allows Staff Members to be associated with the Locations where they work.</description>
+            <public>public</public>
+            <menu_position></menu_position>
+            <supports>
+                <title>1</title>
+            </supports>
+            <rewrite>
+                <custom>normal</custom>
+                <slug></slug>
+            </rewrite>
+            <has_archive_slug></has_archive_slug>
+            <show_in_menu_page></show_in_menu_page>
+            <exclude_from_search>1</exclude_from_search>
+            <can_export>1</can_export>
+            <query_var></query_var>
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+            <rest_base></rest_base>
+            <post_relationship>
+                <belongs>
+                    <grcs_staff>1</grcs_staff>
+                    <grcs_location>1</grcs_location>
+                </belongs>
+            </post_relationship>
+            <id>grcs_staff_location</id>
+            <__types_id>grcs_staff_location</__types_id>
+            <__types_title>Staff Locations</__types_title>
+            <hash>08b39a3448d7683fccbf5cad5a228bbe</hash>
+            <checksum>08b39a3448d7683fccbf5cad5a228bbe</checksum>
+        </type>
     </types>
+    <post_relationships>
+        <data>{&quot;grcs_location&quot;:{&quot;grcs_staff_location&quot;:{&quot;fields_setting&quot;:&quot;specific&quot;,&quot;fields&quot;:{&quot;_wpcf_pr_parents&quot;:{&quot;grcs_staff&quot;:1}}}},&quot;grcs_staff&quot;:{&quot;grcs_staff_location&quot;:{&quot;fields_setting&quot;:&quot;specific&quot;,&quot;fields&quot;:{&quot;_wpcf_pr_parents&quot;:{&quot;grcs_location&quot;:1}}}}}</data>
+    </post_relationships>
     <taxonomies>
         <taxonomy>
             <wpcf-tax>nppb_board</wpcf-tax>
@@ -2243,11 +2473,12 @@ URLs for other sites must include http:// and the domain name.</description>
                 <__types_cpt_supports_grcs_publication>1</__types_cpt_supports_grcs_publication>
                 <__types_cpt_supports_grcs_proprty_listing>1</__types_cpt_supports_grcs_proprty_listing>
                 <__types_cpt_supports_grcs_landbank>1</__types_cpt_supports_grcs_landbank>
+                <__types_cpt_supports_grcs_location>1</__types_cpt_supports_grcs_location>
             </supports>
             <id>post_tag</id>
             <__types_id>post_tag</__types_id>
             <__types_title>Tags</__types_title>
-            <checksum>9e9123bdaf701b5df0a521c315d499bf</checksum>
+            <checksum>758632aed701b1fd228b19f0963993c6</checksum>
         </taxonomy>
         <taxonomy>
             <wpcf-tax>wrlc_nav_box_group</wpcf-tax>
@@ -2320,9 +2551,6 @@ URLs for other sites must include http:// and the domain name.</description>
             <description></description>
             <public>public</public>
             <hierarchical>hierarchical</hierarchical>
-            <supports>
-                <__types_cpt_supports_grcs_staff>1</__types_cpt_supports_grcs_staff>
-            </supports>
             <rewrite>
                 <enabled>1</enabled>
                 <slug></slug>
@@ -2343,7 +2571,7 @@ URLs for other sites must include http:// and the domain name.</description>
             <id>grcs_locations</id>
             <__types_id>grcs_locations</__types_id>
             <__types_title>Office Locations</__types_title>
-            <checksum>a5395b56e069bc1dc1d3f9b74c019a6d</checksum>
+            <checksum>93fa6e5e467490d7bef4b02fc428b2bf</checksum>
         </taxonomy>
         <taxonomy>
             <wpcf-tax>wrlc_property_type</wpcf-tax>
