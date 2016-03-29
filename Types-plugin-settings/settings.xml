@@ -1591,7 +1591,7 @@ URLs for other sites must include http:// and the domain name.</description>
         <type>
             <__types_id>grcs_publication</__types_id>
             <__types_title>Publications</__types_title>
-            <_toolset_edit_last>1458509029</_toolset_edit_last>
+            <_toolset_edit_last>1458719931</_toolset_edit_last>
             <_builtin></_builtin>
             <_wpcf_author_id>1</_wpcf_author_id>
             <wpcf-post-type>grcs_publication</wpcf-post-type>
@@ -1618,7 +1618,6 @@ URLs for other sites must include http:// and the domain name.</description>
             <dashboard_glance>1</dashboard_glance>
             <taxonomies>
                 <post_tag>1</post_tag>
-                <wrlc_pub_type>1</wrlc_pub_type>
                 <grcs_pub_type>1</grcs_pub_type>
             </taxonomies>
             <custom-field-group>
@@ -1636,7 +1635,6 @@ URLs for other sites must include http:// and the domain name.</description>
                 <feeds>1</feeds>
                 <pages>1</pages>
             </rewrite>
-            <has_archive>1</has_archive>
             <has_archive_slug></has_archive_slug>
             <show_in_menu>1</show_in_menu>
             <show_in_menu_page></show_in_menu_page>
@@ -1649,8 +1647,8 @@ URLs for other sites must include http:// and the domain name.</description>
             <permalink_epmask>EP_PERMALINK</permalink_epmask>
             <rest_base></rest_base>
             <id>grcs_publication</id>
-            <hash>bd4c002e3a788f94273687dd73d04608</hash>
-            <checksum>bd4c002e3a788f94273687dd73d04608</checksum>
+            <hash>dbd58f1a3385701422a7f0527ddc3e4a</hash>
+            <checksum>dbd58f1a3385701422a7f0527ddc3e4a</checksum>
         </type>
         <type>
             <__types_id>grcs_proprty_listing</__types_id>
@@ -2254,7 +2252,7 @@ URLs for other sites must include http:// and the domain name.</description>
             <id>grcs_pub_type</id>
             <__types_id>grcs_pub_type</__types_id>
             <__types_title>Publication Types</__types_title>
-            <checksum>e803951ec4dd7df95cef0686701a370f</checksum>
+            <checksum>604728b3a8a0c10431038c2150166370</checksum>
         </taxonomy>
         <taxonomy>
             <wpcf-tax>wrlc_team</wpcf-tax>
