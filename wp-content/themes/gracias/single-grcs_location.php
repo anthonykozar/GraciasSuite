@@ -4,11 +4,13 @@
 			<?php if( have_posts() ) : the_post(); ?>
 				<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 					<div class="entry">
+						<?php gracias_featured_image(); ?>
 						<header class="entry-header">
-							<<?php pinboard_title_tag( 'post' ); ?> class="entry-title"><?php the_title(); ?></<?php pinboard_title_tag( 'post' ); ?>>
+							<<?php pinboard_title_tag( 'post' ); ?> class="entry-title location-name"><?php the_title(); ?></<?php pinboard_title_tag( 'post' ); ?>>
+							<p class="staff-edit-link"><?php edit_post_link( __( 'Edit', 'pinboard' ), '<span class="edit-link">', '</span>' ); ?></p>
+							<div class="clear clear-left"></div>
 						</header><!-- .entry-header -->
 						<div class="entry-content">
-							<?php gracias_featured_image(); ?>
 							<p>
 								<?php gracias_text_field('', 'wpcf-location-address', '', "<br />\n", true); ?>
 								<?php gracias_text_field('Phone:', 'wpcf-location-phone', '', "<br />\n"); ?>
