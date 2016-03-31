@@ -215,6 +215,28 @@ li.pub-entry .pub-type {
 	}
 }
 
+/* Partners page links */
+
+.links-grid {
+	position: relative;
+}
+
+.links-grid .links-entry {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 150px;
+	padding: 10px 10px;
+}
+
+.links-grid .links-entry p {
+    margin: 6px;
+}
+
+.links-grid .links-entry img {
+    max-width: 100%;
+}
+
 /* Land Bank formatting */
 @media screen and (min-width: 761px) {
 	.lb-general,
