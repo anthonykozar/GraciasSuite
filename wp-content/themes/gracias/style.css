@@ -147,12 +147,14 @@ h2.staff-position {
 
 /* publication and location lists */
 
+ul.board-member-list,
 ul.location-list,
 ul.publication-list {
 	list-style: none outside none;
 	position: relative;
 }
 
+li.bm-entry,
 li.loc-entry,
 li.pub-entry {
 	padding: 1.5% 2.4%;
@@ -163,9 +165,17 @@ li.pub-entry {
 	color: rgb(80, 80, 80);
 }
 
+li.bm-entry,
 li.loc-entry {
 	min-height: 32px;
 }
+
+li.bm-entry .bm-title {
+	color: #333;
+	display: inline-block;
+	width: 25%;
+}
+
 
 li.loc-entry .loc-title {
 	display: inline-block;
@@ -177,12 +187,25 @@ li.pub-entry .pub-title {
 	width: 60%;
 }
 
+li.bm-entry .bm-col-2,
+li.bm-entry .bm-col-3,
 li.loc-entry .loc-address,
 li.loc-entry .loc-phone,
 li.loc-entry .loc-hours,
 li.pub-entry .pub-date,
 li.pub-entry .pub-type {
 	position: absolute;
+}
+
+li.bm-entry .bm-col-2 {
+	left: 30%;
+	width: 30%;
+	font-size: 13px;
+}
+
+li.bm-entry .bm-col-3 {
+	left: 65%;
+	font-size: 13px;
 }
 
 li.loc-entry .loc-address,
@@ -208,6 +231,9 @@ li.pub-entry .pub-type {
 }
 
 @media screen and (max-width: 760px) {
+	li.bm-entry .bm-title,
+	li.bm-entry .bm-col-2,
+	li.bm-entry .bm-col-3,
 	li.loc-entry .loc-title,
 	li.loc-entry .loc-address,
 	li.loc-entry .loc-phone,
