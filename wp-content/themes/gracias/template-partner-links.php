@@ -46,6 +46,14 @@
 				// set the "paged" parameter (use 'page' if the query is on a static front page)
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
+				/*	The 'wpcf-display-mode' parameter controls which attibutes are displayed
+					for each link.  The value should be the sum of these constants:
+							1	show link title
+							2	show link thumbnail
+				 */
+				$display_mode = (int) get_post_meta(get_the_ID(), 'wpcf-display-mode', true);
+				if ($display_mode == 0)	$display_mode = 3;	// show all by default
+				
 				$linkcat_slug = get_post_meta(get_the_ID(), 'wpcf-link-category', true);
 				$tax_parms = array(
 								array(
@@ -68,14 +76,16 @@
 							// only wrap the image in an <a> tag if we have a URL
 							if ($link_url) echo '<a href="' . $link_url . '" title="' . the_title_attribute('echo=0') . '">';
 							// this code block customized from function pinboard_post_thumbnail()
-							if (has_post_thumbnail()) {
+							if (($display_mode & 2) && has_post_thumbnail()) {
 								echo '<figure class="entry-thumbnail">';
 								the_post_thumbnail('thumbnail');
 								echo '</figure>';
 							}
-							echo '<p>';
-							the_title();
-							echo '</p>';
+							if ($display_mode & 1) {
+								echo '<p>';
+								the_title();
+								echo '</p>';
+							}
 							if ($link_url) echo '</a>';
 						?>
 					</div>
