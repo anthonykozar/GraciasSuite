@@ -45,6 +45,16 @@
 				// set the "paged" parameter (use 'page' if the query is on a static front page)
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
+				/*	The 'wpcf-display-mode' parameter controls which attibutes are displayed
+					for each location.  The value should be the sum of these constants:
+							1	show address
+							2	show phone
+							4	show hours
+					or		8	show only the address in second column & on a single line
+				 */
+				$display_mode = (int) get_post_meta(get_the_ID(), 'wpcf-display-mode', true);
+				if ($display_mode == 0)	$display_mode = 7;	// show all by default
+				
 				$posts_per_page = get_post_meta(get_the_ID(), 'wpcf-posts-per-page', true);
 				$items = new WP_Query(array('post_type' => 'grcs_location', 'paged' => $paged, 'posts_per_page' => $posts_per_page));
 			?>
@@ -54,10 +64,11 @@
 					<li class="loc-entry">
 						<span class="loc-title">
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-							<?php gracias_text_field('', 'wpcf-location-address', '<br />', '', true); ?>
+							<?php if ($display_mode & 1) gracias_text_field('', 'wpcf-location-address', '<br />', '', true); ?>
 						</span>
-						<?php gracias_text_field('', 'wpcf-location-phone', '<span class="loc-phone">', '</span>', false); ?>
-						<?php gracias_text_field('', 'wpcf-location-hours', '<span class="loc-hours">', '</span>', true); ?>
+						<?php if ($display_mode == 8) gracias_text_field('', 'wpcf-location-address', '<span class="loc-address">', '</span>', false); ?>
+						<?php if ($display_mode & 2) gracias_text_field('', 'wpcf-location-phone', '<span class="loc-phone">', '</span>', false); ?>
+						<?php if ($display_mode & 4) gracias_text_field('', 'wpcf-location-hours', '<span class="loc-hours">', '</span>', true); ?>
 					</li>
 					<?php endwhile; ?>
 				</ul>

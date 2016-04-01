@@ -163,6 +163,10 @@ li.pub-entry {
 	color: rgb(80, 80, 80);
 }
 
+li.loc-entry {
+	min-height: 32px;
+}
+
 li.loc-entry .loc-title {
 	display: inline-block;
 	width: 40%;
@@ -173,6 +177,7 @@ li.pub-entry .pub-title {
 	width: 60%;
 }
 
+li.loc-entry .loc-address,
 li.loc-entry .loc-phone,
 li.loc-entry .loc-hours,
 li.pub-entry .pub-date,
@@ -180,6 +185,7 @@ li.pub-entry .pub-type {
 	position: absolute;
 }
 
+li.loc-entry .loc-address,
 li.loc-entry .loc-phone {
 	left: 42%;
 	font-size: 14px;
@@ -203,6 +209,7 @@ li.pub-entry .pub-type {
 
 @media screen and (max-width: 760px) {
 	li.loc-entry .loc-title,
+	li.loc-entry .loc-address,
 	li.loc-entry .loc-phone,
 	li.loc-entry .loc-hours,
 	li.pub-entry .pub-title,
