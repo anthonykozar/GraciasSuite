@@ -440,9 +440,15 @@ function gracias_staff_email() {
 
 // Displays a person's office locations on staff pages.
 function gracias_staff_locations() {
+	$staff_locations = types_child_posts('grcs_staff_location');
+	/* if (!usort($staff_locations, 'gracias_??')) {
+		echo '<p>Warning: usort($staff_locations) failed.</p>';
+	} */
+	// var_dump($staff_locations);
+
 	$terms = get_the_terms(get_the_ID(), 'grcs_locations');
 	if ($terms && !is_wp_error($terms)) {
-		echo '<p class="staff-locations"><b>Works in: </b>';
+		echo '<p class="staff-locations"><b>Works at: </b>';
 		the_terms(get_the_ID(), 'grcs_locations');
 		echo "</p>\n";
 	}
