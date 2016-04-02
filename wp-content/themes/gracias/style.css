@@ -9,34 +9,23 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-@font-face{
-	font-family: "Scrivano Regular";
-	src: url('Scrivano.otf');
-}
-
 #header {
-	border-top:#111 0px solid;
-	/* Adjust the Image location 'wp-content/uploads/NAMEOFFILE.png' */
-	background:     url(/wp-content/uploads/2015/04/masthead-design-for-website.jpg) no-repeat 0 0;
+	border-top: none;
 }
 
 h1#site-title {
-	font-family: "Scrivano Regular", "Oswald", sans-serif;
+	font-family: "Oswald", sans-serif;
 	font-size: 28px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 12px;
-	line-height:1.25em;
+	line-height: 1.25em;
 }
 
 .twocol .entry-title,
-.threecol .entry-title,
-.page-template-template-blog-php .twocol .entry-title,
-.page-template-template-blog-php .threecol .entry-title,
-.page-template-template-portfolio-php .twocol .entry-title,
-.page-template-template-portfolio-php .threecol .entry-title {
-	line-height:1.25em;
+.threecol .entry-title {
+	line-height: 1.25em;
 }
 
 #access a {
