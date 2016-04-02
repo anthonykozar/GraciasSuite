@@ -56,7 +56,8 @@
 				if ($display_mode == 0)	$display_mode = 7;	// show all by default
 				
 				$posts_per_page = get_post_meta(get_the_ID(), 'wpcf-posts-per-page', true);
-				$items = new WP_Query(array('post_type' => 'grcs_location', 'paged' => $paged, 'posts_per_page' => $posts_per_page));
+				$items = new WP_Query(array('post_type' => 'grcs_location', 'orderby' => 'menu_order', 'order' => 'ASC', 
+											'paged' => $paged, 'posts_per_page' => $posts_per_page));
 			?>
 			<?php if( $items->have_posts() ) : ?>
 				<ul class="location-list">

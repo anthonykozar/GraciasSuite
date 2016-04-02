@@ -1,6 +1,6 @@
 <?php // $sticky = get_option( 'sticky_posts' ); ?>
 <?php // if( ! empty( $sticky ) ) : ?>
-	<?php $slider = new WP_Query( array( 'post_type' => 'grcs_slide', 'posts_per_page' => 99 ) ); ?>
+	<?php $slider = new WP_Query( array( 'post_type' => 'grcs_slide', 'orderby' => 'menu_order', 'order' => 'ASC', 'posts_per_page' => 99 ) ); ?>
 	<?php if( $slider->have_posts() ) : ?>
 		<section id="slider">
 			<ul class="slides">

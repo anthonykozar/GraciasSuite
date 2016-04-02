@@ -66,7 +66,8 @@
 								)
 							);
 				$posts_per_page = get_post_meta(get_the_ID(), 'wpcf-posts-per-page', true);
-				$boxes = new WP_Query(array('post_type' => 'grcs_staff', 'tax_query' => $tax_parms, 'paged' => $paged, 'posts_per_page' => $posts_per_page));
+				$boxes = new WP_Query(array('post_type' => 'grcs_staff', 'tax_query' => $tax_parms, 'orderby' => 'menu_order', 
+											'order' => 'ASC', 'paged' => $paged, 'posts_per_page' => $posts_per_page));
 			?>
 			<?php if( $boxes->have_posts() ) : ?>
 				<?php gracias_set_number_columns(3); ?>

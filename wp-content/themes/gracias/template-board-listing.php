@@ -71,7 +71,8 @@
 								)
 							);
 				$posts_per_page = get_post_meta(get_the_ID(), 'wpcf-posts-per-page', true);
-				$items = new WP_Query(array('post_type' => 'grcs_board_member', 'tax_query' => $tax_parms, 'paged' => $paged, 'posts_per_page' => $posts_per_page));
+				$items = new WP_Query(array('post_type' => 'grcs_board_member', 'tax_query' => $tax_parms, 'orderby' => 'menu_order', 
+											'order' => 'ASC', 'paged' => $paged, 'posts_per_page' => $posts_per_page));
 			?>
 			<?php if( $items->have_posts() ) : ?>
 				<ul class="board-member-list">

@@ -60,7 +60,8 @@
 										'terms'    => $group_slug
 									)
 								);
-				$boxes = new WP_Query( array('post_type' => 'grcs_nav_boxes', 'tax_query' => $group_parms, 'posts_per_page' => -1));
+				$boxes = new WP_Query(array('post_type' => 'grcs_nav_boxes', 'tax_query' => $group_parms, 'orderby' => 'menu_order', 
+											'order' => 'ASC', 'posts_per_page' => -1));
 			?>
 			<?php if( $boxes->have_posts() ) : ?>
 				<?php gracias_set_number_columns(2); ?>
