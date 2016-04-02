@@ -93,8 +93,7 @@
 							}
 							else if ($display_mode == 2) {
 								gracias_text_field('', 'wpcf-bm-position', '<span class="bm-col-2">', '</span>', false);
-								gracias_text_field('', 'wpcf-bm-company-title', '<span class="bm-col-3">', '', false);
-								gracias_text_field('', 'wpcf-bm-company', ', ', '</span>', false);
+								gracias_dbl_text_field('', 'wpcf-bm-company-title', 'wpcf-bm-company', '<span class="bm-col-3">', ', ', '</span>');
 							}
 							else if ($display_mode == 3) {
 								gracias_text_field('', 'wpcf-bm-position', '<span class="bm-col-2">', '</span>', false);

@@ -545,6 +545,34 @@ function gracias_text_field($label, $field_id, $before = '', $after = '', $multi
 	}
 }
 
+// Displays the text (or number) stored in two custom fields, $field1_id1
+// and $field_id2, inserting a $separator between them only if both are non-empty.
+function gracias_dbl_text_field($label, $field_id1, $field_id2, $before = '', $separator = ' ', $after = '', $multiline = false, $after_label = '') {
+	$text1 = get_post_meta(get_the_ID(), $field_id1, true);
+	$text2 = get_post_meta(get_the_ID(), $field_id2, true);
+	$output = '';
+	if (!empty($text1) || is_numeric($text1)) {
+		if (!empty($text2) || is_numeric($text2)) {
+			$output = $text1 . $separator . $text2;
+		}
+		else $output = $text1;
+	}
+	else if (!empty($text2) || is_numeric($text2)) {
+		$output = $text2;
+	}
+	
+	if (!empty($output) || is_numeric($output)) {
+		// convert newlines to <br> if $multiline is true
+		if ($multiline)  $output = str_replace("\n", '<br />', $output);
+		if (!empty($label)) {
+			echo $before . '<b>' . $label . '</b> ' . $after_label . $output . $after;
+		}
+		else {
+			echo $before . $output . $after;
+		}
+	}
+}
+
 // Displays the dollar amount stored in the custom field $field_id
 function gracias_price_field($label, $field_id, $before = '', $after = '') {
 	$price = get_post_meta(get_the_ID(), $field_id, true);
