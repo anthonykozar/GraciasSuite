@@ -916,9 +916,12 @@ function gracias_make_mailto_link($email, $link_text = null)
 // list of additional template files that we consider "multi-post" pages
 $GRACIAS_MULTIPOST_TEMPLATES = array(
 	'template-board-home.php',
+	'template-board-listing.php',
 	'template-category-home.php',
 	'template-custom-type-home.php',
 	'template-landing-page.php',
+	'template-locations-home.php',
+	'template-partner-links.php',
 	'template-property-type-home.php',
 	'template-staff-team-home.php',
 	'page-links.php',
