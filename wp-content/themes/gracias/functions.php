@@ -1209,6 +1209,7 @@ function pinboard_posts_nav($query = null, $link_labels = null) {
 endif;
 
 define('GRACIAS_404_IMAGE_ID', 4257);
+define('GRACIAS_CONTACT_LINK', '/contact-us/');
 
 /**
  * Display notification no posts were found
@@ -1226,7 +1227,7 @@ function pinboard_404() { ?>
 				<?php gracias_display_image(GRACIAS_404_IMAGE_ID, 'medium', 'featured-image', false, false, false); ?>
 				<p>We didn't find any matches for &quot;<?php echo get_search_query(); ?>&quot;.</p>
 				<p>Feel free to start at our <a href="/">home page</a> to find what you are looking for
-				   or ask us a question through our <a href="/resources/contact/">contact form</a>.</p>
+				   or ask us a question through our <a href="<?php echo GRACIAS_CONTACT_LINK; ?>">contact form</a>.</p>
 		<?php elseif (is_category() || is_tag() || is_tax()): 
 			$taxobj = get_queried_object();
 			$title = $taxobj->name;
@@ -1239,7 +1240,7 @@ function pinboard_404() { ?>
 				<p>It looks like we haven't added any content to this area yet.</p>
 				<p>It might help to <a href="/?s=<?php echo urlencode($title); ?>">search for &quot;<?php echo $title; ?>&quot;</a>.
 				   Or feel free to start at our <a href="/">home page</a> to find what you are looking for.</p>
-				<p>Please help us improve our site by telling us through our <a href="/resources/contact/">contact form</a> 
+				<p>Please help us improve our site by telling us through our <a href="<?php echo GRACIAS_CONTACT_LINK; ?>">contact form</a> 
 				   which page sent you here.</p>
 		<?php else: ?>
 			<header class="entry-header">
@@ -1250,7 +1251,7 @@ function pinboard_404() { ?>
 				<?php gracias_display_image(GRACIAS_404_IMAGE_ID, 'medium', 'featured-image', false, false, false); ?>
 				<p>Please use the search box (magnifying glass) in the upper right corner of this page to search our site.
 				   Or feel free to start at our <a href="/">home page</a> to find what you are looking for.</p>
-				<p>Please let us know what was missing through our <a href="/resources/contact/">contact form</a>.</p>
+				<p>Please let us know what was missing through our <a href="<?php echo GRACIAS_CONTACT_LINK; ?>">contact form</a>.</p>
 		<?php endif; ?>
 				<?php if (is_active_sidebar(7)) { 
 					echo "<p>Alternatively, use the resources below to find what you're looking for:</p>";
