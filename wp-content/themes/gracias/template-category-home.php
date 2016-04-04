@@ -58,8 +58,7 @@
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 				$cat_slugs = get_post_meta(get_the_ID(), 'wpcf-categories', false);
-				$boxes = new WP_Query(array('post_type' => 'post', 'category_name' => join(',', $cat_slugs), 'orderby' => 'menu_order', 
-											'order' => 'ASC', 'paged' => $paged));
+				$boxes = new WP_Query(array('post_type' => 'post', 'category_name' => join(',', $cat_slugs), 'paged' => $paged));
 			?>
 			<?php if( $boxes->have_posts() ) : ?>
 				<?php gracias_set_number_columns(3); ?>
