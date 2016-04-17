@@ -56,7 +56,7 @@ function gracias_add_custom_types_to_queries($query)
 		// $curtypes = $query->get('post_type');
 		if ($query->is_tag || $query->is_search) {
 			$post_types = array('post', 'page', 'tribe_events', 'simple_link', 'job_listing',
-								'grcs_landbank', 'grcs_proprty_listing', 'grcs_publication', 
+								'grcs_location', 'grcs_landbank', 'grcs_proprty_listing', 'grcs_publication', 
 								'grcs_staff', 'grcs_board_member', 'glossary');
 			// override the original list of post types
 			$query->set('post_type', $post_types);
