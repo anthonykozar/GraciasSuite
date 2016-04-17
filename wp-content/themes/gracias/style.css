@@ -348,9 +348,18 @@ li.pub-entry .pub-type {
 	margin: 2.48% !important;
 }
 
-/*remove padding around entries on pages with secondary loops */
+/* remove padding around entries on pages with secondary loops */
 .entries .entry {
 	padding: 0px;
+}
+
+/* only display lines between items in widget lists */
+.widget-area li:last-child {
+    border-bottom: none;
+}
+
+#footer-area li:last-child {
+    border-bottom: none;
 }
 
 /* fix text size and vertical spacing of the upcoming events widget */
@@ -362,6 +371,13 @@ aside.tribe-events-list-widget .entry-title {
 	font-size: 16px;
 	margin: 0px 0px 2px;
 }
+
+/* fix vertical spacing of the featured events widget (using Events Calendar Shortcode plugin) */
+.widget .ecs-event-list .entry-title {
+    margin: 12px 0px 12px 0px;
+	line-height: 1.25em;
+}
+
 
 /* selectors for landing boxes */
 .nav-box a,
