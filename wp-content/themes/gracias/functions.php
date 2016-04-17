@@ -488,6 +488,17 @@ function gracias_staff_social_links() {
 	}
 }
 
+// Displays a person's board memberships on board member pages.
+function gracias_board_memberships($label = '') {
+	$terms = get_the_terms(get_the_ID(), 'grcs_board');
+	if ($terms && !is_wp_error($terms)) {
+		echo '<p class="board-memberships">';
+		if (!empty($label)) echo '<b>' . $label . '</b> ';
+		the_terms(get_the_ID(), 'grcs_board');
+		echo "</p>\n";
+	}
+}
+
 // Displays the property type(s) on property listing pages and entries.
 function gracias_property_types($html_tag = 'p', $classes = 'entry-property-type') {
 	global $template;	// the complete path of the main template file selected by WP
@@ -990,6 +1001,7 @@ function pinboard_current_location() {
 				case 'grcs_property_type':	$archive = 'Property Listing archive'; break;
 				case 'grcs_locations':		$archive = 'Staff archive'; break;
 				case 'grcs_team':			$archive = 'Staff archive'; break;
+				case 'grcs_board':			$archive = 'Board Member archive'; break;
 				case 'grcs_nav_box_group':	$archive = 'What are you doing here?'; break;
 				default:					$archive = 'Unknown taxonomy archive'; break;
 			}

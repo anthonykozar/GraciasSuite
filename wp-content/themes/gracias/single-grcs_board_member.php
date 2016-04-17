@@ -10,6 +10,7 @@
 							<p class="staff-edit-link"><?php edit_post_link( __( 'Edit', 'pinboard' ), '<span class="edit-link">', '</span>' ); ?></p>
 							<div class="clear clear-left"></div>
 							<?php gracias_staff_position('h2', 'wpcf-bm-position'); ?>
+							<?php gracias_board_memberships(); ?>
 							<?php gracias_text_field('', 'wpcf-bm-classifications', '<p class="bm-classifications">', "</p>\n"); ?>
 						</header><!-- .entry-header -->
 						<div class="entry-content">

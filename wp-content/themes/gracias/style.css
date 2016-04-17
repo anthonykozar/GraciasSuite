@@ -112,6 +112,18 @@ h2.staff-position {
 	font-size: 18px;
 }
 
+.grcs_staff h1.staff-name,
+.grcs_board_member h1.staff-name {
+    margin-bottom: 4px;
+}
+
+.grcs_board_member h2.staff-position {
+    margin-bottom: 4px;
+}
+
+p.board-memberships {
+    font-size: 16px;
+}
 .entry-content h2 {
 	font-weight: bold;
 }
