@@ -73,12 +73,14 @@ add_action('pre_get_posts', 'gracias_add_custom_types_to_queries');
 // prefix to identify "home" URLs in text
 define('HOME_PREFIX', 'home-url=');
 
-// Change URL "homes" for office locations and some categories.
+// Allow URL "homes" (permalinks) to be changed for categories and custom taxonomies.
 function gracias_filter_category_links($url, $term, $taxonomy)
 {
 	switch ($taxonomy) {
-		case 'grcs_locations':
 		case 'category':
+		case 'grcs_board':
+		case 'grcs_team':
+		case 'grcs_pub_type':
 		case 'grcs_property_type':
 			$descr = trim(strip_tags($term->description));	// remove <p></p> on admin screens
 			if (!empty($descr)) {
