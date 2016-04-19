@@ -299,6 +299,21 @@ function gracias_board_member_admin_columns($cols)
 	return $cols;
 }
 
+function gracias_location_admin_columns($cols)
+{
+	// specify the columns for Locations post type.
+	$cols = array(
+		'cb'				=>	'<input type="checkbox" />',
+		'title'				=>	'Name',
+		'author'			=>	'Author',
+		'tags'				=>	'Tags',
+		'gracias-order'		=>	'Order',
+		'date'				=>	'Date',
+	);
+	
+	return $cols;
+}
+
 function gracias_display_custom_columns($column_id, $post_id)
 {
 	// handle displaying columns for all of our post types.
@@ -329,6 +344,7 @@ add_action('manage_edit-grcs_slide_columns', 'gracias_slide_admin_columns');
 add_action('manage_edit-grcs_nav_boxes_columns', 'gracias_nav_boxes_admin_columns');
 add_action('manage_edit-grcs_staff_columns', 'gracias_staff_admin_columns');
 add_action('manage_edit-grcs_board_member_columns', 'gracias_board_member_admin_columns');
+add_action('manage_edit-grcs_location_columns', 'gracias_location_admin_columns');
 // manage_posts_custom_column might not be the "correct" hook for custom types? (see WP code)
 add_action('manage_posts_custom_column', 'gracias_display_custom_columns', 10, 2);
 
