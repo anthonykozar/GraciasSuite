@@ -162,6 +162,9 @@ function gracias_disable_plugin_features()
 
 add_action('after_setup_theme', 'gracias_disable_plugin_features');
 
+// disable Types "Front-end Display" boxes on editing screens 
+add_filter('types_information_table', '__return_false');
+
 
 /* ADMIN CUSTOMIZATIONS */
 
