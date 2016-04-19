@@ -61,6 +61,11 @@
 				 */
 				$display_mode = (int) get_post_meta(get_the_ID(), 'wpcf-display-mode', true);
 				// if ($display_mode == 0)	$display_mode = 7;	// show all by default
+				if ($display_mode >= 4) {
+					$display_mode -= 4;
+					$link_names = true;
+				}
+				else $link_names = false;
 				
 				$board_slug = get_post_meta(get_the_ID(), 'wpcf-board', true);
 				$tax_parms = array(
@@ -79,7 +84,7 @@
 				<?php while( $items->have_posts() ) : $items->the_post(); ?>
 					<li class="bm-entry">
 						<span class="bm-title">
-							<?php if ($display_mode >= 4) : $display_mode -= 4; ?>
+							<?php if ($link_names) : ?>
 								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 							<?php else :
 								the_title();
