@@ -462,16 +462,29 @@ function gracias_staff_email() {
 // Displays a person's office locations on staff pages.
 function gracias_staff_locations() {
 	$staff_locations = types_child_posts('grcs_staff_location');
-	/* if (!usort($staff_locations, 'gracias_??')) {
-		echo '<p>Warning: usort($staff_locations) failed.</p>';
-	} */
-	// var_dump($staff_locations);
-
-	$terms = get_the_terms(get_the_ID(), 'grcs_locations');
-	if ($terms && !is_wp_error($terms)) {
-		echo '<p class="staff-locations"><b>Works at: </b>';
-		the_terms(get_the_ID(), 'grcs_locations');
-		echo "</p>\n";
+	// formatted_dump($staff_locations);
+	if (empty($staff_locations)) return;
+	
+	// get the post ids of the Locations which are the parents of each Staff Location
+	$parent_ids = array();
+	foreach ($staff_locations as $child) {
+		$parent_id = get_post_meta($child->ID, '_wpcf_belongs_grcs_location_id', true);
+		if ($parent_id) $parent_ids[] = $parent_id;
+	}
+	
+	// get the Location posts
+	$args = array('include' => join(',', $parent_ids), 'orderby' => 'title', 'order' => 'ASC',
+				  'post_type' => 'grcs_location', 'post_status' => 'publish');
+	$locations = get_posts($args);
+	if (!empty($locations)) {
+		// construct <a> links for each location
+		$links = array();
+		foreach ($locations as $loc) {
+			$links[] = '<a href="' . get_permalink($loc->ID) . '">' . $loc->post_title . '</a>';
+		}
+		// output the links in a comma-separated list
+		$output = join(', ', $links);
+		echo '<p class="staff-locations"><b>Works at: </b>' . $output . "</p>\n";
 	}
 }
 
