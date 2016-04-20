@@ -317,6 +317,21 @@ function gracias_location_admin_columns($cols)
 	return $cols;
 }
 
+// You can enable Staff Locations in the admin menu for debugging
+function gracias_staff_location_admin_columns($cols)
+{
+	// specify the columns for Staff Locations post type.
+	$cols = array(
+		'cb'				=>	'<input type="checkbox" />',
+		'title'				=>	'Name',
+		'gracias-staff-parent'		=>	'Staff member',
+		'gracias-loc-parent'		=>	'Location',
+		'date'				=>	'Date',
+	);
+	
+	return $cols;
+}
+
 function gracias_display_custom_columns($column_id, $post_id)
 {
 	// handle displaying columns for all of our post types.
@@ -334,6 +349,22 @@ function gracias_display_custom_columns($column_id, $post_id)
 			else echo "No link set";
 			break;
 		
+		case 'gracias-staff-parent':
+			$parent_id = get_post_meta($post_id, '_wpcf_belongs_grcs_staff_id', true);
+			if ($parent_id) {
+				echo '<a href="' . get_edit_post_link($parent_id) . '">' . get_the_title($parent_id) . '</a>';
+			}
+			else echo "No staff member set";
+			break;
+		
+		case 'gracias-loc-parent':
+			$parent_id = get_post_meta($post_id, '_wpcf_belongs_grcs_location_id', true);
+			if ($parent_id) {
+				echo '<a href="' . get_edit_post_link($parent_id) . '">' . get_the_title($parent_id) . '</a>';
+			}
+			else echo "No location set";
+			break;
+		
 		case 'gracias-order':
 			echo get_post_field('menu_order', $post_id, 'display');
 			break;
@@ -348,6 +379,7 @@ add_action('manage_edit-grcs_nav_boxes_columns', 'gracias_nav_boxes_admin_column
 add_action('manage_edit-grcs_staff_columns', 'gracias_staff_admin_columns');
 add_action('manage_edit-grcs_board_member_columns', 'gracias_board_member_admin_columns');
 add_action('manage_edit-grcs_location_columns', 'gracias_location_admin_columns');
+add_action('manage_edit-grcs_staff_location_columns', 'gracias_staff_location_admin_columns');
 // manage_posts_custom_column might not be the "correct" hook for custom types? (see WP code)
 add_action('manage_posts_custom_column', 'gracias_display_custom_columns', 10, 2);
 
