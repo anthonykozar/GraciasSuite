@@ -493,19 +493,10 @@ function gracias_staff_email() {
 
 // Displays a person's office locations on staff pages.
 function gracias_staff_locations() {
-	$staff_locations = types_child_posts('grcs_staff_location');
-	// formatted_dump($staff_locations);
-	if (empty($staff_locations)) return;
-	
-	// get the post ids of the Locations which are the parents of each Staff Location
-	$parent_ids = array();
-	foreach ($staff_locations as $child) {
-		$parent_id = get_post_meta($child->ID, '_wpcf_belongs_grcs_location_id', true);
-		if ($parent_id) $parent_ids[] = $parent_id;
-	}
-	
 	// get the Location posts
-	$args = array('include' => join(',', $parent_ids), 'orderby' => 'title', 'order' => 'ASC',
+	$post_ids = gracias_get_parents_of_child_posts('grcs_staff_location', 'grcs_location');
+	if (empty($post_ids)) return;
+	$args = array('include' => join(',', $post_ids), 'orderby' => 'title', 'order' => 'ASC',
 				  'post_type' => 'grcs_location', 'post_status' => 'publish');
 	$locations = get_posts($args);
 	if (!empty($locations)) {
@@ -562,6 +553,26 @@ function gracias_board_memberships($label = '') {
 		if (!empty($label)) echo '<b>' . $label . '</b> ';
 		the_terms(get_the_ID(), 'grcs_board');
 		echo "</p>\n";
+	}
+}
+
+// Displays a list on location pages of staff members associated with that location.
+function gracias_location_staff_roster() {
+	// get the Location posts
+	$post_ids = gracias_get_parents_of_child_posts('grcs_staff_location', 'grcs_staff');
+	if (empty($post_ids)) return;
+	$args = array('include' => join(',', $post_ids), 'orderby' => 'menu_order', 'order' => 'ASC',
+				  'post_type' => 'grcs_staff', 'post_status' => 'publish');
+	$staff = get_posts($args);
+	if (!empty($staff)) {
+		// construct <a> links for each staff member
+		$links = array();
+		foreach ($staff as $staffmem) {
+			$links[] = '<a href="' . get_permalink($staffmem->ID) . '">' . $staffmem->post_title . '</a>';
+		}
+		// output the links in a comma-separated list
+		$output = join(', ', $links);
+		echo '<p class="staff-locations"><b>Staff members at this location: </b>' . $output . "</p>\n";
 	}
 }
 
@@ -1036,6 +1047,30 @@ function gracias_is_multipost_page()
 	if (!is_singular())	return true;
 	else return gracias_is_multipost_page_template();
 }
+
+/*	Finds all posts that are parents of child posts of the current post.
+	Only finds parents with post type $parent_type of children with the
+	post type $child_type.  Uses the Toolset Types plugin API.
+
+	Returns an array of the IDs of the posts or an empty array if none.
+ */
+function gracias_get_parents_of_child_posts($child_type, $parent_type)
+{
+	$children = types_child_posts($child_type);
+	// formatted_dump($children);
+	if (empty($children)) return array();
+	
+	// get the post ids of the $parent_type posts which are the parents of each child post
+	$parent_ids = array();
+	$meta_key = '_wpcf_belongs_' . $parent_type . '_id';
+	foreach ($children as $child) {
+		$parent_id = get_post_meta($child->ID, $meta_key, true);
+		if ($parent_id) $parent_ids[] = $parent_id;
+	}
+	
+	return $parent_ids;
+}
+
 
 
 /* OVERRIDES FOR PINBOARD TEMPLATE TAGS */

@@ -20,6 +20,7 @@
 							<?php gracias_text_field('', 'wpcf-location-hours', '<h2>Hours</h2><p>', '</p>', true); ?>
 
 							<?php the_content(); ?>
+							<?php gracias_location_staff_roster(); ?>
 							<div class="clear"></div>
 						</div><!-- .entry-content -->
 						<footer class="entry-utility">
