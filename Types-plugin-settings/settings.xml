@@ -2262,7 +2262,7 @@ URLs for other sites must include http:// and the domain name.</description>
         </type>
         <type>
             <_builtin></_builtin>
-            <_toolset_edit_last>1459237427</_toolset_edit_last>
+            <_toolset_edit_last>1461123025</_toolset_edit_last>
             <_wpcf_author_id>1</_wpcf_author_id>
             <wpcf-post-type>grcs_staff_location</wpcf-post-type>
             <icon>share</icon>
@@ -2294,6 +2294,7 @@ URLs for other sites must include http:// and the domain name.</description>
             </rewrite>
             <has_archive_slug></has_archive_slug>
             <show_in_menu_page></show_in_menu_page>
+            <publicly_queryable>1</publicly_queryable>
             <exclude_from_search>1</exclude_from_search>
             <can_export>1</can_export>
             <query_var></query_var>
@@ -2308,8 +2309,8 @@ URLs for other sites must include http:// and the domain name.</description>
             <id>grcs_staff_location</id>
             <__types_id>grcs_staff_location</__types_id>
             <__types_title>Staff Locations</__types_title>
-            <hash>08b39a3448d7683fccbf5cad5a228bbe</hash>
-            <checksum>08b39a3448d7683fccbf5cad5a228bbe</checksum>
+            <hash>5bf155509af7990854a694fd0af9a72a</hash>
+            <checksum>5bf155509af7990854a694fd0af9a72a</checksum>
         </type>
     </types>
     <post_relationships>
@@ -2525,7 +2526,7 @@ URLs for other sites must include http:// and the domain name.</description>
             <id>grcs_nav_box_group</id>
             <__types_id>grcs_nav_box_group</__types_id>
             <__types_title>Landing Box Groups</__types_title>
-            <checksum>5e31acd7be2a13b24977a7efbb9c1773</checksum>
+            <checksum>9a1f09a1be7d9afe54a185363e841262</checksum>
         </taxonomy>
         <taxonomy>
             <wpcf-tax>wrlc_locations</wpcf-tax>
