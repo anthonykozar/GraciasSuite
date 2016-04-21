@@ -564,16 +564,21 @@ function gracias_location_staff_roster() {
 	$args = array('include' => join(',', $post_ids), 'orderby' => 'menu_order', 'order' => 'ASC',
 				  'post_type' => 'grcs_staff', 'post_status' => 'publish');
 	$staff = get_posts($args);
-	if (!empty($staff)) {
-		// construct <a> links for each staff member
-		$links = array();
-		foreach ($staff as $staffmem) {
-			$links[] = '<a href="' . get_permalink($staffmem->ID) . '">' . $staffmem->post_title . '</a>';
-		}
-		// output the links in a comma-separated list
-		$output = join(', ', $links);
-		echo '<p class="staff-locations"><b>Staff members at this location: </b>' . $output . "</p>\n";
-	}
+	// show the staff members in a list with their positions
+	if (!empty($staff)) : ?>
+		<h2>Staff members</h2>
+		<ul class='staff-roster'>
+		<?php foreach ($staff as $staffmem) {
+			echo "\t\t\t";
+			echo '<li><a href="' . get_permalink($staffmem->ID) . '">' . $staffmem->post_title . '</a>';
+			$position = get_post_meta($staffmem->ID, 'wpcf-position', true);
+			if ($position) {
+				echo ', <span class="staff-position">' . $position . "</span>\n";
+			}
+			echo "</li>\n";
+		} ?>
+		</ul>
+	<?php endif;
 }
 
 // Displays the property type(s) on property listing pages and entries.
