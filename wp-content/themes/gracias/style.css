@@ -133,6 +133,15 @@ p.board-memberships {
     font-size: 16px;
 }
 
+.staff-roster {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.staff-roster span.staff-position {
+    font-size: 13px;
+}
+
 .entry-content h2 {
 	font-weight: bold;
 }
