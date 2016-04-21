@@ -88,11 +88,6 @@ p.staff-edit-link {
 	margin-left: 1em;
 }
 
-.staff-email,
-.staff-locations {
-	margin-bottom: 5px;
-}
-
 .edit-link {
     padding-left: 24px;
 }
@@ -108,10 +103,12 @@ h2.subtitle {
 	}
 }
 
+.grcs_staff header,
 .grcs_board_member header {
     margin-bottom: 24px;
 }
 
+.grcs_staff header p,
 .grcs_board_member header p {
     margin-bottom: 4px;
 }
