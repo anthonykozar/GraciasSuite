@@ -21,6 +21,7 @@
 
 							<?php the_content(); ?>
 							<?php gracias_location_staff_roster(); ?>
+							<?php gracias_location_embed_map(); ?>
 							<div class="clear"></div>
 						</div><!-- .entry-content -->
 						<footer class="entry-utility">

@@ -581,6 +581,23 @@ function gracias_location_staff_roster() {
 	<?php endif;
 }
 
+function gracias_location_embed_map() {
+	$address = get_post_meta(get_the_ID(), 'wpcf-location-address', true);
+	if ($address) {
+		$address = urlencode(str_replace("\n", ' ', $address));
+		// FIXME: get the API key from a WP option!
+		$api_key = 'AIzaSyBq706wsjBbGPtldQyj9DRGvblbhV9ZOMQ';
+		$map_url = "https://www.google.com/maps/embed/v1/place?key={$api_key}&q={$address}";
+		?>
+		<h2>Map</h2>
+		<div class="location-embedded-map">
+			<iframe width="95%" height="450" frameborder="0" style="border:0" 
+			  src="<?php echo esc_attr($map_url); ?>" allowfullscreen></iframe>
+		</div>
+		<?php
+	}
+}
+
 // Displays the property type(s) on property listing pages and entries.
 function gracias_property_types($html_tag = 'p', $classes = 'entry-property-type') {
 	global $template;	// the complete path of the main template file selected by WP
