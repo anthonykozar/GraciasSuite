@@ -56,7 +56,7 @@ function gracias_add_custom_types_to_queries($query)
 		// $curtypes = $query->get('post_type');
 		if ($query->is_tag || $query->is_search) {
 			$post_types = array('post', 'page', 'tribe_events', 'simple_link', 'job_listing',
-								'grcs_location', 'grcs_landbank', 'grcs_proprty_listing', 'grcs_publication', 
+								'grcs_location', 'grcs_publication', 
 								'grcs_staff', 'grcs_board_member', 'glossary');
 			// override the original list of post types
 			$query->set('post_type', $post_types);
@@ -81,7 +81,6 @@ function gracias_filter_category_links($url, $term, $taxonomy)
 		case 'grcs_board':
 		case 'grcs_team':
 		case 'grcs_pub_type':
-		case 'grcs_property_type':
 			$descr = trim(strip_tags($term->description));	// remove <p></p> on admin screens
 			if (!empty($descr)) {
 				// if the term's description begins with HOME_PREFIX, we expect the
@@ -182,7 +181,8 @@ add_action('admin_menu', 'gracias_register_admin_menu_items');
 // Thanks to Josh Leuze's Meteor Slides plugin for illustrating how to do this!
 function gracias_slide_imagebox_callback($post, $metabox)
 {
-     echo '<p>The image size should be 1140x342 pixels.</p>';
+     echo '<p>The image width should be exactly 1140 pixels. The heights of all' .
+     	  ' slide images should be the same (about 342 pixels is good).</p>';
      // call built-in function for WP featured image box
      post_thumbnail_meta_box($post, $metabox);
 }
@@ -197,31 +197,13 @@ function gracias_customize_admin_editors()
 	// remove Types "marketing" box
 	remove_meta_box('wpcf-marketing', 'grcs_staff', 'side');
 	remove_meta_box('wpcf-marketing', 'grcs_board_member', 'side');
-	remove_meta_box('wpcf-marketing', 'grcs_landbank', 'side');
-	remove_meta_box('wpcf-marketing', 'grcs_landbank_member', 'side');
+	remove_meta_box('wpcf-marketing', 'grcs_location', 'side');
 	remove_meta_box('wpcf-marketing', 'grcs_nav_boxes', 'side');
 	remove_meta_box('wpcf-marketing', 'grcs_publication', 'side');
-	remove_meta_box('wpcf-marketing', 'grcs_proprty_listing', 'side');
 	remove_meta_box('wpcf-marketing', 'grcs_slide', 'side');
 }
 
 add_action('do_meta_boxes', 'gracias_customize_admin_editors');
-
-function gracias_label_property_listing_editor()
-{
-	// Check that we are on the "Add New" or "Edit Property Listing" page:
-	//     /wp-admin/post-new.php?post_type=grcs_proprty_listing
-	//     /wp-admin/post.php?post=###&action=edit
-	$screen = get_current_screen();
-	if ($screen->base == 'post' && $screen->post_type == 'grcs_proprty_listing') {
-		// Add a title and help text just before the editor box for Property Listings post type.
-		echo '<h3 style="margin-top: 24px; padding: 0px;">Property Description</h3>' . "\n";
-		echo '<p style="margin-bottom: 0px;"><i>Enter descriptive text for the property here, ' .
-			"but use the appropriate fields below for address, contact, etc.</i></p>\n";
-	}
-}
-
-add_action('edit_form_after_title', 'gracias_label_property_listing_editor');
 
 // Set the slug for Landing Boxes to "nav-boxes-ID"
 // instead of using the post name to avoid potential conflicts with Pages
@@ -277,7 +259,6 @@ function gracias_staff_admin_columns($cols)
 		'title'				=>	'Name',
 		'author'			=>	'Author',
 		'tags'				=>	'Tags',
-		'taxonomy-grcs_locations'	=>	"Office Locations",
 		'taxonomy-grcs_team'		=>	"Teams",
 		'gracias-order'		=>	'Order',
 		'date'				=>	'Date',
@@ -598,21 +579,6 @@ function gracias_location_embed_map() {
 	}
 }
 
-// Displays the property type(s) on property listing pages and entries.
-function gracias_property_types($html_tag = 'p', $classes = 'entry-property-type') {
-	global $template;	// the complete path of the main template file selected by WP
-
-	// don't display type for entries on property type archive or "home" pages
-	if (basename($template) != 'template-property-type-home.php' && !is_tax('grcs_property_type')) {
-		$terms = get_the_terms(get_the_ID(), 'grcs_property_type');
-		if ($terms && !is_wp_error($terms)) {
-			echo '<' . $html_tag . ' class="'. $classes . '">';
-			the_terms(get_the_ID(), 'grcs_property_type');
-			echo '</' . $html_tag . ">\n";
-		}
-	}
-}
-
 // Displays an event's date(s) on search result entries.
 function gracias_tribe_event_date($event = null) {
 	if (tribe_event_is_multiday()) {
@@ -759,39 +725,6 @@ function gracias_multiple_url_field($label = 'Website:', $field_id = 'wpcf-link-
 			}
 		}
 		echo $after;
-	}
-}
-
-// comparison function for land bank board members
-function gracias_lbbm_compare($member1, $member2) {
-	if ($member1->fields['lb-member-order'] < $member2->fields['lb-member-order'])
-		return -1;
-	else if ($member1->fields['lb-member-order'] == $member2->fields['lb-member-order'])
-		return 0;
-	else return 1;
-}
-
-// Display land bank board members for the current land bank post in individual paragraphs
-function gracias_lbbm_paragraphs() {
-	$board_members = types_child_posts('grcs_landbank_member');
-	if (!usort($board_members, 'gracias_lbbm_compare')) {
-		echo '<p>Warning: usort($board_members) failed.</p>';
-	}
-	//var_dump($board_members);
-	
-	foreach ($board_members as $member) {
-		$name = $member->fields['lb-member-name'];
-		if (!empty($name)) {
-			$title = $member->fields['lb_title'];
-			$email = $member->fields['email'];
-			echo '<p class="lb-board-member"><span class="lb-member-name">' . $name;
-			if (!empty($title))  echo '</span>, <span class="lb-member-title">' . $title;
-			echo '</span><br /><span class="lb-member-email">';
-			if (!empty($email)) {
-				echo gracias_make_mailto_link($email);
-			}
-			echo "</span></p>\n";
-		}
 	}
 }
 
@@ -1032,21 +965,8 @@ $GRACIAS_MULTIPOST_TEMPLATES = array(
 	'template-landing-page.php',
 	'template-locations-home.php',
 	'template-partner-links.php',
-	'template-property-type-home.php',
 	'template-staff-team-home.php',
 	'page-links.php',
-	
-	/* these are original Pinboard templates */
-	/*'template-blog.php',
-	'template-blog-full-width.php',
-	'template-blog-four-col.php',
-	'template-blog-left-sidebar.php',
-	'template-blog-no-sidebars.php',
-	'template-portfolio.php',
-	'template-portfolio-right-sidebar.php',
-	'template-portfolio-four-col.php',
-	'template-portfolio-left-sidebar.php',
-	'template-portfolio-no-sidebars.php',*/
 );
 
 /*	gracias_is_multipost_page_template() tests whether the current page template
@@ -1121,8 +1041,6 @@ function pinboard_current_location() {
 				case 'post_tag':			$archive = 'Tag archive'; break;
 				case 'category':			$archive = 'Article archive'; break;
 				case 'grcs_pub_type':		$archive = 'Publication archive'; break;
-				case 'grcs_property_type':	$archive = 'Property Listing archive'; break;
-				case 'grcs_locations':		$archive = 'Staff archive'; break;
 				case 'grcs_team':			$archive = 'Staff archive'; break;
 				case 'grcs_board':			$archive = 'Board Member archive'; break;
 				case 'grcs_nav_box_group':	$archive = 'What are you doing here?'; break;
@@ -1256,12 +1174,8 @@ function pinboard_entry_meta() {
 			<?php else : ?>
 				<span class="entry-date"><?php the_time(get_option('date_format')); ?></span>
 			<?php endif; ?>
-			<?php if( ! is_attachment() ) :
-				if (get_post_type() == 'grcs_proprty_listing'):
-					gracias_property_types('span', 'entry-category');
-				else: ?>
-					<span class="entry-category"><?php the_category( ', ' ); ?></span>
-				<?php endif; ?>
+			<?php if( ! is_attachment() ) : ?>
+				<span class="entry-category"><?php the_category( ', ' ); ?></span>
 			<?php elseif( wp_attachment_is_image() ) : ?>
 				<span class="attachment-size"><a href="<?php echo wp_get_attachment_url(); ?>" title="<?php _e( 'Link to full-size image', 'pinboard' ); ?>"><?php $metadata = wp_get_attachment_metadata(); echo $metadata['width']; ?> &times; <?php echo $metadata['height']; ?></a> <?php _e( 'pixels', 'pinboard' ); ?></span>
 			<?php endif; ?>
@@ -1475,8 +1389,8 @@ function pinboard_call_scripts() { ?>
 <script>
 /* <![CDATA[ */
 	jQuery(window).load(function() {
-		<?php // FIXME ? template-landing-page.php below refers to the Pinboard template
-		if( ( is_home() && ! is_paged() ) || ( is_front_page() && ! is_home() ) || is_page_template( 'template-landing-page.php' ) ) : ?>
+		<?php
+		if ((is_home() && ! is_paged()) || (is_front_page() && ! is_home())) : ?>
 			jQuery('#slider').flexslider({
 				selector: '.slides > li',
 				video: true,
