@@ -40,13 +40,13 @@
             <post_status>publish</post_status>
             <meta>
                 <_wp_types_group_post_types>,,grcs_nav_boxes,</_wp_types_group_post_types>
-                <_wp_types_group_templates>,,,,,,,,,,,,,,,</_wp_types_group_templates>
+                <_wp_types_group_templates>,,,,,,,,,,,,,,,,,,</_wp_types_group_templates>
                 <_wp_types_group_terms>all</_wp_types_group_terms>
                 <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
                 <_wp_types_group_fields>,nav-box-color,</_wp_types_group_fields>
             </meta>
-            <hash>4af8e8317afc29cacaf7c91550f4b165</hash>
-            <checksum>4af8e8317afc29cacaf7c91550f4b165</checksum>
+            <hash>b007620439f7619cbadbc9595c7491cf</hash>
+            <checksum>b007620439f7619cbadbc9595c7491cf</checksum>
             <__types_id>landing-box-colors</__types_id>
             <__types_title>Landing box colors</__types_title>
         </group>
@@ -85,18 +85,18 @@
             <meta>
                 <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
                 <_wp_types_group_fields>,link-url,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_nav_boxes,</_wp_types_group_post_types>
+                <_wp_types_group_post_types>,,grcs_nav_boxes,</_wp_types_group_post_types>
                 <_wp_types_group_terms>all</_wp_types_group_terms>
                 <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wp_types_group_templates>,,,,,,,,,,,,,,,,,,</_wp_types_group_templates>
                 <_wpcf_conditional_display>
                     <custom_use>0</custom_use>
                     <relation>AND</relation>
                     <custom></custom>
                 </_wpcf_conditional_display>
             </meta>
-            <hash>351f6969cf95c8f5d04231864fb15059</hash>
-            <checksum>351f6969cf95c8f5d04231864fb15059</checksum>
+            <hash>77f4a5d8b0e72619dd7b12592b06a6bc</hash>
+            <checksum>77f4a5d8b0e72619dd7b12592b06a6bc</checksum>
             <__types_id>page-link</__types_id>
             <__types_title>Page Link</__types_title>
         </group>
@@ -151,83 +151,6 @@
             <__types_title>Page/Post Subtitle</__types_title>
         </group>
         <group>
-            <ID>11</ID>
-            <post_content>Use the &quot;Select File&quot; button to upload a new file to the Media Library or to select an attachment that is already in the Media Library. When you do so, the file&#039;s URL will be inserted in the URL field.
-
-Alternatively, you may simply paste into the URL field the address of any document that has been uploaded to the site via some other means (eg. FTP) or the full URL (with http://) of any document on another site.</post_content>
-            <post_title>File Attachments</post_title>
-            <post_excerpt></post_excerpt>
-            <post_type>wp-types-group</post_type>
-            <post_status>publish</post_status>
-            <meta>
-                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
-                <_wp_types_group_fields>,attachment,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_proprty_listing,</_wp_types_group_post_types>
-                <_wp_types_group_terms>all</_wp_types_group_terms>
-                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>all</_wp_types_group_templates>
-                <_wpcf_conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </_wpcf_conditional_display>
-            </meta>
-            <hash>2990640f35bd92194dd8f8fe0d420765</hash>
-            <checksum>2990640f35bd92194dd8f8fe0d420765</checksum>
-            <__types_id>file-attachments</__types_id>
-            <__types_title>File Attachments</__types_title>
-        </group>
-        <group>
-            <ID>12</ID>
-            <post_content>Details for the person to contact</post_content>
-            <post_title>Contact information</post_title>
-            <post_excerpt></post_excerpt>
-            <post_type>wp-types-group</post_type>
-            <post_status>publish</post_status>
-            <meta>
-                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
-                <_wp_types_group_fields>,contact-name,contact-company,contact-address,contact-phone,contact-email,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_proprty_listing,</_wp_types_group_post_types>
-                <_wp_types_group_terms>all</_wp_types_group_terms>
-                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>all</_wp_types_group_templates>
-                <_wpcf_conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </_wpcf_conditional_display>
-            </meta>
-            <hash>a7fb7342bfaab760cdaa222564382035</hash>
-            <checksum>a7fb7342bfaab760cdaa222564382035</checksum>
-            <__types_id>contact-information</__types_id>
-            <__types_title>Contact information</__types_title>
-        </group>
-        <group>
-            <ID>13</ID>
-            <post_content>Put common details here.  Put additional descriptions of the property in the editor box above.</post_content>
-            <post_title>Property Details</post_title>
-            <post_excerpt></post_excerpt>
-            <post_type>wp-types-group</post_type>
-            <post_status>publish</post_status>
-            <meta>
-                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
-                <_wp_types_group_fields>,street-address,city,state,zip-code,county,parcel-number,listing-price,listing-url,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_proprty_listing,</_wp_types_group_post_types>
-                <_wp_types_group_terms>all</_wp_types_group_terms>
-                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>all</_wp_types_group_templates>
-                <_wpcf_conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </_wpcf_conditional_display>
-            </meta>
-            <hash>82bd3ca40d7e8ff28e1d3ca2a7d74bb2</hash>
-            <checksum>82bd3ca40d7e8ff28e1d3ca2a7d74bb2</checksum>
-            <__types_id>property-details</__types_id>
-            <__types_title>Property Details</__types_title>
-        </group>
-        <group>
             <ID>14</ID>
             <post_content>Use the &quot;Select File&quot; button to upload a new file to the Media Library or to select a publication that is already in the Media Library.  When you do so, the file&#039;s URL will be inserted in the URL field.
 
@@ -239,95 +162,20 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <meta>
                 <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
                 <_wp_types_group_fields>,publication-url,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_publication,</_wp_types_group_post_types>
+                <_wp_types_group_post_types>,,grcs_publication,</_wp_types_group_post_types>
                 <_wp_types_group_terms>all</_wp_types_group_terms>
                 <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wp_types_group_templates>,,,,,,,,,,,,,,,,,,</_wp_types_group_templates>
                 <_wpcf_conditional_display>
                     <custom_use>0</custom_use>
                     <relation>AND</relation>
                     <custom></custom>
                 </_wpcf_conditional_display>
             </meta>
-            <hash>8e09d981d6b93e26dd5501caf89e4802</hash>
-            <checksum>8e09d981d6b93e26dd5501caf89e4802</checksum>
+            <hash>529dc3f95dec0940e451e0afe1e4d43b</hash>
+            <checksum>529dc3f95dec0940e451e0afe1e4d43b</checksum>
             <__types_id>publication-file</__types_id>
             <__types_title>Publication File</__types_title>
-        </group>
-        <group>
-            <ID>15</ID>
-            <post_content></post_content>
-            <post_title>Land Bank data</post_title>
-            <post_excerpt></post_excerpt>
-            <post_type>wp-types-group</post_type>
-            <post_status>publish</post_status>
-            <meta>
-                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
-                <_wp_types_group_fields>,lb-incorporation-date,lb-dtac-funding,lb-last-updated,lb-notes,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_landbank,</_wp_types_group_post_types>
-                <_wp_types_group_terms>all</_wp_types_group_terms>
-                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>all</_wp_types_group_templates>
-                <_wpcf_conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </_wpcf_conditional_display>
-            </meta>
-            <hash>89f89a1341e9822052857e4a05882058</hash>
-            <checksum>89f89a1341e9822052857e4a05882058</checksum>
-            <__types_id>land-bank-data</__types_id>
-            <__types_title>Land Bank data</__types_title>
-        </group>
-        <group>
-            <ID>16</ID>
-            <post_content>Primary contact info for the land bank.</post_content>
-            <post_title>Land Bank Contact</post_title>
-            <post_excerpt></post_excerpt>
-            <post_type>wp-types-group</post_type>
-            <post_status>publish</post_status>
-            <meta>
-                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
-                <_wp_types_group_post_types>,grcs_landbank,</_wp_types_group_post_types>
-                <_wp_types_group_terms>all</_wp_types_group_terms>
-                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>all</_wp_types_group_templates>
-                <_wpcf_conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </_wpcf_conditional_display>
-                <_wp_types_group_fields>,lb-contact-name,lb-contact-title,lb-address,lb-phone,lb-email,lb-website,</_wp_types_group_fields>
-            </meta>
-            <hash>9aca4b9c13b45e6079a4fc129a168472</hash>
-            <checksum>9aca4b9c13b45e6079a4fc129a168472</checksum>
-            <__types_id>land-bank-contact</__types_id>
-            <__types_title>Land Bank Contact</__types_title>
-        </group>
-        <group>
-            <ID>17</ID>
-            <post_content></post_content>
-            <post_title>Land Bank Board Member Info</post_title>
-            <post_excerpt></post_excerpt>
-            <post_type>wp-types-group</post_type>
-            <post_status>publish</post_status>
-            <meta>
-                <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
-                <_wp_types_group_fields>,lb-member-name,lb_title,email,lb-member-order,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_landbank_member,</_wp_types_group_post_types>
-                <_wp_types_group_terms>all</_wp_types_group_terms>
-                <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>all</_wp_types_group_templates>
-                <_wpcf_conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </_wpcf_conditional_display>
-            </meta>
-            <hash>1ad70e47fbd92437b902edc4d56db0a7</hash>
-            <checksum>1ad70e47fbd92437b902edc4d56db0a7</checksum>
-            <__types_id>land-bank-board-member-info</__types_id>
-            <__types_title>Land Bank Board Member Info</__types_title>
         </group>
         <group>
             <ID>18</ID>
@@ -439,18 +287,18 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <meta>
                 <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
                 <_wp_types_group_fields>,link-url,</_wp_types_group_fields>
-                <_wp_types_group_post_types>,grcs_slide,</_wp_types_group_post_types>
+                <_wp_types_group_post_types>,,grcs_slide,</_wp_types_group_post_types>
                 <_wp_types_group_terms>all</_wp_types_group_terms>
                 <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>all</_wp_types_group_templates>
+                <_wp_types_group_templates>,,,,,,,,,,,,,,,,,,</_wp_types_group_templates>
                 <_wpcf_conditional_display>
                     <custom_use>0</custom_use>
                     <relation>AND</relation>
                     <custom></custom>
                 </_wpcf_conditional_display>
             </meta>
-            <hash>5e46452fa071822e4e118d853f7a0e79</hash>
-            <checksum>5e46452fa071822e4e118d853f7a0e79</checksum>
+            <hash>04ad49ee0d8edd1bb953791dae37457c</hash>
+            <checksum>04ad49ee0d8edd1bb953791dae37457c</checksum>
             <__types_id>slide-link</__types_id>
             <__types_title>Slide Link</__types_title>
         </group>
@@ -1006,8 +854,14 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <checksum>066fdcd4f9fe7044a28f4156ef43f5e1</checksum>
         </field>
         <field>
-            <description>Note: URLs for this site may include or exclude the domain http://www.wrlandconservancy.org but must begin with a slash if the domain is excluded (eg. /pdf/Landline-Winter2014.pdf).  The domain-less style will continue to work without needing to be updated in the event that the domain name of the site changes.</description>
+            <id>publication-url</id>
+            <slug>publication-url</slug>
+            <type>file</type>
+            <name>Publication URL</name>
+            <description>Note: URLs for this site may include or exclude the domain http://www.example.org but must begin with a slash if the domain is excluded (eg. /pdf/Newletter-April-2016.pdf).  The domain-less style will continue to work without needing to be updated in the event that the domain name of the site changes.</description>
             <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
                 <repetitive>0</repetitive>
                 <validate>
                     <required>
@@ -1016,23 +870,21 @@ Alternatively, you may simply paste into the URL field the address of any docume
                         <message>This field is required</message>
                     </required>
                 </validate>
+                <custom_use></custom_use>
                 <conditional_display>
                     <custom_use>0</custom_use>
                     <relation>AND</relation>
                     <custom></custom>
                 </conditional_display>
+                <submit-key>publication-url</submit-key>
                 <disabled_by_type>0</disabled_by_type>
             </data>
-            <id>publication-url</id>
-            <name>Publication URL</name>
-            <type>file</type>
-            <slug>publication-url</slug>
             <meta_key>wpcf-publication-url</meta_key>
             <meta_type>postmeta</meta_type>
             <__types_id>publication-url</__types_id>
             <__types_title>Publication URL</__types_title>
-            <hash>0405aaf623abc2f76a3ba38b469510c6</hash>
-            <checksum>0405aaf623abc2f76a3ba38b469510c6</checksum>
+            <hash>d409db4a61be3c18a3fe4e81990ec584</hash>
+            <checksum>d409db4a61be3c18a3fe4e81990ec584</checksum>
         </field>
         <field>
             <description></description>
@@ -1367,23 +1219,27 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <checksum>72b1eebd7734d77f53a866743d9b66d0</checksum>
         </field>
         <field>
-            <description>Note: URLs for this site may include or exclude the domain http://www.wrlandconservancy.org but must begin with a slash if the domain is excluded (eg. /who-we-are/). The domain-less style will continue to work without needing to be updated in the event that the domain name of the site changes.
+            <id>link-url</id>
+            <slug>link-url</slug>
+            <type>url</type>
+            <name>Link URL</name>
+            <description>Note: URLs for this site may include or exclude the domain http://www.example.org but must begin with a slash if the domain is excluded (eg. /about-us/). The domain-less style will continue to work without needing to be updated in the event that the domain name of the site changes.
 
 URLs for other sites must include http:// and the domain name.</description>
             <data>
+                <placeholder></placeholder>
+                <user_default_value></user_default_value>
                 <repetitive>0</repetitive>
+                <custom_use></custom_use>
+                <submit-key>link-url</submit-key>
                 <disabled_by_type>0</disabled_by_type>
             </data>
-            <id>link-url</id>
-            <name>Link URL</name>
-            <type>url</type>
-            <slug>link-url</slug>
             <meta_key>wpcf-link-url</meta_key>
             <meta_type>postmeta</meta_type>
             <__types_id>link-url</__types_id>
             <__types_title>Link URL</__types_title>
-            <hash>82d2fa0000448b444a9cf8f47fac4fb0</hash>
-            <checksum>82d2fa0000448b444a9cf8f47fac4fb0</checksum>
+            <hash>9d42dcf159230e6ed7b44d542d3a45cc</hash>
+            <checksum>9d42dcf159230e6ed7b44d542d3a45cc</checksum>
         </field>
         <field>
             <description></description>
@@ -1593,19 +1449,20 @@ URLs for other sites must include http:// and the domain name.</description>
             <slug>nav-box-color</slug>
             <type>colorpicker</type>
             <name>Box color</name>
-            <description>Depending upon the selected template, this color will be used either as the background color for the text box or as the shadow color for the entire landing box.  Leave this field blank to use the default color.</description>
+            <description>This color will be used as the background color for the text box.  Leave this field blank to use the default color.</description>
             <data>
                 <placeholder></placeholder>
                 <repetitive>0</repetitive>
-                <submit-key>colorpicker-1207310966</submit-key>
+                <custom_use></custom_use>
+                <submit-key>nav-box-color</submit-key>
                 <disabled_by_type>0</disabled_by_type>
             </data>
             <meta_key>wpcf-nav-box-color</meta_key>
             <meta_type>postmeta</meta_type>
             <__types_id>nav-box-color</__types_id>
             <__types_title>Box color</__types_title>
-            <hash>b27e33ff69099b6cbbb9c41e7ee4e06f</hash>
-            <checksum>b27e33ff69099b6cbbb9c41e7ee4e06f</checksum>
+            <hash>68679ff7291ebde8a079f65d8f4d5fc0</hash>
+            <checksum>68679ff7291ebde8a079f65d8f4d5fc0</checksum>
         </field>
         <field>
             <id>location-address</id>
@@ -1945,73 +1802,6 @@ URLs for other sites must include http:// and the domain name.</description>
             <checksum>dbd58f1a3385701422a7f0527ddc3e4a</checksum>
         </type>
         <type>
-            <__types_id>grcs_proprty_listing</__types_id>
-            <__types_title>Property Listings</__types_title>
-            <_toolset_edit_last>1458507795</_toolset_edit_last>
-            <wpcf-post-type>grcs_proprty_listing</wpcf-post-type>
-            <icon>location</icon>
-            <labels>
-                <name>Property Listings</name>
-                <singular_name>Property Listing</singular_name>
-                <add_new>Add New</add_new>
-                <add_new_item>Add New %s</add_new_item>
-                <edit_item>Edit %s</edit_item>
-                <new_item>New %s</new_item>
-                <view_item>View %s</view_item>
-                <search_items>Search %s</search_items>
-                <not_found>No %s found</not_found>
-                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
-                <parent_item_colon>Parent text</parent_item_colon>
-                <all_items>All Listings</all_items>
-                <enter_title_here>Enter title here</enter_title_here>
-            </labels>
-            <slug>grcs_proprty_listing</slug>
-            <description>Conservation buyer properties</description>
-            <public>public</public>
-            <menu_position></menu_position>
-            <dashboard_glance>1</dashboard_glance>
-            <taxonomies>
-                <post_tag>1</post_tag>
-            </taxonomies>
-            <custom-field-group>
-                <file-attachments>11</file-attachments>
-                <contact-information>12</contact-information>
-                <property-details>13</property-details>
-            </custom-field-group>
-            <supports>
-                <title>1</title>
-                <editor>1</editor>
-                <revisions>1</revisions>
-                <author>1</author>
-                <excerpt>1</excerpt>
-                <thumbnail>1</thumbnail>
-            </supports>
-            <rewrite>
-                <enabled>1</enabled>
-                <custom>custom</custom>
-                <slug>connect-with-us/buy-properties/listings</slug>
-                <feeds>1</feeds>
-                <pages>1</pages>
-            </rewrite>
-            <has_archive>1</has_archive>
-            <has_archive_slug></has_archive_slug>
-            <show_in_menu>1</show_in_menu>
-            <show_in_menu_page></show_in_menu_page>
-            <show_ui>1</show_ui>
-            <publicly_queryable>1</publicly_queryable>
-            <can_export>1</can_export>
-            <query_var_enabled>1</query_var_enabled>
-            <query_var></query_var>
-            <permalink_epmask>EP_PERMALINK</permalink_epmask>
-            <rest_base></rest_base>
-            <_builtin></_builtin>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <disabled>1</disabled>
-            <id>grcs_proprty_listing</id>
-            <hash>c21b366a541e07d12668353dd4be0daf</hash>
-            <checksum>c21b366a541e07d12668353dd4be0daf</checksum>
-        </type>
-        <type>
             <_toolset_edit_last>1458508683</_toolset_edit_last>
             <__types_id>grcs_nav_boxes</__types_id>
             <__types_title>Landing Boxes</__types_title>
@@ -2072,124 +1862,6 @@ URLs for other sites must include http:// and the domain name.</description>
             <id>grcs_nav_boxes</id>
             <hash>bdc217b107a6bc321a89458179ee42ef</hash>
             <checksum>bdc217b107a6bc321a89458179ee42ef</checksum>
-        </type>
-        <type>
-            <__types_id>grcs_landbank_member</__types_id>
-            <__types_title>Land Bank Board Members</__types_title>
-            <_toolset_edit_last>1458508264</_toolset_edit_last>
-            <wpcf-post-type>grcs_landbank_member</wpcf-post-type>
-            <icon>groups</icon>
-            <labels>
-                <name>Land Bank Board Members</name>
-                <singular_name>Land Bank Board Member</singular_name>
-                <add_new>Add New</add_new>
-                <add_new_item>Add New %s</add_new_item>
-                <edit_item>Edit %s</edit_item>
-                <new_item>New %s</new_item>
-                <view_item>View %s</view_item>
-                <search_items>Search %s</search_items>
-                <not_found>No %s found</not_found>
-                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
-                <parent_item_colon>Parent text</parent_item_colon>
-                <all_items>All items</all_items>
-                <enter_title_here>Enter title here</enter_title_here>
-            </labels>
-            <slug>grcs_landbank_member</slug>
-            <description>Land banks can have their own list of board members.</description>
-            <public>public</public>
-            <menu_position></menu_position>
-            <custom-field-group>
-                <land-bank-board-member-info>17</land-bank-board-member-info>
-            </custom-field-group>
-            <supports>
-                <title>1</title>
-                <author>1</author>
-            </supports>
-            <rewrite>
-                <enabled>1</enabled>
-                <custom>normal</custom>
-                <slug></slug>
-                <pages>1</pages>
-            </rewrite>
-            <has_archive_slug></has_archive_slug>
-            <show_in_menu_page></show_in_menu_page>
-            <show_ui>1</show_ui>
-            <publicly_queryable>1</publicly_queryable>
-            <exclude_from_search>1</exclude_from_search>
-            <can_export>1</can_export>
-            <query_var_enabled>1</query_var_enabled>
-            <query_var></query_var>
-            <permalink_epmask>EP_PERMALINK</permalink_epmask>
-            <rest_base></rest_base>
-            <_builtin></_builtin>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <disabled>1</disabled>
-            <id>grcs_landbank_member</id>
-            <hash>dfb74a2430811acbcdc51ccd2b155fda</hash>
-            <checksum>dfb74a2430811acbcdc51ccd2b155fda</checksum>
-        </type>
-        <type>
-            <__types_id>grcs_landbank</__types_id>
-            <__types_title>Land Banks</__types_title>
-            <_toolset_edit_last>1458508264</_toolset_edit_last>
-            <wpcf-post-type>grcs_landbank</wpcf-post-type>
-            <icon>id-alt</icon>
-            <labels>
-                <name>Land Banks</name>
-                <singular_name>Land Bank</singular_name>
-                <add_new>Add New</add_new>
-                <add_new_item>Add New %s</add_new_item>
-                <edit_item>Edit %s</edit_item>
-                <new_item>New %s</new_item>
-                <view_item>View %s</view_item>
-                <search_items>Search %s</search_items>
-                <not_found>No %s found</not_found>
-                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
-                <parent_item_colon>Parent text</parent_item_colon>
-                <all_items>All Land Banks</all_items>
-                <enter_title_here>Enter title here</enter_title_here>
-            </labels>
-            <slug>grcs_landbank</slug>
-            <description>For maintaining information about area land banks.</description>
-            <public>public</public>
-            <menu_position></menu_position>
-            <dashboard_glance>1</dashboard_glance>
-            <taxonomies>
-                <post_tag>1</post_tag>
-            </taxonomies>
-            <custom-field-group>
-                <land-bank-data>15</land-bank-data>
-                <land-bank-contact>16</land-bank-contact>
-            </custom-field-group>
-            <supports>
-                <title>1</title>
-                <revisions>1</revisions>
-                <author>1</author>
-                <thumbnail>1</thumbnail>
-            </supports>
-            <rewrite>
-                <enabled>1</enabled>
-                <custom>custom</custom>
-                <slug>county-land-banks/land-banks</slug>
-                <pages>1</pages>
-            </rewrite>
-            <has_archive_slug></has_archive_slug>
-            <show_in_menu>1</show_in_menu>
-            <show_in_menu_page></show_in_menu_page>
-            <show_ui>1</show_ui>
-            <publicly_queryable>1</publicly_queryable>
-            <can_export>1</can_export>
-            <show_in_nav_menus>1</show_in_nav_menus>
-            <query_var_enabled>1</query_var_enabled>
-            <query_var></query_var>
-            <permalink_epmask>EP_PERMALINK</permalink_epmask>
-            <rest_base></rest_base>
-            <_builtin></_builtin>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <disabled>1</disabled>
-            <id>grcs_landbank</id>
-            <hash>0e6de429ee6ca81d03c4578f7d8b681e</hash>
-            <checksum>0e6de429ee6ca81d03c4578f7d8b681e</checksum>
         </type>
         <type>
             <_builtin></_builtin>
@@ -2472,14 +2144,12 @@ URLs for other sites must include http:// and the domain name.</description>
                 <__types_cpt_supports_grcs_board_member>1</__types_cpt_supports_grcs_board_member>
                 <__types_cpt_supports_grcs_staff>1</__types_cpt_supports_grcs_staff>
                 <__types_cpt_supports_grcs_publication>1</__types_cpt_supports_grcs_publication>
-                <__types_cpt_supports_grcs_proprty_listing>1</__types_cpt_supports_grcs_proprty_listing>
-                <__types_cpt_supports_grcs_landbank>1</__types_cpt_supports_grcs_landbank>
                 <__types_cpt_supports_grcs_location>1</__types_cpt_supports_grcs_location>
             </supports>
             <id>post_tag</id>
             <__types_id>post_tag</__types_id>
             <__types_title>Tags</__types_title>
-            <checksum>758632aed701b1fd228b19f0963993c6</checksum>
+            <checksum>7e730643c00276c1a86fd3ece2de1e5b</checksum>
         </taxonomy>
         <taxonomy>
             <wpcf-tax>wrlc_nav_box_group</wpcf-tax>
@@ -2527,99 +2197,6 @@ URLs for other sites must include http:// and the domain name.</description>
             <__types_id>grcs_nav_box_group</__types_id>
             <__types_title>Landing Box Groups</__types_title>
             <checksum>9a1f09a1be7d9afe54a185363e841262</checksum>
-        </taxonomy>
-        <taxonomy>
-            <wpcf-tax>wrlc_locations</wpcf-tax>
-            <icon>admin-post</icon>
-            <labels>
-                <name>Office Locations</name>
-                <singular_name>Office Location</singular_name>
-                <search_items>Search %s</search_items>
-                <popular_items>Popular %s</popular_items>
-                <all_items>All %s</all_items>
-                <parent_item>Parent %s</parent_item>
-                <parent_item_colon>Parent %s:</parent_item_colon>
-                <edit_item>Edit %s</edit_item>
-                <update_item>Update %s</update_item>
-                <add_new_item>Add New %s</add_new_item>
-                <new_item_name>New %s Name</new_item_name>
-                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
-                <add_or_remove_items>Add or remove %s</add_or_remove_items>
-                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
-                <menu_name>%s</menu_name>
-            </labels>
-            <slug>grcs_locations</slug>
-            <description></description>
-            <public>public</public>
-            <hierarchical>hierarchical</hierarchical>
-            <rewrite>
-                <enabled>1</enabled>
-                <slug></slug>
-                <hierarchical>1</hierarchical>
-            </rewrite>
-            <show_ui>1</show_ui>
-            <show_in_nav_menus>1</show_in_nav_menus>
-            <show_admin_column>1</show_admin_column>
-            <query_var_enabled>1</query_var_enabled>
-            <query_var></query_var>
-            <update_count_callback></update_count_callback>
-            <meta_box_cb>
-                <callback></callback>
-            </meta_box_cb>
-            <_toolset_edit_last>1458508807</_toolset_edit_last>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <name></name>
-            <id>grcs_locations</id>
-            <__types_id>grcs_locations</__types_id>
-            <__types_title>Office Locations</__types_title>
-            <checksum>93fa6e5e467490d7bef4b02fc428b2bf</checksum>
-        </taxonomy>
-        <taxonomy>
-            <wpcf-tax>wrlc_property_type</wpcf-tax>
-            <icon>admin-post</icon>
-            <labels>
-                <name>Property Types</name>
-                <singular_name>Property Type</singular_name>
-                <search_items>Search %s</search_items>
-                <popular_items>Popular %s</popular_items>
-                <all_items>All %s</all_items>
-                <parent_item>Parent %s</parent_item>
-                <parent_item_colon>Parent %s:</parent_item_colon>
-                <edit_item>Edit %s</edit_item>
-                <update_item>Update %s</update_item>
-                <add_new_item>Add New %s</add_new_item>
-                <new_item_name>New %s Name</new_item_name>
-                <separate_items_with_commas>Separate %s with commas</separate_items_with_commas>
-                <add_or_remove_items>Add or remove %s</add_or_remove_items>
-                <choose_from_most_used>Choose from the most used %s</choose_from_most_used>
-                <menu_name>%s</menu_name>
-            </labels>
-            <slug>grcs_property_type</slug>
-            <description></description>
-            <public>public</public>
-            <hierarchical>hierarchical</hierarchical>
-            <rewrite>
-                <enabled>1</enabled>
-                <slug>properties-by-type</slug>
-                <hierarchical>1</hierarchical>
-            </rewrite>
-            <show_ui>1</show_ui>
-            <show_in_nav_menus>1</show_in_nav_menus>
-            <show_admin_column>1</show_admin_column>
-            <query_var_enabled>1</query_var_enabled>
-            <query_var></query_var>
-            <update_count_callback></update_count_callback>
-            <meta_box_cb>
-                <callback></callback>
-            </meta_box_cb>
-            <_toolset_edit_last>1458509282</_toolset_edit_last>
-            <_wpcf_author_id>1</_wpcf_author_id>
-            <name></name>
-            <disabled>1</disabled>
-            <id>grcs_property_type</id>
-            <__types_id>grcs_property_type</__types_id>
-            <__types_title>Property Types</__types_title>
-            <checksum>d4ce1c2644cf3c0d02ec214e17893ca0</checksum>
         </taxonomy>
         <taxonomy>
             <wpcf-tax>wrlc_pub_type</wpcf-tax>
