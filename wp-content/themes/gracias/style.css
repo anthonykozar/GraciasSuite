@@ -286,45 +286,6 @@ li.pub-entry .pub-type {
     max-width: 100%;
 }
 
-/* Land Bank formatting */
-@media screen and (min-width: 761px) {
-	.lb-general,
-	.lb-notes,
-	.lb-contact {
-		margin-left: 10px;
-	}
-
-	.lb-board-member {
-		float: left;
-		width: 46%;
-		margin: 5px 10px;
-	}
-	.lb-member-title, 
-	.lb-member-email,
-		.lb-contact-email,
-		.lb-contact-title,
-		.lb-contact-address,
-		.lb-contact-phone,
-		.lb-contact-website {
-		font-size: 13px;
-	}
-}
-
-@media screen and (max-width: 760px) {
-	.lb-member-title,
-	.lb-member-email, 
-		.lb-contact-email,
-		.lb-contact-website {
-		display: block;
-		font-size: 13px;
-	}
-	
-	.lb-member-title {
-		margin-bottom: -20px;
-	}
-	
-}
-
 /* add margins to the contents of our custom shortcode columns */
 .gracias-column > *
 {
@@ -460,24 +421,6 @@ b {
 /* highlight the current item in sidebar menus */
 .widget-area .current-menu-item > a {
 	color: #D54E21;
-}
-
-/* eliminate space between Land Bank Playbook menus */
-@media screen and (min-width: 961px), screen and (max-width: 760px) {
-
-	#sidebar-playbook .column .widget {
-		margin-bottom: 0px;
-		margin-top: 0px;
-	}
-	
-	#sidebar-playbook .column:first-child .widget {
-		 margin-top: 7.5%;
-	}
-	
-	#sidebar-playbook .column:last-child .widget {
-		margin-bottom: 7.5%;
-	}
-
 }
 
 /* swap positions of site credits and copyright */
