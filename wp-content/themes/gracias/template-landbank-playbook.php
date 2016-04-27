@@ -1,7 +1,7 @@
 <?php
-/*  Template Name: Land Bank Playbook
+/*  Template Name: Alternate Sidebar
 
-	Custom page template that displays the Playbook Sidebar instead
+	Custom page template that displays the Alternate Sidebar instead
 	of the default sidebars.
 
 	Part of:  Gracias WordPress theme by Anthony Kozar
@@ -39,6 +39,7 @@
 							<?php wp_link_pages( array( 'before' => '<p class="post-pagination">' . __( 'Pages:', 'pinboard' ), 'after' => '</p>' ) ); ?>
 							<?php the_tags( '<div class="entry-tags">', ' ', '</div>' ); ?>
 							<?php pinboard_social_bookmarks(); ?>
+							<?php gracias_related_content(); ?>
 						</footer><!-- .entry-utility -->
 					</div><!-- .entry -->
 					<?php comments_template(); ?>
@@ -48,7 +49,7 @@
 			<?php endif; ?>
 		</section><!-- #content -->
 		<?php if( ( 'no-sidebars' != pinboard_get_option( 'layout' ) ) && ( 'full-width' != pinboard_get_option( 'layout' ) ) ) : ?>
-			<?php get_sidebar('gracias-playbook'); ?>
+			<?php get_sidebar('gracias-alternate'); ?>
 		<?php endif; ?>
 		<div class="clear"></div>
 	</div><!-- #container -->

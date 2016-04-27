@@ -31,7 +31,7 @@
 							<?php wp_nav_menu(array('menu' => $menu_name)); ?>
 						</aside><!-- .widget -->
 					</div>
-				</div><!-- #sidebar-playbook -->
+				</div><!-- #sidebar-selectable-menu -->
 			<?php endif; ?>
 		<?php endif; ?>
 	<?php get_sidebar( 'top' ); ?>

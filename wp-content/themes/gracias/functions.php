@@ -21,9 +21,9 @@ function  gracias_widgets_init() {
 	
 	register_sidebar(
 		array(
-			'id'   => 'gracias-playbook',
-			'name' => 'Playbook Sidebar',
-			'description' => 'Replaces the main sidebar on pages that use the Land Bank Playbook template.',
+			'id'   => 'gracias-alternate',
+			'name' => 'Alternate Sidebar',
+			'description' => 'Replaces the main sidebar on pages that use the Alternate Sidebar template.',
 			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside><!-- .widget --></div>',
 			'before_title' => '<' . $title_tag . ' class="widget-title">',
