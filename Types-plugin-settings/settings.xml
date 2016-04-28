@@ -88,15 +88,15 @@
                 <_wp_types_group_post_types>,,grcs_nav_boxes,</_wp_types_group_post_types>
                 <_wp_types_group_terms>all</_wp_types_group_terms>
                 <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>,,,,,,,,,,,,,,,,,,</_wp_types_group_templates>
+                <_wp_types_group_templates>,,,,,,,,,,,,,,,,,</_wp_types_group_templates>
                 <_wpcf_conditional_display>
                     <custom_use>0</custom_use>
                     <relation>AND</relation>
                     <custom></custom>
                 </_wpcf_conditional_display>
             </meta>
-            <hash>77f4a5d8b0e72619dd7b12592b06a6bc</hash>
-            <checksum>77f4a5d8b0e72619dd7b12592b06a6bc</checksum>
+            <hash>96cba361529a9ea034ceeb31da29d92c</hash>
+            <checksum>96cba361529a9ea034ceeb31da29d92c</checksum>
             <__types_id>page-link</__types_id>
             <__types_title>Page Link</__types_title>
         </group>
@@ -165,15 +165,15 @@ Alternatively, you may simply paste into the URL field the address of any docume
                 <_wp_types_group_post_types>,,grcs_publication,</_wp_types_group_post_types>
                 <_wp_types_group_terms>all</_wp_types_group_terms>
                 <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>,,,,,,,,,,,,,,,,,,</_wp_types_group_templates>
+                <_wp_types_group_templates>,,,,,,,,,,,,,,,,,</_wp_types_group_templates>
                 <_wpcf_conditional_display>
                     <custom_use>0</custom_use>
                     <relation>AND</relation>
                     <custom></custom>
                 </_wpcf_conditional_display>
             </meta>
-            <hash>529dc3f95dec0940e451e0afe1e4d43b</hash>
-            <checksum>529dc3f95dec0940e451e0afe1e4d43b</checksum>
+            <hash>a798b2f153c41ca1ee567d6419965339</hash>
+            <checksum>a798b2f153c41ca1ee567d6419965339</checksum>
             <__types_id>publication-file</__types_id>
             <__types_title>Publication File</__types_title>
         </group>
@@ -186,19 +186,19 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <post_status>publish</post_status>
             <meta>
                 <_wp_types_group_filters_association>any</_wp_types_group_filters_association>
-                <_wp_types_group_fields>,bm-position,bm-company,bm-company-title,bm-classifications-2,bm-classifications,</_wp_types_group_fields>
+                <_wp_types_group_fields>,bm-position,bm-company,bm-company-title,bm-classifications,</_wp_types_group_fields>
                 <_wp_types_group_post_types>,,grcs_board_member,</_wp_types_group_post_types>
                 <_wp_types_group_terms>all</_wp_types_group_terms>
                 <_wp_types_group_admin_styles></_wp_types_group_admin_styles>
-                <_wp_types_group_templates>,,,,,,,,,,,,,,,</_wp_types_group_templates>
+                <_wp_types_group_templates>,,,,,,,,,,,,,,,,,</_wp_types_group_templates>
                 <_wpcf_conditional_display>
                     <custom_use>0</custom_use>
                     <relation>AND</relation>
                     <custom></custom>
                 </_wpcf_conditional_display>
             </meta>
-            <hash>8f577ffde90bb6414946b7be389c13c0</hash>
-            <checksum>8f577ffde90bb6414946b7be389c13c0</checksum>
+            <hash>eba31869f6595299d7d6a20d2852d562</hash>
+            <checksum>eba31869f6595299d7d6a20d2852d562</checksum>
             <__types_id>board-member-information</__types_id>
             <__types_title>Board member information</__types_title>
         </group>
@@ -444,421 +444,11 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <checksum>5459d06dcce525004a441616fa06ad12</checksum>
         </field>
         <field>
-            <description></description>
-            <data>
-                <placeholder></placeholder>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb_title</id>
-            <name>Title/position</name>
-            <type>textfield</type>
-            <slug>lb_title</slug>
-            <meta_key>wpcf-lb_title</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb_title</__types_id>
-            <__types_title>Title/position</__types_title>
-            <hash>998b4ca7aecd65e3890b476173251e80</hash>
-            <checksum>998b4ca7aecd65e3890b476173251e80</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-contact-name</id>
-            <name>Name</name>
-            <type>textfield</type>
-            <slug>lb-contact-name</slug>
-            <meta_key>wpcf-lb-contact-name</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-contact-name</__types_id>
-            <__types_title>Name</__types_title>
-            <hash>4ae76bc71cd59cbc99e2d278fd1f6eac</hash>
-            <checksum>4ae76bc71cd59cbc99e2d278fd1f6eac</checksum>
-        </field>
-        <field>
-            <description>The contact\&#039;s title (if any)</description>
-            <data>
-                <repetitive>0</repetitive>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-contact-title</id>
-            <name>Title</name>
-            <type>textfield</type>
-            <slug>lb-contact-title</slug>
-            <meta_key>wpcf-lb-contact-title</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-contact-title</__types_id>
-            <__types_title>Title</__types_title>
-            <hash>f1ec74781838b3399efa6d87ae23d9f2</hash>
-            <checksum>f1ec74781838b3399efa6d87ae23d9f2</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-address</id>
-            <name>Address</name>
-            <type>textarea</type>
-            <slug>lb-address</slug>
-            <meta_key>wpcf-lb-address</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-address</__types_id>
-            <__types_title>Address</__types_title>
-            <hash>e1e18f7a86c91feef706cbce23c32ba5</hash>
-            <checksum>e1e18f7a86c91feef706cbce23c32ba5</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-phone</id>
-            <name>Phone</name>
-            <type>phone</type>
-            <slug>lb-phone</slug>
-            <meta_key>wpcf-lb-phone</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-phone</__types_id>
-            <__types_title>Phone</__types_title>
-            <hash>230cfef2bec1cb6c2937553ac3caff80</hash>
-            <checksum>230cfef2bec1cb6c2937553ac3caff80</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <validate>
-                    <email>
-                        <active>1</active>
-                        <message>Please enter a valid email address</message>
-                    </email>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-email</id>
-            <name>Contact Email</name>
-            <type>email</type>
-            <slug>lb-email</slug>
-            <meta_key>wpcf-lb-email</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-email</__types_id>
-            <__types_title>Contact Email</__types_title>
-            <hash>3b2230cb14146f8a009958d61a01dcec</hash>
-            <checksum>3b2230cb14146f8a009958d61a01dcec</checksum>
-        </field>
-        <field>
-            <description>Enter the website\&#039;s address (URL) including the http://</description>
-            <data>
-                <repetitive>0</repetitive>
-                <validate>
-                    <url>
-                        <active>1</active>
-                        <message>Please enter a valid URL address</message>
-                    </url>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-website</id>
-            <name>Website</name>
-            <type>url</type>
-            <slug>lb-website</slug>
-            <meta_key>wpcf-lb-website</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-website</__types_id>
-            <__types_title>Website</__types_title>
-            <hash>97ca88d65acfe4e6514cb77f83c20fbe</hash>
-            <checksum>97ca88d65acfe4e6514cb77f83c20fbe</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <date_and_time>date</date_and_time>
-                <placeholder></placeholder>
-                <validate>
-                    <date>
-                        <active>1</active>
-                        <format>mdy</format>
-                        <pattern>check.format</pattern>
-                        <message>Please enter a valid date</message>
-                    </date>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-incorporation-date</id>
-            <name>Incorporation Date</name>
-            <type>date</type>
-            <slug>lb-incorporation-date</slug>
-            <meta_key>wpcf-lb-incorporation-date</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-incorporation-date</__types_id>
-            <__types_title>Incorporation Date</__types_title>
-            <hash>010c9b5dd60e532c7bd57f41d30d60d8</hash>
-            <checksum>010c9b5dd60e532c7bd57f41d30d60d8</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <validate>
-                    <number>
-                        <active>1</active>
-                        <message>Please enter numeric data</message>
-                    </number>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-properties-held</id>
-            <name>Number of properties held</name>
-            <type>numeric</type>
-            <slug>lb-properties-held</slug>
-            <meta_key>wpcf-lb-properties-held</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-properties-held</__types_id>
-            <__types_title>Number of properties held</__types_title>
-            <hash>cc41df9e4fdabe4329ad858468f5998c</hash>
-            <checksum>cc41df9e4fdabe4329ad858468f5998c</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <validate>
-                    <number>
-                        <active>1</active>
-                        <message>Please enter numeric data</message>
-                    </number>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-properties-transferred</id>
-            <name>Number of properties transferred</name>
-            <type>numeric</type>
-            <slug>lb-properties-transferred</slug>
-            <meta_key>wpcf-lb-properties-transferred</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-properties-transferred</__types_id>
-            <__types_title>Number of properties transferred</__types_title>
-            <hash>11f597e75a65ea59d16fb5b31bdad7c2</hash>
-            <checksum>11f597e75a65ea59d16fb5b31bdad7c2</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <date_and_time>date</date_and_time>
-                <placeholder></placeholder>
-                <validate>
-                    <date>
-                        <active>1</active>
-                        <format>mdy</format>
-                        <pattern>check.format</pattern>
-                        <message>Please enter a valid date</message>
-                    </date>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-last-updated</id>
-            <name>Date last updated</name>
-            <type>date</type>
-            <slug>lb-last-updated</slug>
-            <meta_key>wpcf-lb-last-updated</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-last-updated</__types_id>
-            <__types_title>Date last updated</__types_title>
-            <hash>41310fad6d3b9ba3908064cf7b143950</hash>
-            <checksum>41310fad6d3b9ba3908064cf7b143950</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <placeholder></placeholder>
-                <repetitive>0</repetitive>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-notes</id>
-            <name>Notes</name>
-            <type>textarea</type>
-            <slug>lb-notes</slug>
-            <meta_key>wpcf-lb-notes</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-notes</__types_id>
-            <__types_title>Notes</__types_title>
-            <hash>ccc45f7f80176caa1eb4fcb8c8f73922</hash>
-            <checksum>ccc45f7f80176caa1eb4fcb8c8f73922</checksum>
-        </field>
-        <field>
-            <description>Enter the percentage of funding from DTAC</description>
-            <data>
-                <placeholder></placeholder>
-                <validate>
-                    <number>
-                        <active>1</active>
-                        <message>Please enter numeric data</message>
-                    </number>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-dtac-funding</id>
-            <name>DTAC Funding</name>
-            <type>numeric</type>
-            <slug>lb-dtac-funding</slug>
-            <meta_key>wpcf-lb-dtac-funding</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-dtac-funding</__types_id>
-            <__types_title>DTAC Funding</__types_title>
-            <hash>3ad6dcf134ad314d47777c043af98c0f</hash>
-            <checksum>3ad6dcf134ad314d47777c043af98c0f</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <placeholder></placeholder>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-member-name</id>
-            <name>Member Name</name>
-            <type>textfield</type>
-            <slug>lb-member-name</slug>
-            <meta_key>wpcf-lb-member-name</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-member-name</__types_id>
-            <__types_title>Member Name</__types_title>
-            <hash>0a348b92986118831488f15001d1c091</hash>
-            <checksum>0a348b92986118831488f15001d1c091</checksum>
-        </field>
-        <field>
-            <description>Number the board members in the order in which they should be displayed.</description>
-            <data>
-                <placeholder></placeholder>
-                <validate>
-                    <number>
-                        <active>1</active>
-                        <message>Please enter numeric data</message>
-                    </number>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>lb-member-order</id>
-            <name>Display Order</name>
-            <type>numeric</type>
-            <slug>lb-member-order</slug>
-            <meta_key>wpcf-lb-member-order</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>lb-member-order</__types_id>
-            <__types_title>Display Order</__types_title>
-            <hash>b6757081c0b8ca57af04402bea3985a3</hash>
-            <checksum>b6757081c0b8ca57af04402bea3985a3</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <validate>
-                    <required>
-                        <active>1</active>
-                        <value>true</value>
-                        <message>This field is required</message>
-                    </required>
-                </validate>
-                <is_new>1</is_new>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>upload-a-file</id>
-            <name>Upload a File</name>
-            <type>file</type>
-            <slug>upload-a-file</slug>
-            <meta_key>wpcf-upload-a-file</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>upload-a-file</__types_id>
-            <__types_title>Upload a File</__types_title>
-            <hash>066fdcd4f9fe7044a28f4156ef43f5e1</hash>
-            <checksum>066fdcd4f9fe7044a28f4156ef43f5e1</checksum>
-        </field>
-        <field>
             <id>publication-url</id>
             <slug>publication-url</slug>
             <type>file</type>
             <name>Publication URL</name>
-            <description>Note: URLs for this site may include or exclude the domain http://www.example.org but must begin with a slash if the domain is excluded (eg. /pdf/Newletter-April-2016.pdf).  The domain-less style will continue to work without needing to be updated in the event that the domain name of the site changes.</description>
+            <description>Note: URLs for this site may include or exclude the domain (eg. http://www.example.org) but must begin with a slash if the domain is excluded (eg. /pdf/Newletter-April-2016.pdf).  The domain-less style will continue to work without needing to be updated in the event that the domain name of the site changes.</description>
             <data>
                 <placeholder></placeholder>
                 <user_default_value></user_default_value>
@@ -883,8 +473,8 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <meta_type>postmeta</meta_type>
             <__types_id>publication-url</__types_id>
             <__types_title>Publication URL</__types_title>
-            <hash>d409db4a61be3c18a3fe4e81990ec584</hash>
-            <checksum>d409db4a61be3c18a3fe4e81990ec584</checksum>
+            <hash>d3b3fc24e25469d7471518075acaa8fe</hash>
+            <checksum>d3b3fc24e25469d7471518075acaa8fe</checksum>
         </field>
         <field>
             <description></description>
@@ -1007,223 +597,11 @@ Alternatively, you may simply paste into the URL field the address of any docume
             <checksum>43d67b68e3aeaf2a6f3724bfe1821930</checksum>
         </field>
         <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>parcel-number</id>
-            <name>Parcel Number(s)</name>
-            <type>textfield</type>
-            <slug>parcel-number</slug>
-            <meta_key>wpcf-parcel-number</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>parcel-number</__types_id>
-            <__types_title>Parcel Number(s)</__types_title>
-            <hash>d10819a5a7de1bc9040c3b232f1daa13</hash>
-            <checksum>d10819a5a7de1bc9040c3b232f1daa13</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <validate>
-                    <number>
-                        <active>1</active>
-                        <message>Please enter numeric data</message>
-                    </number>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>listing-price</id>
-            <name>Listing Price</name>
-            <type>numeric</type>
-            <slug>listing-price</slug>
-            <meta_key>wpcf-listing-price</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>listing-price</__types_id>
-            <__types_title>Listing Price</__types_title>
-            <hash>8999dd782e20ee12c15ce15362f4c254</hash>
-            <checksum>8999dd782e20ee12c15ce15362f4c254</checksum>
-        </field>
-        <field>
-            <description>A web address (URL) including the http://</description>
-            <data>
-                <repetitive>0</repetitive>
-                <validate>
-                    <url>
-                        <active>1</active>
-                        <message>Please enter a valid web address</message>
-                    </url>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>listing-url</id>
-            <name>Realtor Site Listing</name>
-            <type>url</type>
-            <slug>listing-url</slug>
-            <meta_key>wpcf-listing-url</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>listing-url</__types_id>
-            <__types_title>Realtor Site Listing</__types_title>
-            <hash>2a55dc9dbb26c67d00dfca5a99e8ce2a</hash>
-            <checksum>2a55dc9dbb26c67d00dfca5a99e8ce2a</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>contact-name</id>
-            <name>Name</name>
-            <type>textfield</type>
-            <slug>contact-name</slug>
-            <meta_key>wpcf-contact-name</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>contact-name</__types_id>
-            <__types_title>Name</__types_title>
-            <hash>4306401627b0b6d433e6b9a7bffb750c</hash>
-            <checksum>4306401627b0b6d433e6b9a7bffb750c</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>contact-company</id>
-            <name>Company</name>
-            <type>textfield</type>
-            <slug>contact-company</slug>
-            <meta_key>wpcf-contact-company</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>contact-company</__types_id>
-            <__types_title>Company</__types_title>
-            <hash>0e0fbef000fc8585f902733578dff521</hash>
-            <checksum>0e0fbef000fc8585f902733578dff521</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>contact-address</id>
-            <name>Address</name>
-            <type>textarea</type>
-            <slug>contact-address</slug>
-            <meta_key>wpcf-contact-address</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>contact-address</__types_id>
-            <__types_title>Address</__types_title>
-            <hash>6bfb6298a7032bc3d8a4d81e0689b854</hash>
-            <checksum>6bfb6298a7032bc3d8a4d81e0689b854</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>0</repetitive>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>contact-phone</id>
-            <name>Phone</name>
-            <type>phone</type>
-            <slug>contact-phone</slug>
-            <meta_key>wpcf-contact-phone</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>contact-phone</__types_id>
-            <__types_title>Phone</__types_title>
-            <hash>22e574c92a59f4d8c402730686d2697c</hash>
-            <checksum>22e574c92a59f4d8c402730686d2697c</checksum>
-        </field>
-        <field>
-            <description>(Will be published on the site)</description>
-            <data>
-                <repetitive>0</repetitive>
-                <validate>
-                    <email>
-                        <active>1</active>
-                        <message>Please enter a valid email address</message>
-                    </email>
-                </validate>
-                <conditional_display>
-                    <custom_use>0</custom_use>
-                    <relation>AND</relation>
-                    <custom></custom>
-                </conditional_display>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>contact-email</id>
-            <name>Email</name>
-            <type>email</type>
-            <slug>contact-email</slug>
-            <meta_key>wpcf-contact-email</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>contact-email</__types_id>
-            <__types_title>Email</__types_title>
-            <hash>59fd636c4ed72e80b44a59ef035f1b2f</hash>
-            <checksum>59fd636c4ed72e80b44a59ef035f1b2f</checksum>
-        </field>
-        <field>
-            <description></description>
-            <data>
-                <repetitive>1</repetitive>
-                <is_new>1</is_new>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <id>attachment</id>
-            <name>Attachment</name>
-            <type>file</type>
-            <slug>attachment</slug>
-            <meta_key>wpcf-attachment</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>attachment</__types_id>
-            <__types_title>Attachment</__types_title>
-            <hash>72b1eebd7734d77f53a866743d9b66d0</hash>
-            <checksum>72b1eebd7734d77f53a866743d9b66d0</checksum>
-        </field>
-        <field>
             <id>link-url</id>
             <slug>link-url</slug>
             <type>url</type>
             <name>Link URL</name>
-            <description>Note: URLs for this site may include or exclude the domain http://www.example.org but must begin with a slash if the domain is excluded (eg. /about-us/). The domain-less style will continue to work without needing to be updated in the event that the domain name of the site changes.
+            <description>Note: URLs for this site may include or exclude the domain (eg. http://www.example.org) but must begin with a slash if the domain is excluded (eg. /about-us/). The domain-less style will continue to work without needing to be updated in the event that the domain name of the site changes.
 
 URLs for other sites must include http:// and the domain name.</description>
             <data>
@@ -1238,8 +616,8 @@ URLs for other sites must include http:// and the domain name.</description>
             <meta_type>postmeta</meta_type>
             <__types_id>link-url</__types_id>
             <__types_title>Link URL</__types_title>
-            <hash>9d42dcf159230e6ed7b44d542d3a45cc</hash>
-            <checksum>9d42dcf159230e6ed7b44d542d3a45cc</checksum>
+            <hash>0c85b28b3fcb691eb6fca0f7eb3bb851</hash>
+            <checksum>0c85b28b3fcb691eb6fca0f7eb3bb851</checksum>
         </field>
         <field>
             <description></description>
@@ -1298,26 +676,6 @@ URLs for other sites must include http:// and the domain name.</description>
             <__types_title>Category</__types_title>
             <hash>5bc4f61a7a21c0190f0ec01d32a8edab</hash>
             <checksum>5bc4f61a7a21c0190f0ec01d32a8edab</checksum>
-        </field>
-        <field>
-            <id>board-position</id>
-            <slug>board-position</slug>
-            <type>textfield</type>
-            <name>Board Position</name>
-            <description>Position or role on the board</description>
-            <data>
-                <placeholder></placeholder>
-                <user_default_value></user_default_value>
-                <repetitive>0</repetitive>
-                <submit-key>textfield-371418260</submit-key>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <meta_key>wpcf-board-position</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>board-position</__types_id>
-            <__types_title>Board Position</__types_title>
-            <hash>9ed61e49bfa11bc4cc6ff4e730379d95</hash>
-            <checksum>9ed61e49bfa11bc4cc6ff4e730379d95</checksum>
         </field>
         <field>
             <id>bm-position</id>
@@ -1387,10 +745,11 @@ URLs for other sites must include http:// and the domain name.</description>
             <slug>bm-classifications</slug>
             <type>textfield</type>
             <name>Additional Board Classifications</name>
-            <description>Director Emeriti, Honorary, Lifetime, etc.</description>
+            <description>Director Emeriti, Honorary or Lifetime member, etc.</description>
             <data>
                 <placeholder></placeholder>
                 <user_default_value></user_default_value>
+                <repetitive>0</repetitive>
                 <custom_use></custom_use>
                 <submit-key>bm-classifications</submit-key>
                 <disabled_by_type>0</disabled_by_type>
@@ -1399,50 +758,8 @@ URLs for other sites must include http:// and the domain name.</description>
             <meta_type>postmeta</meta_type>
             <__types_id>bm-classifications</__types_id>
             <__types_title>Additional Board Classifications</__types_title>
-            <hash>51b54bd0f7ff6265e4dee54fd3747390</hash>
-            <checksum>51b54bd0f7ff6265e4dee54fd3747390</checksum>
-        </field>
-        <field>
-            <id>bm-classifications-2</id>
-            <slug>bm-classifications-2</slug>
-            <type>checkboxes</type>
-            <name>Board Classifications</name>
-            <description></description>
-            <data>
-                <save_empty>no</save_empty>
-                <options>
-                    <wpcf-fields-checkboxes-option-fc59e927bf7bc00666271bf8d3c77759-1>
-                        <title>Director Emeriti</title>
-                        <set_value>1</set_value>
-                        <display>db</display>
-                        <display_value_not_selected></display_value_not_selected>
-                        <display_value_selected></display_value_selected>
-                    </wpcf-fields-checkboxes-option-fc59e927bf7bc00666271bf8d3c77759-1>
-                    <wpcf-fields-checkboxes-option-4a760e2ea7a407585b78f504a47e27a6-1>
-                        <title>Honorary</title>
-                        <set_value>1</set_value>
-                        <display>db</display>
-                        <display_value_not_selected></display_value_not_selected>
-                        <display_value_selected></display_value_selected>
-                    </wpcf-fields-checkboxes-option-4a760e2ea7a407585b78f504a47e27a6-1>
-                    <wpcf-fields-checkboxes-option-e206f817bf4f193d8ffe7c07bf044cf8-1>
-                        <title>Lifetime</title>
-                        <set_value>1</set_value>
-                        <display>db</display>
-                        <display_value_not_selected></display_value_not_selected>
-                        <display_value_selected></display_value_selected>
-                    </wpcf-fields-checkboxes-option-e206f817bf4f193d8ffe7c07bf044cf8-1>
-                </options>
-                <custom_use></custom_use>
-                <submit-key>bm-classifications-2</submit-key>
-                <disabled_by_type>0</disabled_by_type>
-            </data>
-            <meta_key>wpcf-bm-classifications-2</meta_key>
-            <meta_type>postmeta</meta_type>
-            <__types_id>bm-classifications-2</__types_id>
-            <__types_title>Board Classifications</__types_title>
-            <hash>f6db684e3ca404a32cfcce1a2f49660d</hash>
-            <checksum>f6db684e3ca404a32cfcce1a2f49660d</checksum>
+            <hash>e5527895ddeca15aa6930416a7395092</hash>
+            <checksum>e5527895ddeca15aa6930416a7395092</checksum>
         </field>
         <field>
             <id>nav-box-color</id>
