@@ -161,7 +161,16 @@ p.board-memberships {
 	text-transform: uppercase;
 }
 
-/* publication and location lists */
+/* board member, publication, and location lists */
+
+ul.board-member-list-simple {
+	list-style: none outside none;
+}
+
+.bm-entry-simple .bm-position {
+	color: rgb(80, 80, 80);
+	font-size: 13px;
+}
 
 ul.board-member-list,
 ul.location-list,
