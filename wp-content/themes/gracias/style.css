@@ -179,7 +179,6 @@ ul.publication-list {
 	position: relative;
 }
 
-li.bm-entry,
 li.loc-entry,
 li.pub-entry {
 	padding: 1.5% 2.4%;
@@ -190,17 +189,44 @@ li.pub-entry {
 	color: rgb(80, 80, 80);
 }
 
-li.bm-entry,
 li.loc-entry {
 	min-height: 32px;
 }
 
-li.bm-entry .bm-title {
-	color: #333;
-	display: inline-block;
-	width: 25%;
+li.bm-entry {
+	display: table-row;
+	/* position: static; */
+	/* width: 33%; */
+	/* height: 32px; */
 }
 
+li.bm-entry .bm-title,
+li.bm-entry .bm-col-2,
+li.bm-entry .bm-col-3 {
+	display: table-cell;
+	/* position: static; */
+	color: rgb(80, 80, 80);
+	border-top: 2px solid #eee;
+}
+
+li.bm-entry:last-child .bm-title,
+li.bm-entry:last-child .bm-col-2,
+li.bm-entry:last-child .bm-col-3 {
+	border-bottom: 2px solid #eee;
+}
+
+li.bm-entry .bm-title {
+	color: #333;
+	width: 30%;
+	padding: 1.5% 2.4% 1.5% 2.4%;
+}
+
+li.bm-entry .bm-col-2,
+li.bm-entry .bm-col-3 {
+	font-size: 13px;
+	width: 35%;
+	padding: 1.5% 2.4% 1.5% 0%;
+}
 
 li.loc-entry .loc-title {
 	display: inline-block;
@@ -212,25 +238,12 @@ li.pub-entry .pub-title {
 	width: 60%;
 }
 
-li.bm-entry .bm-col-2,
-li.bm-entry .bm-col-3,
 li.loc-entry .loc-address,
 li.loc-entry .loc-phone,
 li.loc-entry .loc-hours,
 li.pub-entry .pub-date,
 li.pub-entry .pub-type {
 	position: absolute;
-}
-
-li.bm-entry .bm-col-2 {
-	left: 30%;
-	width: 30%;
-	font-size: 13px;
-}
-
-li.bm-entry .bm-col-3 {
-	left: 65%;
-	font-size: 13px;
 }
 
 li.loc-entry .loc-address,
@@ -271,7 +284,34 @@ li.pub-entry .pub-type {
 		width: auto;
 		margin-right: 20px;
 	}
+
+    ul.board-member-list {
+        margin-left: 5px;
+    }
+
+    li.bm-entry {
+	   display: block;
+	   border-top: 2px solid #eee;
+    }
+
+    li.bm-entry:last-child {
+	   border-bottom: 2px solid #eee;
+    }
+
+	li.bm-entry .bm-title,
+	li.bm-entry .bm-col-2,
+	li.bm-entry .bm-col-3 {
+        border: none;
+        padding: 1.5% 2.4%;
+	}
+	
+	li.bm-entry:last-child .bm-title,
+    li.bm-entry:last-child .bm-col-2,
+    li.bm-entry:last-child .bm-col-3 {
+	   border-bottom: none;
+    }
 }
+
 
 /* Partners page links */
 

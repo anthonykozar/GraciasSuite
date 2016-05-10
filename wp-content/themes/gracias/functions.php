@@ -613,9 +613,9 @@ function gracias_tribe_event_date($event = null) {
 }
 
 // Displays the text (or number) stored in the custom field $field_id
-function gracias_text_field($label, $field_id, $before = '', $after = '', $multiline = false, $after_label = '') {
+function gracias_text_field($label, $field_id, $before = '', $after = '', $multiline = false, $after_label = '', $force_output = false) {
 	$text = get_post_meta(get_the_ID(), $field_id, true);
-	if (!empty($text) || is_numeric($text)) {
+	if (!empty($text) || is_numeric($text) || $force_output) {
 		// convert newlines to <br> if $multiline is true
 		if ($multiline)  $text = str_replace("\n", '<br />', $text);
 		if (!empty($label)) {
@@ -629,7 +629,7 @@ function gracias_text_field($label, $field_id, $before = '', $after = '', $multi
 
 // Displays the text (or number) stored in two custom fields, $field1_id1
 // and $field_id2, inserting a $separator between them only if both are non-empty.
-function gracias_dbl_text_field($label, $field_id1, $field_id2, $before = '', $separator = ' ', $after = '', $multiline = false, $after_label = '') {
+function gracias_dbl_text_field($label, $field_id1, $field_id2, $before = '', $separator = ' ', $after = '', $multiline = false, $after_label = '', $force_output = false) {
 	$text1 = get_post_meta(get_the_ID(), $field_id1, true);
 	$text2 = get_post_meta(get_the_ID(), $field_id2, true);
 	$output = '';
@@ -643,7 +643,7 @@ function gracias_dbl_text_field($label, $field_id1, $field_id2, $before = '', $s
 		$output = $text2;
 	}
 	
-	if (!empty($output) || is_numeric($output)) {
+	if (!empty($output) || is_numeric($output) || $force_output) {
 		// convert newlines to <br> if $multiline is true
 		if ($multiline)  $output = str_replace("\n", '<br />', $output);
 		if (!empty($label)) {

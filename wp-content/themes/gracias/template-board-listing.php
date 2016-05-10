@@ -94,15 +94,15 @@
 						</span>
 						<?php
 							if ($display_mode < 2) {
-								gracias_text_field('', 'wpcf-bm-company-title', '<span class="bm-col-2">', '</span>', false);
-								gracias_text_field('', 'wpcf-bm-company', '<span class="bm-col-3">', '</span>', false);
+								gracias_text_field('', 'wpcf-bm-company-title', '<span class="bm-col-2">', '</span>', false, '', true);
+								gracias_text_field('', 'wpcf-bm-company', '<span class="bm-col-3">', '</span>', false, '', true);
 							}
 							else if ($display_mode == 2) {
-								gracias_text_field('', 'wpcf-bm-position', '<span class="bm-col-2">', '</span>', false);
-								gracias_dbl_text_field('', 'wpcf-bm-company-title', 'wpcf-bm-company', '<span class="bm-col-3">', ', ', '</span>');
+								gracias_text_field('', 'wpcf-bm-position', '<span class="bm-col-2">', '</span>', false, '', true);
+								gracias_dbl_text_field('', 'wpcf-bm-company-title', 'wpcf-bm-company', '<span class="bm-col-3">', ', ', '</span>', false, '', true);
 							}
 							else if ($display_mode == 3) {
-								gracias_text_field('', 'wpcf-bm-position', '<span class="bm-col-2">', '</span>', false);
+								gracias_text_field('', 'wpcf-bm-position', '<span class="bm-col-2">', '</span>', false, '', true);
 							}	
 						?>
 					</li>
