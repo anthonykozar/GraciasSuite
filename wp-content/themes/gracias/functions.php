@@ -572,8 +572,7 @@ function gracias_location_embed_map() {
 		?>
 		<h2>Map</h2>
 		<div class="location-embedded-map">
-			<iframe width="95%" height="450" frameborder="0" style="border:0" 
-			  src="<?php echo esc_attr($map_url); ?>" allowfullscreen></iframe>
+			<iframe width="95%" height="450" src="<?php echo esc_attr($map_url); ?>" allowfullscreen></iframe>
 		</div>
 		<?php
 	}

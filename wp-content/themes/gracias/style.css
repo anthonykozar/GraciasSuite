@@ -348,6 +348,7 @@ li.bm-entry .bm-col-3 {
 }
 
 /* style embedded maps similarly to content images */
+.location-embedded-map iframe,
 .clubs-embedded-map iframe {
 	display: block;
 	max-width: 98.5%;
@@ -356,6 +357,13 @@ li.bm-entry .bm-col-3 {
 	box-shadow: 0px 0px 3px rgb(238, 238, 238);
 	background: none repeat scroll 0% 0% rgb(255, 255, 255);
 	border: 1px solid rgb(238, 238, 238);
+}
+
+@media screen and (max-width: 760px) {
+	.location-embedded-map iframe,
+	.clubs-embedded-map iframe {
+		max-height: 400px;
+	}
 }
 
 /* add margins to the contents of our custom shortcode columns */
