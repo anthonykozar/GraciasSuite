@@ -58,9 +58,20 @@
 						3		name			board position
 						
 						Add 4 to the display mode to enable linking to the individual board member pages.
+
+						Add 8 to the display mode to show headings for child boards (such as committees).
+						This simplistic solution outputs a heading whenever the first board assignment
+						changes between two consecutive board members.  This will probably be less than 
+						ideal if the board members are not sorted by child boards or have multiple board
+						assignments.
 				 */
 				$display_mode = (int) get_post_meta(get_the_ID(), 'wpcf-display-mode', true);
 				// if ($display_mode == 0)	$display_mode = 7;	// show all by default
+				if ($display_mode >= 8) {
+					$display_mode -= 8;
+					$show_headings = true;
+				}
+				else $show_headings = false;
 				if ($display_mode >= 4) {
 					$display_mode -= 4;
 					$link_names = true;
@@ -80,8 +91,42 @@
 											'order' => 'ASC', 'paged' => $paged, 'posts_per_page' => $posts_per_page));
 			?>
 			<?php if( $items->have_posts() ) : ?>
+				<?php
+					if ($show_headings) {
+						// get the first board term for the first board member
+						$last_board = '';
+						$items->the_post();
+						$terms = get_the_terms(get_the_ID(), 'grcs_board');
+						if ($terms && !is_wp_error($terms)) {
+							$last_board = $terms[0]->slug;
+							if ($last_board != $board_slug) {
+								echo '<h2 class="subboard">' . $terms[0]->name . "</h2>\n";
+							}
+						}
+						$items->rewind_posts();
+					}
+				?>
 				<ul class="board-member-list">
 				<?php while( $items->have_posts() ) : $items->the_post(); ?>
+					<?php
+						if ($show_headings) {
+							// get the first board term for this board member
+							$terms = get_the_terms(get_the_ID(), 'grcs_board');
+							if ($terms && !is_wp_error($terms)) {
+								$board = $terms[0]->slug;
+								if ($board != $last_board) {
+									// output a heading and begin a new list if the board has changed
+									echo "</ul>\n";
+									if ($board != $board_slug) {
+										echo '<h2 class="subboard">' . $terms[0]->name . "</h2>\n";
+									}
+									else echo '<h2 class="subboard">Board Members</h2>' . "\n";
+									echo '<ul class="board-member-list">' . "\n";
+									$last_board = $board;
+								}
+							}
+						}
+					?>
 					<li class="bm-entry">
 						<span class="bm-title">
 							<?php if ($link_names) : ?>
