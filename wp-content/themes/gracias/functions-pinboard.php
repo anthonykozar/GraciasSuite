@@ -56,8 +56,8 @@ function pinboard_theme_setup() {
 	
 	// Allows users to set a custom header image
 	add_theme_support( 'custom-header', array(
-		'width' => ( pinboard_get_option( 'retina_header' ) ? 392 : 196 ),
-		'height' => ( pinboard_get_option( 'retina_header' ) ? 96 : 48 ),
+		'width' => ( pinboard_get_option( 'retina_header' ) ? 1028 : 514 ),
+		'height' => ( pinboard_get_option( 'retina_header' ) ? 300 : 150 ),
 		'default-text-color' => '333',
 		'flex-width' => true,
 		'flex-height' => true,

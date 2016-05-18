@@ -650,7 +650,9 @@ audio {
 }
 
 #site-title img {
-	margin: 38px 0;
+    width: auto;
+    max-height: 150px;
+    margin: 0px;
 	vertical-align:middle;
 }
 
