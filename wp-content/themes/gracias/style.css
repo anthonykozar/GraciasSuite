@@ -400,11 +400,6 @@ li.bm-entry .bm-col-3 {
 	color: rgb(80, 80, 80);
 }
 
-/* match other link colors in post "metadata" */
-.entry-meta a {
-	color: rgb(22, 87, 114);
-}
-
 /* reduce extra space around title on pages */
 .single .entry-title, .page .entry-title, .error404 .entry-title {
 	line-height: 1.25em;
