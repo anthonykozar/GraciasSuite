@@ -106,7 +106,7 @@ add_filter('term_link', 'gracias_filter_category_links', 10, 3);
 /* CUSTOM SHORTCODES */
 
 // [gracias_clear]{contents}{[/gracias_clear]}
-function gracias_do_clear_shortcode($atts, $content = "", $tag)
+function gracias_do_clear_shortcode($atts, $content, $tag)
 {
 	if ($content == null) $content = "";
 	
@@ -117,8 +117,10 @@ function gracias_do_clear_shortcode($atts, $content = "", $tag)
 add_shortcode('gracias_clear', 'gracias_do_clear_shortcode');
 
 // [gracias_column col="(1|2|3|4)"]{contents}[/gracias_column]
-function gracias_do_column_shortcode($atts, $content = "NO CONTENT PASSED", $tag)
+function gracias_do_column_shortcode($atts, $content, $tag)
 {
+	if ($content == null) $content = "";
+	
 	if (!is_array($atts)) {
 		// $atts is not an array if no attributes are given
 		return $content;
