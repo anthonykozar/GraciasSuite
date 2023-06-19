@@ -978,6 +978,9 @@ function gracias_is_multipost_page_template()
 	global $template;	// the complete path of the main template file selected by WP
 	global $GRACIAS_MULTIPOST_TEMPLATES;
 	
+	// eliminate a warning when $template is null
+	if (!is_string($template) || $template == "")  return false;
+	
 	return in_array(basename($template), $GRACIAS_MULTIPOST_TEMPLATES);
 }
 
