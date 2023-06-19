@@ -95,8 +95,9 @@ function  pinboard_widgets_init() {
 	
 	register_sidebar(
 		array(
+			'id'   => 'sidebar-1',
 			'name' => 'Header',
-			'description' => 'Displays in the header. Intended exclusively for displaying ads of standard dimentions.',
+			'description' => 'Displays in the header. Intended exclusively for displaying ads of standard dimensions.',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside><!-- .widget -->',
 			'before_title' => '<' . $title_tag . ' class="widget-title">',
@@ -105,8 +106,9 @@ function  pinboard_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'id'   => 'sidebar-2',
 			'name' => 'Sidebar Top',
-			'description' => 'Displays in in the main sidebar stacked at the top.',
+			'description' => 'Displays in the main sidebar stacked at the top.',
 			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside><!-- .widget --></div>',
 			'before_title' => '<' . $title_tag . ' class="widget-title">',
@@ -115,8 +117,9 @@ function  pinboard_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'id'   => 'sidebar-3',
 			'name' => 'Sidebar Left',
-			'description' => 'Displays in in the main sidebar floated to the left.',
+			'description' => 'Displays in the main sidebar floated to the left.',
 			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside><!-- .widget --></div>',
 			'before_title' => '<' . $title_tag . ' class="widget-title">',
@@ -125,8 +128,9 @@ function  pinboard_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'id'   => 'sidebar-4',
 			'name' => 'Sidebar Right',
-			'description' => 'Displays in in the main sidebar floated to the right.',
+			'description' => 'Displays in the main sidebar floated to the right.',
 			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside><!-- .widget --></div>',
 			'before_title' => '<' . $title_tag . ' class="widget-title">',
@@ -135,8 +139,9 @@ function  pinboard_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'id'   => 'sidebar-5',
 			'name' => 'Sidebar Bottom',
-			'description' => 'Displays in in the main sidebar stacked at the bottom.',
+			'description' => 'Displays in the main sidebar stacked at the bottom.',
 			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside><!-- .widget --></div>',
 			'before_title' => '<' . $title_tag . ' class="widget-title">',
@@ -154,8 +159,9 @@ function  pinboard_widgets_init() {
 		$grid_class = 'fourcol';
 	register_sidebar(
 		array(
+			'id'   => 'sidebar-6',
 			'name' => 'Footer',
-			'description' => 'Displays in in the footer area.',
+			'description' => 'Displays in the footer area.',
 			'before_widget' => '<div class="column ' . $grid_class . '"><aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside><!-- .widget --></div>',
 			'before_title' => '<' . $title_tag . ' class="widget-title">',
@@ -164,6 +170,7 @@ function  pinboard_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'id'   => 'sidebar-7',
 			'name' => '404 Page',
 			'description' => 'Displays on 404 Pages in the content area.',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -174,6 +181,7 @@ function  pinboard_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'id'   => 'sidebar-8',
 			'name' => 'Wide',
 			'description' => 'Displays on the front page and spans full width.',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -193,6 +201,7 @@ function  pinboard_widgets_init() {
 		$grid_class = 'fourcol';
 	register_sidebar(
 		array(
+			'id'   => 'sidebar-9',
 			'name' => 'Boxes',
 			'before_widget' => '<div class="column ' . $grid_class . '"><aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside><!-- .widget --></div>',
@@ -202,6 +211,7 @@ function  pinboard_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'id'   => 'sidebar-10',
 			'name' => 'Footer Wide',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside><!-- .widget -->',
